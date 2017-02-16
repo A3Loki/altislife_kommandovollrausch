@@ -33,7 +33,7 @@ if(playerSide == west) then {
 		//(unitBackpack _unit) setObjectTextureGlobal [0, "textures\cop\cop_backpack.paa"];
 		(unitBackpack player) setObjectTextureGlobal [0, ""];
 	};
-};
+
 
 if(playerSide == independent) then {
 	switch(_type) do {
