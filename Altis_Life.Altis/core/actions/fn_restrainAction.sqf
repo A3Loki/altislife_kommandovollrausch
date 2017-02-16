@@ -8,7 +8,7 @@
 private["_unit", "_cop", "_cableties"];
 _unit = cursorTarget;
 _cop = if(side player == west) then {true} else {false};
-_cableties = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+_cableties = [_this,0,false] call BIS_fnc_param;
 if(isNull _unit) exitWith {}; //Not valid
 if((player distance _unit > 3)) exitWith {};
 if((_unit getVariable "restrained")) exitWith {};
