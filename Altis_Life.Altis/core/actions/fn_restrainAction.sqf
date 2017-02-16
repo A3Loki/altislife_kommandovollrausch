@@ -7,13 +7,17 @@
 */
 private["_unit"];
 _unit = cursorTarget;
+_cableties = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _unit) exitWith {}; //Not valid
 if((player distance _unit > 3)) exitWith {};
 if((_unit getVariable "restrained")) exitWith {};
-if(side _unit == west) exitWith {};
+if(side player == west && side _unit == west) exitWith {};
+if(_cableties && life_inv_cableties < 1) exitWith {hint "Du hast keine Kabelbinder"};
 if(player == _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
 
+if(_cableties) then {
+  [false,"cableties",1] call life_fnc_handleInv; };
 _unit setVariable["restrained",true,true];
 [[player], "life_fnc_restrain", _unit, false] call life_fnc_MP;
 //[[0,"STR_NOTF_Restrained",true,[_unit getVariable["realname", name _unit], profileName]],"life_fnc_broadcast",west,false] call life_fnc_MP;
