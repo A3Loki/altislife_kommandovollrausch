@@ -99,7 +99,7 @@ switch (_code) do {
 		_handled = true;
 	};
 
-	//Restraining or robbing (Shift + R)
+	//Restraining (Shift + R)
 	case 19:
 	{
 		if(_shift) then {_handled = true;};
@@ -112,36 +112,22 @@ switch (_code) do {
 		{
 			[true] call life_fnc_restrainAction;
 		};
-
-		//Robbing
-		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
-		{
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == RIFLE OR currentWeapon player == PISTOL) && currentWeapon player != "" && !life_knockout && !(player GVAR["restrained",false]) && !life_istazed && !(player GVAR["surrender",false])) then
-			{
-				[cursorTarget] spawn life_fnc_knockoutAction;
-			};
-			_handled = true;
-		};
 	};
 
-	//Shift + G (surrender)
+	//Shift + G Niederschlagen
 	case 34:
 	{
-		if(_shift) then {_handled = true;};
+	    if(_shift) then {_handled = true;};
 
-		if (_shift) then
-		{
-			if (vehicle player == player && !(player GVAR ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
-			{
-				if (player GVAR ["surrender", false]) then
-				{
-					player SVAR ["surrender", false, true];
-				} else
-				{
-					[] spawn life_fnc_surrender;
-				};
-			};
-		};
+	    //Robbing
+        if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
+        {
+            if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == RIFLE OR currentWeapon player == PISTOL) && currentWeapon player != "" && !life_knockout && !(player GVAR["restrained",false]) && !life_istazed && !(player GVAR["surrender",false])) then
+            {
+                [cursorTarget] spawn life_fnc_knockoutAction;
+            };
+            _handled = true;
+        };
 	};
 
 	//Num1
@@ -188,27 +174,41 @@ switch (_code) do {
 		};
 	};
 
+    //Num5
 	case 76:
 	{
 			if(_shift) then {_handled = true;};
 			if((_shift) && (vehicle player == player)) then
-	{
-			[] spawn {
-				player playMove "Acts_AidlPercMstpSlowWrflDnon_pissing";
-				[player,"piss"] call life_fnc_globalSound;
-				sleep 8;
-				_pipi = "Oil_Spill_F" createVehicle (getPos player);
-				_pipi setPos (getPos player);
-				sleep 120;
-				deleteVehicle _pipi;
-		};
-	};
-};
-
-
+	        {
+                [] spawn {
+                    player playMove "Acts_AidlPercMstpSlowWrflDnon_pissing";
+                    [player,"piss"] call life_fnc_globalSound;
+                    sleep 8;
+                    _pipi = "Oil_Spill_F" createVehicle (getPos player);
+                    _pipi setPos (getPos player);
+                    sleep 120;
+                    deleteVehicle _pipi;
+                };
+	        };
+    };
 
 	//T Key (Trunk)
 	case 20: {
+		if(_shift) then {_handled = true;};
+		if (_shift) then
+        {
+            if (vehicle player == player && !(player GVAR ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
+            {
+                if (player GVAR ["surrender", false]) then
+                {
+                    player SVAR ["surrender", false, true];
+                } else
+                {
+                    [] spawn life_fnc_surrender;
+                };
+            };
+        };
+
 		if(!_alt && !_ctrlKey && !life_is_processing) then {
 			if(vehicle player != player && alive vehicle player) then {
 				if((vehicle player) in life_vehicles) then {
@@ -226,6 +226,7 @@ switch (_code) do {
 		};
 	};
 
+    //E Sirene Takedown Weapon
 	case 18:
 	{
 		if(_shift && playerSide == west  && !(life_siren4_active) && vehicle player != player && ((driver vehicle player) == player)) then
@@ -242,6 +243,7 @@ switch (_code) do {
 		};
 	};
 
+    //C Sirene Follow Vehicle
 	case 46:
 	{
 		if(_shift && playerSide == west && !(life_siren5_active) && vehicle player != player && ((driver vehicle player) == player)) then
@@ -282,18 +284,19 @@ switch (_code) do {
 	};
 
 	//NEW ONE
-//L Key?
-case 38: {
- //If cop run checks for turning lights on.
- if(!isNil {vehicle player getVariable "lights"} && vehicle player != player && _shift) then {
- if (!(vehicle player getVariable "lights")) then {
- [vehicle player, player] spawn life_fnc_emergencyLights;
- } else {
- vehicle player setVariable ["lights", false, true];
- };
- };
- if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
-};
+    //L Key?
+    case 38: {
+        //If cop run checks for turning lights on.
+        if(!isNil {vehicle player getVariable "lights"} && vehicle player != player && _shift) then {
+            if (!(vehicle player getVariable "lights")) then {
+                [vehicle player, player] spawn life_fnc_emergencyLights;
+            } else {
+                vehicle player setVariable ["lights", false, true];
+            };
+        };
+
+        if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
+    };
 
 	case 41: {
 
@@ -320,7 +323,8 @@ case 38: {
                 [] spawn
                 {
                     life_siren_active = true;
-                    uiSleep 0.5;
+                    if(playerSide == west) then {uiSleep 15.1;}
+                    else {uiSleep 4.4;};
                     life_siren_active = false;
                 };
                 if(isNil {_veh getVariable "siren"}) then {_veh setVariable["siren",false,true];};

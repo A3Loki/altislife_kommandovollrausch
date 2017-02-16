@@ -100,7 +100,7 @@ class CfgSounds
 		titles[] = {};
 	};
 	
-		class car_lock
+    class car_lock
 	{
 		name = "car_lock";
 		sound[] = {"\sounds\veh_lock.ogg", 1.0, 1};
@@ -119,13 +119,6 @@ class CfgSounds
         name="handcuffs";
 		sound[] = {"\sounds\handcuffs.ogg", 1.0, 1};
 		titles[] = {};
-    };	
-	
-	class rcmix
-    {
-        name="rcmix";
-		sound[] = {"\sounds\rcmix.ogg", 1.0, 1};
-		titles[] = {};
     };
 	
 	class survival
@@ -135,7 +128,7 @@ class CfgSounds
 		titles[] = {};
 	};
 	
-		class dimitri
+    class dimitri
 	{
 		name = "dimitri";
 		sound[] = {"\sounds\dimitri.ogg", 1.0, 1};
@@ -216,13 +209,6 @@ class CfgSounds
 	{
 		name = "medyelp";
 		sound[] = {"\sounds\medyelp.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class grummelmix
-	{
-		name = "grummelmix";
-		sound[] = {"\sounds\grummelmix.ogg", 1.0, 1};
 		titles[] = {};
 	};
 };

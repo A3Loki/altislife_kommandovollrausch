@@ -3,8 +3,8 @@
 	Description: Musik? :o
 */
 
-while {true} do
+/*while {true} do
 {
 	NativediscoLight5 say3D "rcmix";
 	sleep 135;
-};
+};*/

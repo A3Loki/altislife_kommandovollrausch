@@ -6,10 +6,10 @@
 	Description:
 	Retrains the client.
 */
-private["_cop","_player"];
-_cop = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
+private["_unit","_player"];
+_unit = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _player = player;
-if(isNull _cop) exitWith {};
+if(isNull _unit) exitWith {};
 
 /*
 //Monitor excessive restrainment
@@ -33,7 +33,7 @@ if(isNull _cop) exitWith {};
 player addEventhandler ["KeyDown", "_this call life_fnc_Input"];
 if((player GVAR["surrender",FALSE])) then { player SVAR["surrender",FALSE,TRUE]; player switchMove ""; };
 
-titleText[format[localize "STR_Cop_Retrained",_cop GVAR ["realname",name _cop]],"PLAIN"];
+titleText[format[localize "STR_Cop_Retrained",_unit GVAR ["realname",name _unit]],"PLAIN"];
 				
 while {player GVAR  "restrained"} do {
 	if(vehicle player == player) then {
@@ -50,7 +50,7 @@ while {player GVAR  "restrained"} do {
 		detach _player;
 	};
 	
-	if(!alive _cop) exitWith {
+	if(!alive _unit) exitWith {
 		player SVAR ["Escorting",false,true];
 		detach player;
 	};
