@@ -3362,6 +3362,13 @@
 			<Italian>Striscia Chiodata</Italian>
 			<Portuguese>Spike Strip</Portuguese>
 		</Key>
+		<Key ID="STR_Item_CableTies">
+			<Original>Cableties</Original>
+			<German>Kabelbinder</German>
+			<French>Cableties</French>
+			<Italian>Cableties</Italian>
+			<Portuguese>Cableties</Portuguese>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">
