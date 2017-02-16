@@ -30,7 +30,7 @@ class Clothing {
 			{ "U_C_WorkerCoveralls", "Mechanic Coveralls", 2500, { "", "", -1 } },
 			{ "U_OrestesBody", "Surfing On Land", 1100, { "", "", -1 } },
 			{ "U_NikosAgedBody", "Casual Wears", 5000, { "", "", -1 } }
-		};	
+		};
 
 		headgear[] = {
 			{ "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -98,16 +98,18 @@ class Clothing {
 
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
-			{ "U_C_WorkerCoveralls", "Notarzt", 250, { "", "", -1 } }
+			{ "U_C_WorkerCoveralls", "ART", 250, { "life_mediclevel", "SCALAR", -1 } },
+			{ "U_I_CombatUniform", "Notarzt", 250, { "life_mediclevel", "SCALAR", 3 } }
 
 		};
-		
+
 		backpacks[] = {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
-			{ "B_Bergen_mcamo", "", 800, { "", "", -1 } }
+			{ "B_Bergen_mcamo", "", 800, { "", "", -1 } },
+			{ "B_Bergen_rgr", "", 800, { "", "", -1 } }
 		};
 	};
-	
+
 	class cop {
 		title = "STR_Shops_C_Police";
 		license = "";
@@ -117,7 +119,7 @@ class Clothing {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
 			{ "U_Rangemaster", "Rekrut Uniform", 25, { "", "", -1 } },
 			{ "U_B_Wetsuit", "Taucheranzug", 25, { "", "", -1 } },
-			{ "U_B_GEN_Soldier_F", "Wachtmeister+", 350, { "life_coplevel", "SCALAR", 3 } },
+			{ "U_B_GEN_Soldier_F", "Wachtmeister+", 350, { "life_coplevel", "SCALAR", 2 } },
 			{ "U_B_GEN_Commander_F", "Leutnant+", 1250, { "life_coplevel", "SCALAR", 6 } },
 			{ "U_O_V_Soldier_Viper_F", "SWAT", 550, { "life_coplevel", "SCALAR", 10 } }
 		};
