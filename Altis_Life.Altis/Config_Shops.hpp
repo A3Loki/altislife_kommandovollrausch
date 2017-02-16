@@ -57,7 +57,7 @@ class WeaponShops {
 					{ "30Rnd_556x45_Stanag_Tracer_Yellow", "",  950 }
         };
     };
-	
+
 	    class rebel_heavy {
         name = "Schwere Waffen";
         side = "civ";
@@ -109,7 +109,7 @@ class WeaponShops {
         msg = "";
         items[] = {
 						{ "acc_flashlight", "",  2100 },
-						{ "acc_pointer_IR", "",  2500 }, 
+						{ "acc_pointer_IR", "",  2500 },
 						{ "optic_Holosight", "",  4100 },
 						{ "optic_Aco", "",  3900 },
 						{ "optic_ACO_grn", "",  3900 },
@@ -151,12 +151,7 @@ class WeaponShops {
 						{ "optic_KHS_blk", "",  65000 },
 						{ "optic_KHS_hex", "",  65000 },
 						{ "optic_KHS_old", "",  65000 },
-						{ "optic_KHS_tan", "",  65000 },
-						{ "muzzle_snds_93mmg", "",  55000 },
-						{ "muzzle_snds_93mmg_tan", "",  55000 },
-						{ "muzzle_snds_338_black", "",  55000 },
-						{ "muzzle_snds_338_green", "",  55000 },
-						{ "muzzle_snds_338_sand", "",  55000 }
+						{ "optic_KHS_tan", "",  65000 }
         };
     };
     class gang {
@@ -178,7 +173,7 @@ class WeaponShops {
             { "30Rnd_9x21_Mag", "",  75 }
         };
     };
-    
+
     class genstore {
         name = "Altis General Store";
         side = "civ";
@@ -205,7 +200,7 @@ class WeaponShops {
         msg = "";
         items[] = {
 						{ "acc_flashlight", "",  2100 },
-						{ "acc_pointer_IR", "",  2500 }, 
+						{ "acc_pointer_IR", "",  2500 },
 						{ "optic_Holosight", "",  4100 },
 						{ "optic_Aco", "",  3900 },
 						{ "optic_ACO_grn", "",  3900 },
@@ -247,15 +242,10 @@ class WeaponShops {
 						{ "optic_KHS_blk", "",  65000 },
 						{ "optic_KHS_hex", "",  65000 },
 						{ "optic_KHS_old", "",  65000 },
-						{ "optic_KHS_tan", "",  65000 },
-						{ "muzzle_snds_93mmg", "",  55000 },
-						{ "muzzle_snds_93mmg_tan", "",  55000 },
-						{ "muzzle_snds_338_black", "",  55000 },
-						{ "muzzle_snds_338_green", "",  55000 },
-						{ "muzzle_snds_338_sand", "",  55000 }
+						{ "optic_KHS_tan", "",  65000 }
         };
     };
- 
+
     class cop_recruit {
         name = "Altis Rekrut Shop";
         side = "cop";
@@ -312,8 +302,8 @@ class WeaponShops {
 				{ "arifle_CTAR_blk_F","",1500},
 				{ "30Rnd_580x42_Mag_F","",300}
         };
-    };    
-	
+    };
+
 	class cop_sergeant {
         name = "Hauptwachtmeister Shop";
         side = "cop";
@@ -339,10 +329,10 @@ class WeaponShops {
 				{ "30Rnd_580x42_Mag_F","", 300},
 				{ "arifle_ARX_blk_F","", 1500},
 				{ "30Rnd_65x39_caseless_green","", 300}
-				
+
         };
-    };	
-	
+    };
+
 	class cop_master_sergeant {
         name = "Leutnant Shop";
         side = "cop";
@@ -370,7 +360,7 @@ class WeaponShops {
 				{ "20Rnd_762x51_Mag","", 300}
         };
     };
-	
+
 	class cop_captain {
         name = "Oberleutnant Shop";
         side = "cop";
@@ -398,8 +388,8 @@ class WeaponShops {
 				{ "arifle_SPAR_03_blk_F","", 1500},
 				{ "20Rnd_762x51_Mag","", 300}
         };
-    };	
-	
+    };
+
 	class cop_commander {
         name = "Hauptmann Shop";
         side = "cop";
@@ -458,8 +448,8 @@ class WeaponShops {
 				{ "arifle_SPAR_03_blk_F","", 1500},
 				{ "20Rnd_762x51_Mag","", 300}
         };
-    };	
-	
+    };
+
 	class cop_colonel {
         name = "Major Shop";
         side = "cop";
@@ -491,7 +481,7 @@ class WeaponShops {
 				{ "200Rnd_65x39_cased_Box","",300}
         };
     };
-	
+
 	class cop_ass_chief {
         name = "General";
         side = "cop";
@@ -523,7 +513,7 @@ class WeaponShops {
 				{ "30Rnd_762x39_Mag_F","", 300}
         };
     };
-	
+
 	class cop_chief {
         name = "GIGN";
         side = "cop";
@@ -557,7 +547,7 @@ class WeaponShops {
 				{ "10Rnd_338_Mag","", 1500}
         };
     };
-    
+
     class med_basic {
         name = "Rettungshelfer";
         side = "med";
@@ -572,7 +562,7 @@ class WeaponShops {
         };
     };
 
-	
+
 	class med_notarzt {
         name = "Sanitäterausrüstung";
         side = "med";

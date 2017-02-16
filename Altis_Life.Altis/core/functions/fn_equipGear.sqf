@@ -8,7 +8,7 @@
 private["_path","_unit","_type"];
 _unit = [_this,0] call BIS_fnc_param;
 _type = [_this,1,"",[""]] call BIS_fnc_param;
-
+/*
 if(playerSide == west) then {
 	switch(_type) do {
 		case "U_Rangemaster" : {
@@ -28,7 +28,7 @@ if(playerSide == west) then {
 			//_unit setObjectTextureGlobal [0,_path];
 		};
 	};
-	
+	*/
 	if((backpack player) == "B_Bergen_mcamo")  then {
 		//(unitBackpack _unit) setObjectTextureGlobal [0, "textures\cop\cop_backpack.paa"];
 		(unitBackpack player) setObjectTextureGlobal [0, ""];
