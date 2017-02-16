@@ -1,0 +1,312 @@
+author = "Tonic and Itsyuka";
+onLoadName = "Altis Life RPG v4.0";
+onLoadMission = "Beginne ein neues Leben! Entscheide dich fuer einen Beruf und baue dir eine Monopolstellung auf, schliesse dich den Gesetzeshuetern an oder zahle es der Obrigkeit heim.";
+joinUnassigned = 1;
+respawn = BASE;
+respawndelay = 5;
+disabledAI = true;
+disableChannels[] = {0,1,2};
+enableItemsDropping = 0;
+enableDebugConsole = 1;
+respawnDialog = 0;
+loadScreen = "images\logo.paa";
+
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 75;
+};
+
+wreckLimit = 10;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 320;
+corpseLimit = 15;
+corpseRemovalMinTime = 120;
+corpseRemovalMaxTime = 300;
+
+#include "dialog\MasterHandler.h"
+#include "Config_Master.hpp"
+
+class RscTitles
+{
+	#include "dialog\ui.hpp"
+	#include "dialog\progress.hpp"
+	#include "dialog\hud_nameTags.h"
+	
+		class RageCoreintro {
+		idd = -1;
+		duration = 12; //6
+		class controls {
+			class ExampleControl {
+				idc = -1;
+				type = 0;
+				style = 2192;
+				x = 0.125;
+				y = 0.125;
+				h = 0.75;
+				w = 0.75;
+				font = "EtelkaNarrowMediumPro";
+				sizeEx = 0.05; 
+				colorBackground[] = {1,1,1,0};
+				colorText[] = {1,1,1,1};
+				text = "images\intrologo.paa";
+				lineSpacing = 1;
+			};
+		};
+	};	
+};
+
+class CfgFunctions
+{
+	#include "Functions.h"
+};
+
+class CfgSounds
+{
+	sounds[] = {};
+	class SirenLong
+	{
+		name = "SirenLong";
+		sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
+	class tazersound
+	{
+		name = "Tazersound";
+		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+		titles[] = {};
+	};
+
+	class flashbang
+	{
+		name = "flashbang";
+		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class welcome
+	{
+		name = "welcome";
+		sound[] = {"\sounds\welcome.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class Geschafft
+	{
+		name = "Geschafft";
+		sound[] = {"\sounds\Geschafft.ogg",1.0, 1};
+		titles[] = {};
+	};
+	
+    class car_lock
+	{
+		name = "car_lock";
+		sound[] = {"\sounds\veh_lock.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class unlock
+	{
+		name = "unlock";
+		sound[] = {"\sounds\veh_unlock.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class handcuffs
+    {
+        name="handcuffs";
+		sound[] = {"\sounds\handcuffs.ogg", 1.0, 1};
+		titles[] = {};
+    };
+	
+	class survival
+	{
+		name = "survival";
+		sound[] = {"\sounds\survival.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+    class dimitri
+	{
+		name = "dimitri";
+		sound[] = {"\sounds\dimitri.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class airportsound
+	{
+		name = "airportsound";
+		sound[] = {"\sounds\airportsound.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class dramatic
+	{
+		name = "dramatic";
+		sound[] = {"\sounds\dramatic.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class stop_car
+	{
+		name = "stop_car";
+		sound[] = {"\sounds\stop_car.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class evac
+	{
+		name = "evac";
+		sound[] = {"\sounds\evac.ogg", 1.0, 1};
+		titles[] = {};
+	 };
+	
+	class takedown_weapon
+	{
+		name = "takedown_weapon";
+		sound[] = {"\sounds\takedown_weapon.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
+	class follow
+	{
+		name = "follow";
+		sound[] = {"\sounds\follow.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class waiting
+	{
+		name = "waiting";
+		sound[] = {"\sounds\waiting.ogg", 1.0, 1};
+		titles[] = {};
+	};	
+	
+	class piss
+	{
+		name = "piss";
+		sound[] = {"\sounds\piss.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class medsiren
+	{
+		name = "medsiren";
+		sound[] = {"\sounds\medsiren.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class yelp
+	{
+		name = "yelp";
+		sound[] = {"\sounds\yelp.ogg", 1.0, 1};
+		titles[] = {};
+	};	
+	
+	class medyelp
+	{
+		name = "medyelp";
+		sound[] = {"\sounds\medyelp.ogg", 1.0, 1};
+		titles[] = {};
+	};
+};
+
+class CfgDebriefing
+{
+	class NotWhitelisted
+	{
+		title = "Zutritt verweigert!";
+		subtitle = "Du bist kein registrierter Beamter.";
+		description = "Bewerbungen nehmen die Dienststellen unter www.altisliferpg.de/forum entgegen.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+
+	class Blacklisted
+	{
+		title = "Zutritt verweigert!";
+		subtitle = "Du wurdest suspendiert!";
+		description = "Scheinbar hast du dich daneben benommen und wurdest daher vom Dienst suspendiert.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+};
+
+class CfgNotifications
+{
+	class MedicalRequestEmerg
+	{
+		title = "Notarzt verständigt!";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 5;
+		priority = 7;
+	};
+
+	class DeliveryAssigned
+	{
+		title = "Auftrag angenommen";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 10;
+		priority = 7;
+	};
+
+	class DeliveryFailed
+	{
+		title = "Auftrag fehlgeschlagen";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
+		description = "%1";
+		duration = 7;
+		priority = 7;
+	};
+
+	class DeliverySucceeded
+	{
+		title = "Auftrag abgeschlossen";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "%1";
+		duration = 6;
+		priority = 6;
+	};
+
+	class TextMessage
+	{
+		title = "Eine neue Nachricht";
+		iconPicture = "icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+
+	class PoliceDispatch
+	{
+		title = "Notrufzentrale";
+		iconPicture = "icons\messagepolice.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+
+	class AdminDispatch
+	{
+		title = "Adminzentrale";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+
+	class AdminMessage
+	{
+		title = "Admin Nachricht";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
+};
