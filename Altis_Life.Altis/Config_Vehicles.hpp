@@ -5,17 +5,17 @@ class CarShops {
 
 		{ varname, >= value} this is a "level" requirement mainly used by cops and rebels, do not fill this in if you are not utilizing it.
 	*/
-	
+
 		class civ_car {
 		side = "civ";
 		vehicles[] = {
-			{ "C_Hatchback_01_F", 9500, "ausweis" }, 
+			{ "C_Hatchback_01_F", 9500, "ausweis" },
 			{ "C_Offroad_01_F", 12500, "ausweis" },
 			{ "C_SUV_01_F", 30000, "ausweis" },
 			{ "C_Hatchback_01_sport_F", 55000, "ausweis" }
 		};
 	};
-	
+
 	class civ_quad {
 		side = "civ";
 		vehicles[] = {
@@ -60,7 +60,7 @@ class CarShops {
 			{ "O_Truck_02_transport_F", 210000, "trucking" },
 			{ "O_Truck_02_covered_F", 215000, "trucking" },
 			{ "B_Truck_01_transport_F", 650000, "trucking" },
-			{ "B_Truck_01_covered_F", 850000, "trucking" },	
+			{ "B_Truck_01_covered_F", 850000, "trucking" },
 			{ "B_Truck_01_ammo_F", 1200000, "trucking" },
 			{ "O_Truck_03_transport_F", 1600000, "trucking" },
 			{ "O_Truck_03_covered_F", 2200000, "trucking" },
@@ -456,9 +456,9 @@ class CfgVehicles {
             } },
 			{ "Green", "civ", {
 	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
-            } },			
-            { "Polizei", "cop", {
-                "textures\cop\cop_hatch.paa"
+            } },
+            { "GNRA", "cop", {
+                "textures\cop\hatchback_gen.paa"
             } }
         };
     };
@@ -472,7 +472,7 @@ class CfgVehicles {
         textures[] = {
         	{ "HyperBeast", "civ", {
                 "textures\civ\hyper_quad.paa"
-            } },        	
+            } },
 			{ "Brown", "cop", {
                 "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
             } },
@@ -565,7 +565,7 @@ class CfgVehicles {
             } },
             { "Black", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
-            } },          
+            } },
 			{ "Polizei", "cop", {
                 "textures\cop\cop_hatch.paa"
             } }
@@ -584,7 +584,7 @@ class CfgVehicles {
             } },
 			{ "Notarzt", "med", {
 	                "textures\med\med_suv.paa"
-            } },			
+            } },
 			{ "Feuerwehr", "med", {
 	                "textures\med\fire_suv.paa"
             } },
@@ -599,7 +599,7 @@ class CfgVehicles {
             } },
 			{ "Hyperbeast", "civ", {
 	                "textures\civ\hyperbeast_suv.paa"
-            } },			
+            } },
 			{ "Jurassic Park", "civ", {
 	                "textures\civ\suv_jurassic.paa"
             } },
@@ -637,14 +637,14 @@ class CfgVehicles {
             } },
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
-            } },            
+            } },
 			{ "Notarzt", "med", {
                 "textures\med\rtwfront.paa",
 				"textures\med\rtwback.paa"
             } }
         };
     };
-	
+
 	class B_MRAP_01_F {
         vItemSpace = 85;
         storageFee[] = { 0, 7500, 0, 0 };
@@ -653,12 +653,12 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {
         	{ "Polizei", "cop", {
-                "textures\cop\cop_hunter1.paa",
-				"textures\cop\cop_hunter2.paa"
+                "textures\cop\hunter_front.jpg",
+				"textures\cop\hunter_back.jpg"
             } },
             { "Black", "fed", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } },            
+            } },
 			{ "Digital Rot", "reb", {
                 "textures\civ\digirot_hunter_1.paa",
                 "textures\civ\digirot_hunter_2.paa",
@@ -733,13 +733,13 @@ class CfgVehicles {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
             } },
 			{ "White / Blue", "civ", {
-	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"   
+	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"
             } },
 			{ "Digi Green", "donate", {
 	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa"
             } },
 			{ "Desert Digi", "reb", {
-	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa" 
+	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             } },
             { "EMS White", "med", {
                 "#(argb,8,8,3)color(1,1,1,0.8)"
@@ -774,7 +774,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class O_Truck_02_transport_F {
 		vItemSpace = 100;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -782,7 +782,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class O_Truck_02_covered_F {
 		vItemSpace = 100;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -790,7 +790,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class B_Truck_01_ammo_F {
 		vItemSpace = 200;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -798,7 +798,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class C_Van_01_fuel_F {
 		vItemSpace = 70;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -806,7 +806,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class O_Truck_02_fuel_F {
 		vItemSpace = 125;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -814,7 +814,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class B_Truck_01_fuel_F {
 		vItemSpace = 180;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -822,7 +822,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class O_Truck_03_fuel_F {
 		vItemSpace = 250;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -830,7 +830,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class B_Heli_Transport_03_unarmed_F {
 		vItemSpace = 250;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -838,7 +838,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class O_Heli_Transport_04_F {
 		vItemSpace = 150;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -846,7 +846,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class O_Heli_Transport_04_ammo_F {
 		vItemSpace = 200;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -854,7 +854,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class O_Heli_Transport_04_bench_F {
 		vItemSpace = 180;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -862,7 +862,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class O_Heli_Transport_04_box_F {
 		vItemSpace = 250;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -870,7 +870,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class O_Heli_Transport_04_repair_F {
 		vItemSpace = 180;
 		storageFee[] = { 1000, 0, 0, 0 };
@@ -878,7 +878,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class O_Heli_Transport_04_covered_F {
 		vItemSpace = 300;
 		storageFee[] = { 1000, 0, 0, 0 };
@@ -886,7 +886,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class C_Heli_Light_01_civil_F {
 		vItemSpace = 90;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -894,7 +894,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class B_SDV_01_F {
 		vItemSpace = 10;
 		 storageFee[] = { 1000, 0, 0, 0 };
@@ -902,12 +902,12 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
 	};
-	
+
 	class B_Truck_01_covered_F {
 		vItemSpace = 185;
 		 storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = {};
-	};	
+	};
 };
