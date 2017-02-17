@@ -8,6 +8,8 @@
 private["_crew"];
 _crew = crew cursorTarget;
 
+if(vehicle _crew distance player < 5) exitWith {};
+
 {
 	if(side _x != west) then
 	{
