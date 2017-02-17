@@ -131,6 +131,7 @@ class VirtualItems {
 	VITEMMACRO(storagesmall, "STR_Item_StorageBS", "storageSmall", 5, 75000, -1, false, -1, "icons\ico_storageSmall.paa")
 	VITEMMACRO(storagebig, "STR_Item_StorageBL", "storageBig", 10, 150000, -1, false, -1, "icons\ico_storageBig.paa")
 	VITEMMACRO(cableties, "STR_Item_CableTies", "cableties", 1, 400, 100, true, -1, "")
+	VITEMMACRO(blindfold, "STR_Item_Blindfold", "blindfold", 1, 400, 100, true, -1, "")
 
 	//Mined Items
 	VITEMMACRO(oil_unprocessed, "STR_Item_OilU", "oilUnprocessed", 7, -1, -1, false, -1, "icons\oil_unprocessed.paa")
@@ -276,7 +277,7 @@ class VirtualShops {
 	
 	class rebel {
 		name = "STR_Shops_Rebel";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "cableties", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "cableties", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge", "blindfold" };
 	};
 
 	class gang {
@@ -331,7 +332,7 @@ class VirtualShops {
 
 	class cop {
 		name = "STR_Shops_Cop";
-		items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit_grilled", "apple", "redgull", "fuelFull", "defusekit" };
+		items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit_grilled", "apple", "redgull", "fuelFull", "defusekit", "blindfold" };
 	};
 	
 	class med {

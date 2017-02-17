@@ -24,6 +24,11 @@ if(isNull _unit) exitWith {};
 			player SVAR ["restrained",FALSE,TRUE];
 			player SVAR ["Escorting",FALSE,TRUE];
 			player SVAR ["transporting",false,true];
+			if ((player getVariable["blindfolded",true])) then
+                {
+                    player setVariable["blindfolded",false,true];
+                    0 cutText ["","BLACK IN"];
+                };
 			detach player;
 			titleText[localize "STR_Cop_ExcessiveRestrain","PLAIN"];
 		};

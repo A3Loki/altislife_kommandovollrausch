@@ -103,6 +103,9 @@ class Life_Client_Core
 		class gutAnimal {};
 		class surrender {};
 		class robSmartphoneAction {};
+		class blind {};
+		class notBlind {};
+		class doBlindfold {};
 		//class Input {};
 	};
 	

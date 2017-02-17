@@ -14,9 +14,11 @@
 #define Btn6 37455
 #define Btn7 37456
 #define Btn8 37457
+#define Btn9 37457
+#define Btn10 37457
 #define Title 37401
 
-private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_Btn9","_Btn10"];
 if(!dialog) then {
 	createDialog "pInteraction_Menu";
 };
@@ -34,6 +36,9 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn5 = _display displayCtrl Btn5;
 		_Btn6 = _display displayCtrl Btn6;
 		_Btn7 = _display displayCtrl Btn7;
+		_Btn8 = _display displayCtrl Btn8;
+		_Btn9 = _display displayCtrl Btn9;
+        _Btn10 = _display displayCtrl Btn10;
 		life_pInact_curTarget = _curTarget;
 		
 		_Btn1 ctrlSetText localize "STR_pInAct_Repair";
@@ -46,6 +51,9 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn5 ctrlShow false;
 		_Btn6 ctrlShow false;
 		_Btn7 ctrlShow false;
+		_Btn8 ctrlShow false;
+		_Btn9 ctrlShow false;
+		_Btn10 ctrlShow false;
 	} else {
 		closeDialog 0;
 	};
@@ -61,6 +69,8 @@ _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
+_Btn9 = _display displayCtrl Btn9;
+_Btn10 = _display displayCtrl Btn10;
 life_pInact_curTarget = _curTarget;
 
 //Set Unrestrain Button
@@ -97,8 +107,20 @@ _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 _Btn8 ctrlSetTooltip localize "STR_pInact_RevokeLicense";
 _Btn8 buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_revokeLicense;";
 
+if((_curTarget getVariable["blindfolded",false])) then
+{
+	_Btn9 ctrlSetText "Augen öffnen";
+	_Btn9 buttonSetAction "[[life_pInact_curTarget],""life_fnc_notBlind"",life_pInact_curTarget,false] spawn life_fnc_MP; [true,""blindfold"",1] call life_fnc_handleInv; closeDialog 0;";
+} else
+{
+	_Btn9 ctrlSetText "Augen verbinden";
+	_Btn9 buttonSetAction "[[life_pInact_curTarget, player],""life_fnc_blind"",player,false] spawn life_fnc_MP; closeDialog 0;";
+};
+
 //Check that you are near a place to jail them.
 if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30))) then  {
 	_Btn6 ctrlEnable false;
 };
+
+_Btn10 ctrlEnable false;
 		

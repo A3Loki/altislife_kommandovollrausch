@@ -8,6 +8,8 @@ if(isNull _unit OR !(_unit getVariable["restrained",FALSE])) exitWith {}; //Erro
 _unit setVariable["restrained",FALSE,TRUE];
 _unit setVariable["Escorting",FALSE,TRUE];
 _unit setVariable["transporting",FALSE,TRUE];
+if(_unit getVariable["blindfolded",true]) then
+    { [[_unit],"life_fnc_notBlind",_unit,false] spawn life_fnc_MP; };
 _unit removeEventhandler "KeyDown";
 detach _unit;
 

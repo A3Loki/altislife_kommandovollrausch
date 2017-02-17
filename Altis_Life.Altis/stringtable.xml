@@ -3293,7 +3293,6 @@
 			<French>Sac de ciment</French>
 			<Italian>Sacco di Cemento</Italian>
 			<Portuguese>Saco de Cimento</Portuguese>
-		</Key>		
 		</Key>
 		<Key ID="STR_Item_Weaponmg">
 			<Original>Schmuggelwaffe (MG)</Original>
@@ -3368,6 +3367,13 @@
 			<French>Cableties</French>
 			<Italian>Cableties</Italian>
 			<Portuguese>Cableties</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Blindfold">
+			<Original>Blindfold</Original>
+			<German>Augenbinde</German>
+			<French>Blindfold</French>
+			<Italian>Blindfold</Italian>
+			<Portuguese>Blindfold</Portuguese>
 		</Key>
 	</Package>
 	<Package name="Life_License">
@@ -4124,7 +4130,6 @@
 			<French>Arrêter Escorte</French>
 			<Italian>Ferma Scorta</Italian>
 			<Portuguese>Parar de Escoltar</Portuguese>
-		</Key>		
 		</Key>
 		<Key ID="STR_pInAct_AusweisZeigen">
 			<Original>Ausweis zeigen</Original>
