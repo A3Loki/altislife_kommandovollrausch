@@ -55,10 +55,10 @@ _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; close
 };
 
 _Btn3 ctrlSetText localize "STR_pInAct_PutInCar";
-_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;"; 
+_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
-	
-	
+
+
 
 _Btn4 ctrlSetText localize "STR_pInAct_Lappenzeigen";
 _Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_showLappen; closeDialog 0;";
@@ -72,6 +72,9 @@ if((_curTarget getVariable["blindfolded",false])) then
 	_Btn5 ctrlSetText "Augen verbinden";
 	_Btn5 buttonSetAction "[[life_pInact_curTarget, player],""life_fnc_blind"",player,false] spawn life_fnc_MP; closeDialog 0;";
 };
+
+_Btn6 ctrlSetText localize "STR_pInAct_Unrestrain";
+_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
 
 _Btn7 ctrlEnable false;
 _Btn8 ctrlEnable false;
