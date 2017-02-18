@@ -44,4 +44,42 @@ switch (_state) do {
 			hint localize "STR_Civ_LicenseRemove_2";
 		};
 	};
+
+	case 6: {
+	    SVAR_MNS [LICENSE_VARNAME("driver","civ"),false];
+	    hint localize "STR_Civ_LicenseRemove_Driver";
+	};
+
+	case 7: {
+	    SVAR_MNS [LICENSE_VARNAME("truck","civ"),false];
+	    hint localize "STR_Civ_LicenseRemove_Truck";
+	};
+
+	case 8: {
+	    SVAR_MNS [LICENSE_VARNAME("air","civ"),false];
+	    hint localize "STR_Civ_LicenseRemove_Pilot";
+	};
+
+	case 9: {
+	    SVAR_MNS [LICENSE_VARNAME("boat","civ"),false];
+	    hint localize "STR_Civ_LicenseRemove_Boat";
+	};
+
+	case 10: {
+	    SVAR_MNS [LICENSE_VARNAME("dive","civ"),false];
+	    hint localize "STR_Civ_LicenseRemove_Dive";
+	};
+
+	case 11: {
+	    SVAR_MNS [LICENSE_VARNAME("air","civ"),false];
+        SVAR_MNS [LICENSE_VARNAME("driver","civ"),false];
+        SVAR_MNS [LICENSE_VARNAME("truck","civ"),false];
+        SVAR_MNS [LICENSE_VARNAME("boat","civ"),false];
+	    hint localize "STR_Civ_LicenseRemove_All";
+	};
+
+	case 12: {
+	    SVAR_MNS [LICENSE_VARNAME("gun","civ"),false];
+	    hint localize "STR_Civ_LicenseRemove_Gun";
+	};
 };

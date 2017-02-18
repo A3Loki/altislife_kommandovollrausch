@@ -104,7 +104,7 @@ _Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction;";
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
-_Btn8 ctrlSetTooltip localize "STR_pInact_RevokeLicense";
+_Btn8 ctrlSetTooltip localize "STR_pInAct_RevokeLicense";
 _Btn8 buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_revokeLicense;";
 
 if((_curTarget getVariable["blindfolded",false])) then

@@ -1762,6 +1762,13 @@
 			<Italian>%2 ha tolto le manette a %1</Italian>
 			<Portuguese>%1 foi liberado por %2</Portuguese>
 		</Key>
+		<Key ID="STR_NOTF_Unrestraining">
+			<Original>Unrestrain player</Original>
+			<German>Spieler wird befreit</German>
+			<French>Unrestrain player</French>
+			<Italian>Unrestrain player</Italian>
+			<Portuguese>Unrestrain player</Portuguese>
+		</Key>
 		<Key ID="STR_NOTF_Robbed">
 			<Original>%1 has robbed %2 for $%3</Original>
 			<German>%1 hat $%3 von %2 geraubt</German>
@@ -2078,6 +2085,48 @@
 		<Key ID="STR_Civ_LicenseRemove_2">
 			<Original>You have lost your firearms license for manslaughter.</Original>
 			<German>Du hast deinen Waffenschein wegen Mordes verloren.</German>
+			<French>Vous avez perdu votre permis d'armes à feu pour homicide involontaire.</French>
+			<Italian>Hai perso il tuo Porto d'Armi a causa di un omicidio</Italian>
+		</Key>
+		<Key ID="STR_Civ_LicenseRemove_Driver">
+			<Original>You have lost your driver license</Original>
+			<German>Dir wurde dein Führerschein entzogen</German>
+			<French>Vous avez perdu votre permis d'armes à feu pour homicide involontaire.</French>
+			<Italian>Hai perso il tuo Porto d'Armi a causa di un omicidio</Italian>
+		</Key>
+		<Key ID="STR_Civ_LicenseRemove_Truck">
+			<Original>You have lost your truck license</Original>
+			<German>Dir wurde dein LKW-Führerschein entzogen</German>
+			<French>Vous avez perdu votre permis d'armes à feu pour homicide involontaire.</French>
+			<Italian>Hai perso il tuo Porto d'Armi a causa di un omicidio</Italian>
+		</Key>
+		<Key ID="STR_Civ_LicenseRemove_Pilot">
+			<Original>You have lost your pilot license</Original>
+			<German>Dir wurde dein Pilotenschein entzogen</German>
+			<French>Vous avez perdu votre permis d'armes à feu pour homicide involontaire.</French>
+			<Italian>Hai perso il tuo Porto d'Armi a causa di un omicidio</Italian>
+		</Key>
+		<Key ID="STR_Civ_LicenseRemove_Boat">
+			<Original>You have lost your boat license</Original>
+			<German>Dir wurde dein Boots-Führerschein entzogen</German>
+			<French>Vous avez perdu votre permis d'armes à feu pour homicide involontaire.</French>
+			<Italian>Hai perso il tuo Porto d'Armi a causa di un omicidio</Italian>
+		</Key>
+		<Key ID="STR_Civ_LicenseRemove_Dive">
+			<Original>You have lost your dive license</Original>
+			<German>Dir wurde dein Taucherschein entzogen</German>
+			<French>Vous avez perdu votre permis d'armes à feu pour homicide involontaire.</French>
+			<Italian>Hai perso il tuo Porto d'Armi a causa di un omicidio</Italian>
+		</Key>
+		<Key ID="STR_Civ_LicenseRemove_All">
+			<Original>You have lost all your motor vehicle licenses</Original>
+			<German>Dir wurden alle Führerscheine entzogen</German>
+			<French>Vous avez perdu votre permis d'armes à feu pour homicide involontaire.</French>
+			<Italian>Hai perso il tuo Porto d'Armi a causa di un omicidio</Italian>
+		</Key>
+		<Key ID="STR_Civ_LicenseRemove_Gun">
+			<Original>You have lost your gun license</Original>
+			<German>Dir wurde dein Waffenschein entzogen</German>
 			<French>Vous avez perdu votre permis d'armes à feu pour homicide involontaire.</French>
 			<Italian>Hai perso il tuo Porto d'Armi a causa di un omicidio</Italian>
 		</Key>
@@ -4264,6 +4313,13 @@
 			<French>Déposer pour le gang</French>
 			<Italian>Deposita alla Gang</Italian>
 			<Portuguese>Depositar para a Gangue</Portuguese>
+		</Key>
+		<Key ID="STR_pInAct_RevokeLicense">
+			<Original>Licenses</Original>
+			<German>Lizenzen</German>
+			<French>Licenses</French>
+			<Italian>Licenses</Italian>
+			<Portuguese>Licenses</Portuguese>
 		</Key>
 	</Package>
 		<Package name="Vehicle_Interaction">

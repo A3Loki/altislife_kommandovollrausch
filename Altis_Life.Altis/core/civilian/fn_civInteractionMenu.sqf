@@ -43,8 +43,8 @@ _Btn10 = _display displayCtrl Btn10;
 
 life_pInact_curTarget = _curTarget;
 
-_Btn1 ctrlSetText localize "STR_pInAct_AusweisZeigen";
-_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_civShowLicense; closeDialog 0;";
+_Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
+_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
 
 if((_curTarget getVariable["Escorting",false])) then {
 _Btn2 ctrlSetText localize "STR_pInAct_StopEscort";
@@ -54,23 +54,23 @@ _Btn2 ctrlSetText localize "STR_pInAct_Escort";
 _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
 };
 
-_Btn3 ctrlSetText localize "STR_pInAct_PutInCar";
-_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;"; 
+_Btn3 ctrlSetText localize "STR_pInAct_AusweisZeigen";
+_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_civShowLicense; closeDialog 0;";
 
-	
-	
+_Btn4 ctrlSetText localize "STR_pInAct_PutInCar";
+_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
-_Btn4 ctrlSetText localize "STR_pInAct_Lappenzeigen";
-_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_showLappen; closeDialog 0;";
+_Btn5 ctrlSetText localize "STR_pInAct_Lappenzeigen";
+_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_showLappen; closeDialog 0;";
 
 if((_curTarget getVariable["blindfolded",false])) then
 {
-	_Btn5 ctrlSetText "Augen öffnen";
-	_Btn5 buttonSetAction "[[life_pInact_curTarget],""life_fnc_notBlind"",life_pInact_curTarget,false] spawn life_fnc_MP; [true,""blindfold"",1] call life_fnc_handleInv; closeDialog 0;";
+	_Btn6 ctrlSetText "Augen öffnen";
+	_Btn6 buttonSetAction "[[life_pInact_curTarget],""life_fnc_notBlind"",life_pInact_curTarget,false] spawn life_fnc_MP; [true,""blindfold"",1] call life_fnc_handleInv; closeDialog 0;";
 } else
 {
-	_Btn5 ctrlSetText "Augen verbinden";
-	_Btn5 buttonSetAction "[[life_pInact_curTarget, player],""life_fnc_blind"",player,false] spawn life_fnc_MP; closeDialog 0;";
+	_Btn6 ctrlSetText "Augen verbinden";
+	_Btn6 buttonSetAction "[[life_pInact_curTarget, player],""life_fnc_blind"",player,false] spawn life_fnc_MP; closeDialog 0;";
 };
 
 _Btn7 ctrlEnable false;
