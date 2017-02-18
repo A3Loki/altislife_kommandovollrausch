@@ -2069,11 +2069,11 @@
 	</Package>
 	<Package name="Civ_Strings">
 		<Key ID="STR_Civ_KnockedOut">
-			<Original>%1 has knocked you out.</Original>
-			<German>%1 hat dich niedergeschlagen.</German>
-			<French>%1 vous a assommé.</French>
-			<Italian>%1 ti ha colpito stordendoti.</Italian>
-			<Portuguese>%1 nocauteou você.</Portuguese>
+			<Original>You have been knocked you out.</Original>
+			<German>Du wurdest niedergeschlagen.</German>
+			<French>vous a assommé.</French>
+			<Italian>ti ha colpito stordendoti.</Italian>
+			<Portuguese>nocauteou você.</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_LicenseRemove_1">
 			<Original>You have lost all your motor vehicle licenses for vehicular manslaughter.</Original>

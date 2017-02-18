@@ -17,6 +17,8 @@ if(_cableties && (life_inv_cableties < 1) && !_cop) exitWith {hint "Du hast kein
 if(player == _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
 
+[[_unit,"handcuffs"],"life_fnc_globalSound",true,false] spawn life_fnc_MP;
+
 if(_cableties && !_cop) then {
   [false,"cableties",1] call life_fnc_handleInv; };
 _unit setVariable["restrained",true,true];

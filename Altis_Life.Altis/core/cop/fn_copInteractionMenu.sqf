@@ -14,8 +14,8 @@
 #define Btn6 37455
 #define Btn7 37456
 #define Btn8 37457
-#define Btn9 37457
-#define Btn10 37457
+#define Btn9 37458
+#define Btn10 37459
 #define Title 37401
 
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_Btn9","_Btn10"];
