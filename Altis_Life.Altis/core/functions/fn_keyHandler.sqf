@@ -139,6 +139,19 @@ switch (_code) do {
 			cutText [format["Taekwondo"], "PLAIN DOWN"];
 			player playMove "AmovPercMstpSnonWnonDnon_exerciseKata";
 		};
+
+		if (_shift && playerSide == west  && !(life_siren_piercer_active) && vehicle player != player && ((driver vehicle player) == player)) then
+        {
+            _veh = vehicle player;
+            [[_veh,"piercer"],"life_fnc_globalSound",true,false] spawn life_fnc_MP;
+            [] spawn
+            {
+                life_siren_piercer_active = true;
+                sleep 5;
+                life_siren_piercer_active = false;
+            };
+            _handled = true;
+        };
 	};
 
 	//Num2
@@ -150,6 +163,19 @@ switch (_code) do {
 			cutText [format["Kniebeuge"], "PLAIN DOWN"];
 			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
 		};
+
+		if (_shift && playerSide == west  && !(life_siren_airhorn_active) && vehicle player != player && ((driver vehicle player) == player)) then
+        {
+            _veh = vehicle player;
+            [[_veh,"airhorn"],"life_fnc_globalSound",true,false] spawn life_fnc_MP;
+            [] spawn
+            {
+                life_siren_airhorn_active = true;
+                sleep 4.3;
+                life_siren_airhorn_active = false;
+            };
+            _handled = true;
+        };
 	};
 
 	//Num3

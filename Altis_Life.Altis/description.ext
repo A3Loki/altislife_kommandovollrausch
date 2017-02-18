@@ -1,5 +1,5 @@
-author = "Tonic and Itsyuka";
-onLoadName = "Altis Life RPG v4.0";
+author = "Tonic and Itsyuka edited by KV Team";
+onLoadName = "Kommando Vollrausch V0.672";
 onLoadMission = "Beginne ein neues Leben! Entscheide dich fuer einen Beruf und baue dir eine Monopolstellung auf, schliesse dich den Gesetzeshuetern an oder zahle es der Obrigkeit heim.";
 joinUnassigned = 1;
 respawn = BASE;
@@ -211,6 +211,20 @@ class CfgSounds
 		sound[] = {"\sounds\medyelp.ogg", 1.0, 1};
 		titles[] = {};
 	};
+
+	class piercer
+	{
+	    name = "piercer";
+	    sound[] = {"\sounds\piercer.ogg", 1.0, 1};
+	    titles[] = {};
+	}
+
+	class airhorn
+    {
+        name = "airhorn";
+        sound[] = {"\sounds\airhorn.ogg", 1.0, 1};
+        titles[] = {};
+    }
 };
 
 class CfgDebriefing
