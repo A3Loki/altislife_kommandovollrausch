@@ -6,9 +6,11 @@
 	Pulls civilians out of a car if it's stopped.
 */
 private["_crew"];
-_crew = crew cursorTarget;
+_curTarget = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+_crew = crew _curTarget;
 
-if((vehicle _crew distance player) > 5) exitWith {};
+if((_curTarget distance player) > 5) exitWith {};
+if((locked _curTarget == 2) && playerSide == civilian) exitWith {hint "Dieses Fahrzeug ist abgeschlossen"};
 
 {
 	if(side _x != west) then

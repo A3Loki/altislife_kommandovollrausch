@@ -575,7 +575,7 @@ class CfgVehicles {
 
 	class C_SUV_01_F {
         vItemSpace = 50;
- storageFee[] = { 1000, 0, 0, 0 };
+        storageFee[] = { 1000, 0, 0, 0 };
 		garageSell[] = { 15000, 7500, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
@@ -605,7 +605,7 @@ class CfgVehicles {
 	                "textures\civ\suv_jurassic.paa"
             } },
             { "GNRA", "cop", {
-				"textures\cop\SUV_GNRA"
+				"textures\cop\SUV_GNRA.paa"
             } }
 	        };
     };
