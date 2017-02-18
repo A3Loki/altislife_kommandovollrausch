@@ -9,7 +9,8 @@ private["_unit"];
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _unit OR !isPlayer _unit) exitWith {};
 if(player getVariable "restrained") exitWith {};
-if(_unit (!(getVariable "restrained"))) exit with {hint "Die Person muss gefesselt sein!"};
+if(!(_unit getVariable "restrained")) exitWith {hint "Die Person muss gefesselt sein!"};
+if((player distance _unit) > 4) exitWith {hint "Du musst näher an der Person stehen"};
 
 _nearestVehicle = nearestObjects[getPosATL player,["Car","Ship","Submarine","Air"],3] select 0;
 if(isNil "_nearestVehicle") exitWith {hint localize "STR_NOTF_VehicleNear"};
