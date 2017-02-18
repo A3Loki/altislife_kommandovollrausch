@@ -219,10 +219,17 @@ class CfgSounds
 	    titles[] = {};
 	}
 
-	class airhorn
+	class Siren_Long_2
     {
-        name = "airhorn";
-        sound[] = {"\sounds\airhorn.ogg", 1.0, 1};
+        name = "Siren_Long_2";
+        sound[] = {"\sounds\Siren_Long_2.ogg", 1.0, 1};
+        titles[] = {};
+    }
+
+    class Siren_Long_3
+    {
+        name = "Siren_Long_3";
+        sound[] = {"\sounds\Siren_Long_3.ogg", 1.0, 1};
         titles[] = {};
     }
 };

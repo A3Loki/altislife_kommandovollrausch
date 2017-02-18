@@ -164,18 +164,29 @@ switch (_code) do {
 			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
 		};
 
-		if (_shift && playerSide == west  && !(life_siren_airhorn_active) && vehicle player != player && ((driver vehicle player) == player)) then
-        {
-            _veh = vehicle player;
-            [[_veh,"airhorn"],"life_fnc_globalSound",true,false] spawn life_fnc_MP;
-            [] spawn
+		if(_shift) then
+		{
+		    _veh = vehicle player;
+            if(playerSide == west && _veh != player && !life_siren_active && ((driver _veh) == player)) then
             {
-                life_siren_airhorn_active = true;
-                sleep 4.3;
-                life_siren_airhorn_active = false;
+                [] spawn
+                {
+                    life_siren_active = true;
+                    uiSleep 25; // 25.2
+                    life_siren_active = false;
+                };
+                if(isNil {_veh getVariable "siren"}) then {_veh setVariable["siren",false,true];};
+                if((_veh getVariable "siren")) then
+                {
+                    titleText [localize "STR_MISC_SirensOFF","PLAIN"];
+                    _veh setVariable["siren",false,true];
+                } else {
+                    titleText [localize "STR_MISC_SirensON","PLAIN"];
+                    _veh setVariable["siren",true,true];
+                    [[_veh, "Siren_Long_2", 25],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
+                };
             };
-            _handled = true;
-        };
+		}
 	};
 
 	//Num3
@@ -187,6 +198,30 @@ switch (_code) do {
 			cutText [format["Hastige Kniebeuge"], "PLAIN DOWN"];
 			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
 		};
+
+		if(_shift) then
+        {
+            _veh = vehicle player;
+            if(playerSide == west && _veh != player && !life_siren_active && ((driver _veh) == player)) then
+            {
+                [] spawn
+                {
+                    life_siren_active = true;
+                    uiSleep 27.1;
+                    life_siren_active = false;
+                };
+                if(isNil {_veh getVariable "siren"}) then {_veh setVariable["siren",false,true];};
+                if((_veh getVariable "siren")) then
+                {
+                    titleText [localize "STR_MISC_SirensOFF","PLAIN"];
+                    _veh setVariable["siren",false,true];
+                } else {
+                    titleText [localize "STR_MISC_SirensON","PLAIN"];
+                    _veh setVariable["siren",true,true];
+                    [[_veh, "Siren_Long_3", 27.1],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
+                };
+            };
+        }
 	};
 
 	//Num4
