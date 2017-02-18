@@ -100,7 +100,8 @@ class CarShops {
 			{ "C_Hatchback_01_sport_F", 20000, "", { "life_coplevel", 4 } },
 			{"O_MRAP_02_F", 50000, "gsg" },
 			{"B_MRAP_01_F", 50000, "gsg" },
-			{"I_MRAP_03_F", 50000, "gsg"}
+			{"I_MRAP_03_F", 50000, "gsg"},
+			{"C_Offroad_02_unarmed_F", 15000,"",{"life_coplevel", -1}}
 		};
 	};
 
@@ -603,8 +604,8 @@ class CfgVehicles {
 			{ "Jurassic Park", "civ", {
 	                "textures\civ\suv_jurassic.paa"
             } },
-            { "Police", "cop", {
-				"textures\cop\police_suv.paa"
+            { "GNRA", "cop", {
+				"textures\cop\SUV_GNRA"
             } }
 	        };
     };
@@ -652,9 +653,13 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
-        	{ "Polizei", "cop", {
+        	{ "SEK", "cop", {
                 "textures\cop\hunter_front.jpg",
 				"textures\cop\hunter_back.jpg"
+            } },
+            { "GNRA", "cop", {
+                "textures\cop\hunter_GNRA.paa",
+				"textures\cop\hunter_GNRA_BACK.paa"
             } },
             { "Black", "fed", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
@@ -909,5 +914,18 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = {};
+	};
+
+		class C_Offroad_02_unarmed_F {
+		vItemSpace = 185;
+		 storageFee[] = { 1000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = {
+
+        { "GNRA", "cop", {
+                "textures\cop\jeep_GNRA.paa"
+            } }
+        };
 	};
 };
