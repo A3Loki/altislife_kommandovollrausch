@@ -376,7 +376,11 @@ class CfgVehicles {
 		storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {};
+        textures[] = {
+        { "GIGN", "cop", {
+            "textures\cop\Strider_gign.jpg"
+        } }
+        };
     };
 
 	class C_Offroad_01_F {
@@ -608,6 +612,9 @@ class CfgVehicles {
             } },
             { "GNRA", "cop", {
 				"textures\cop\SUV_Gendarm.jpg"
+            } },
+            { "GIGN", "cop", {
+                "textures\cop\SUV_GIGN.jpg"
             } }
 	        };
     };
@@ -937,7 +944,7 @@ class CfgVehicles {
         textures[] = {
 
         { "GNRA", "cop", {
-                "textures\cop\jeep_GNRA.paa"
+                "textures\cop\jeep_gendarm.jpg"
             } }
         };
 	};
