@@ -37,10 +37,11 @@ class CarShops {
 		side = "med";
 		vehicles[] = {
 			{ "C_Offroad_01_F", 13000, "", { "life_medlevel", -1 } },
-			{ "C_SUV_01_F", 13000, "", { "life_medlevel", 3 } },
-			{ "C_Van_01_box_F", 13000, "", { "life_medlevel", 4 } },
-			{ "C_Hatchback_01_sport_F", 13000, "", { "life_medlevel", 6 } },
-			{ "B_MRAP_01_F", 13000, "", { "life_medlevel", 7 } }
+			{ "B_Truck_01_mover_F", 75000, "", { "life_medlevel", 2 } },
+			{ "C_SUV_01_F", 13000, "", { "life_medlevel", 2 } },
+			{ "C_Van_01_box_F", 13000, "", { "life_medlevel", 1 } },
+			{ "C_Hatchback_01_sport_F", 13000, "", { "life_medlevel", 3 } },
+			{ "B_MRAP_01_F", 13000, "", { "life_medlevel", 5 } }
 		};
 	};
 
@@ -48,7 +49,8 @@ class CarShops {
 		side = "med";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 200000, "mAir", { "life_medlevel", 2 } },
-			{ "O_Heli_Light_02_unarmed_F", 200000, "mAir", { "life_medlevel", 5 } }
+			{ "O_Heli_Light_02_unarmed_F", 200000, "mAir", { "life_medlevel", 3 } },
+			{ "I_Heli_Transport_02_F", 200000, "mAir", { "life_medlevel", 3 } }
 		};
 	};
 
@@ -408,11 +410,11 @@ class CfgVehicles {
 	                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
 	                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
             } },
-            { "Fed", "fed", {
+            { "ART", "med", {
 	                "textures\med\offroad_med.paa"
             } },
-			{ "Polizei", "cop", {
-	                "textures\cop\cop_offroader.paa"
+            { "ART", "med", {
+	                "textures\med\medic_offroad.jpg"
             } },
             { "Taxi", "civ", {
 	                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
@@ -586,8 +588,8 @@ class CfgVehicles {
 			{ "Notarzt", "med", {
 	                "textures\med\med_suv.paa"
             } },
-			{ "Feuerwehr", "med", {
-	                "textures\med\fire_suv.paa"
+			{ "ART", "med", {
+	                "textures\med\suv_art.jpg"
             } },
 			{ "Silver", "civ", {
 	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa"
@@ -642,6 +644,10 @@ class CfgVehicles {
 			{ "Notarzt", "med", {
                 "textures\med\rtwfront.paa",
 				"textures\med\rtwback.paa"
+            } },
+            { "ART", "med", {
+                "textures\med\art_truck_front.jpg",
+				"textures\med\art_truck_back.jpg"
             } }
         };
     };
@@ -661,7 +667,7 @@ class CfgVehicles {
                 "textures\cop\Hunter_Gendarm_Front.jpg",
 				"textures\cop\Hunter_Gendarm_back.jpg"
             } },
-            { "Black", "fed", {
+            { "Black", "med", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             } },
 			{ "Digital Rot", "reb", {
@@ -682,7 +688,7 @@ class CfgVehicles {
         	{ "Sheriff", "cop", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
             } },
-			{ "Black", "fed", {
+			{ "Black", "med", {
 	                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
             } },
 			{ "Civ Blue", "civ", {
@@ -723,6 +729,9 @@ class CfgVehicles {
             } },
             { "Notarzt", "med", {
                 "textures\med\medic_humming.paa"
+            } },
+            { "ART", "med", {
+                "textures\med\art_humming.jpg"
             } }
         };
     };
@@ -746,8 +755,8 @@ class CfgVehicles {
 			{ "Desert Digi", "reb", {
 	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             } },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+            { "ART", "med", {
+                "textures\med\medic_orca.jpg"
             } }
         };
     };
@@ -768,7 +777,11 @@ class CfgVehicles {
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_1_dahoman_co.paa",
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_2_dahoman_co.paa",
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_dahoman_co.paa"
+            } },
+            { "Medic", "med", {
+                "textures\med\medic_mowhawk.jpg"
             } }
+
         };
     };
 
@@ -916,7 +929,7 @@ class CfgVehicles {
         textures[] = {};
 	};
 
-		class C_Offroad_02_unarmed_F {
+	class C_Offroad_02_unarmed_F {
 		vItemSpace = 185;
 		 storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
@@ -925,6 +938,20 @@ class CfgVehicles {
 
         { "GNRA", "cop", {
                 "textures\cop\jeep_GNRA.paa"
+            } }
+        };
+	};
+
+	class B_Truck_01_mover_F {
+		vItemSpace = 185;
+		 storageFee[] = { 1000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = {
+
+        { "ART", "med", {
+                "textures\med\art_hemtt_mover.jpg",
+                "textures\med\art_hemtt2.jpg"
             } }
         };
 	};
