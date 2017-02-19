@@ -133,7 +133,7 @@ while{(alive _vehicle)} do
 		_leftYellow = false;
 		_lightone_front setLightBrightness 0.0;
 		_lightone_back setLightBrightness 0.0;
-		if(_blinker == 2) then {
+		if(_blinker == 2 && !isNull _lighttwo_front && !isNull _lighttwo_back) then {
 		    _lighttwo_front setLightBrightness 0.0;
             _lighttwo_back setLightBrightness 0.0;
 		};
@@ -150,7 +150,7 @@ while{(alive _vehicle)} do
 
         _lightone_front setLightBrightness _brightnessfact;
         _lightone_back setLightBrightness _brightnessfact;
-        if(_blinker == 2) then {
+        if(_blinker == 2 && !isNull _lighttwo_front && !isNull _lighttwo_back) then {
             _lighttwo_front setLightBrightness _brightnessfact;
 		    _lighttwo_back setLightBrightness _brightnessfact;
         };
@@ -159,7 +159,7 @@ while{(alive _vehicle)} do
 };
 deleteVehicle _lightone_front;
 deleteVehicle _lightone_back;
-if(_blinker == 2) then {
+if(_blinker == 2 && !isNull _lighttwo_front && !isNull _lighttwo_back) then {
     deleteVehicle _lighttwo_front;
     deleteVehicle _lighttwo_back;
 };

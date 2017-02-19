@@ -5,7 +5,7 @@ class life_wantedadd2 {
 	enableSimulation = true;
 	onLoad = "[] spawn life_fnc_wantedadd2;";
 	
-	class controlsBackground {\
+	class controlsBackground {
 	
 		class fondtablet: Life_RscPicture
 		{
@@ -54,7 +54,7 @@ class life_wantedadd2 {
 			idc = 9902;
 			text = "";
 			sizeEx = 0.035;
-			colorBackground[] = {0,0,0,0};
+			//colorBackground[] = {0,0,0,0};
 			onLBSelChanged = "[_this] spawn life_fnc_WantedPersonList";
 			
 			x = 0.12; y = 0.25;
@@ -65,7 +65,7 @@ class life_wantedadd2 {
         class RSUCombo_2101: Life_RscListBox
         {
             idc = 9991;
-			colorBackground[] = {0, 0, 0, 0};
+			//colorBackground[] = {0, 0, 0, 0};
 			text = "";
 			sizeEx = 0.035;
 			x = 0.42;
