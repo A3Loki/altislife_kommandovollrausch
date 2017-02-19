@@ -17,19 +17,19 @@ switch(playerSide) do {
 		ctrlShow[980025,false];
 		ctrlShow[1207,false];
 		ctrlShow[1209,false];
-		ctrlShow[9800,true];
+		ctrlShow[2406,true];
 	};
 	
 	case civilian: {
 		ctrlShow[2012,false];
 		ctrlShow[1210,false];
 		ctrlShow[2008,false];
-		ctrlShow[9800,false];
+		ctrlShow[2406,false];
 	};
 
 	case independent:
     {
-        ctrlShow[9800,false];
+        ctrlShow[2406,false];
     };
 };
 
