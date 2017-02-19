@@ -27,3 +27,15 @@ if(!(_this select 0)) exitWith {}; //Not server
 	[ [ 3657, 13077, 10 ], 1121119 ],
 	[ [ 3657, 13077, 10 ], 1121148 ]
 ];
+
+[] spawn
+{
+    while {true} do
+    {
+        if (daytime >= 19 || daytime < 5) then
+        {time_status_day = false;}      // NIGHT}
+        else
+        {time_status_day = true;};      // DAY};
+        uiSleep 30;
+    };
+};

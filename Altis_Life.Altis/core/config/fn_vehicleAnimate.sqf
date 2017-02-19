@@ -66,12 +66,14 @@ if(!_preset) then
 			_vehicle animate ["HideBumper1", 0];
 			_vehicle setVariable["lights",false,true];
 		};
-	};
 
-	// Vehicle Vars
-	if(typeOf _vehicle in ["C_SUV_01_F"]) then {
-        _vehicle setVariable["blinkerWarn",false,true];
-        _vehicle setVariable["blinkerLeft",false,true];
-        _vehicle setVariable["blinkerRight",false,true];
-    };
+		case "vehicle_blinker":
+		{
+		    if(typeOf _vehicle in ["C_SUV_01_F"]) then {
+                _vehicle setVariable["blinkerWarn",false,true];
+                _vehicle setVariable["blinkerLeft",false,true];
+                _vehicle setVariable["blinkerRight",false,true];
+            };
+		};
+	};
 };

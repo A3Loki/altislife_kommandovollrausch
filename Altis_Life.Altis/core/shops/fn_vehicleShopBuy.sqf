@@ -78,16 +78,19 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 switch(playerSide) do {
 	case west: {
 		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
+		[_vehicle,"vehicle_blinker",true] spawn life_fnc_vehicleAnimate;
 	};
 	
 	case civilian: {
 		if(EQUAL(SEL(life_veh_shop,2),"civ") && {_className == "B_Heli_Light_01_F"}) then {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
+		[_vehicle,"vehicle_blinker",true] spawn life_fnc_vehicleAnimate;
 	};
 	
 	case independent: {
 		[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
+		[_vehicle,"vehicle_blinker",true] spawn life_fnc_vehicleAnimate;
 	};
 };
 

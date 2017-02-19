@@ -169,18 +169,6 @@ life_wanted_list = [];
 	};
 };
 
-[] spawn
-{
-    while {true} do
-    {
-        if (daytime >= 19 || daytime < 5) then
-        {SVAR_UINS ["time_status_day",false];      // NIGHT}
-        else
-        {SVAR_UINS ["time_status_day",true];      // DAY};
-        uiSleep 30;
-    };
-};
-
 [] spawn TON_fnc_initHouses;
 
 /* Setup the federal reserve building(s) */

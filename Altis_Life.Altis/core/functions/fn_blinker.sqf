@@ -1,10 +1,9 @@
 #include <macro.h>
-private["_vehicle","_blinker","_pos","_blinkerType","_timestatus"];
+private["_vehicle","_blinker","_position","_blinkerType"];
 _vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _blinker = [_this,1,Objnull,[Objnull]] call BIS_fnc_param;
-_pos = [];
+_position = [];
 _blinkerType = "";
-_timestatus = GVAR_UINS "time_status_day";
 if(isNull _vehicle) exitWith {};
 if(!(typeOf _vehicle in ["C_SUV_01_F"])) exitWith {};
 
@@ -21,7 +20,7 @@ switch (_blinker) do
             _vehicle setVariable["blinkerLeft",false,true];
         };
         _blinkerType = "blinkerLeft";
-        _pos = [[-0.6, 2.0, -0.55],[-0.6, -2.77, -0.2]];
+        _position = [[-0.6, 2.0, -0.55],[-0.6, -2.77, -0.2]];
   };
   case 1: {
         if (!(_vehicle getVariable "blinkerRight")) then
@@ -34,7 +33,7 @@ switch (_blinker) do
             _vehicle setVariable["blinkerRight",false,true];
         };
         _blinkerType = "blinkerRight";
-        _pos = [[0.6, 2.0, -0.55],[0.6, -2.77, -0.2]];
+        _position = [[0.6, 2.0, -0.55],[0.6, -2.77, -0.2]];
   };
   case 2: {
         if (!(_vehicle getVariable "blinkerWarn")) then
@@ -47,7 +46,7 @@ switch (_blinker) do
             _vehicle setVariable["blinkerWarn",false,true];
         };
         _blinkerType = "blinkerWarn";
-        _pos = [[-0.6, 2.0, -0.55],[-0.6, -2.77, -0.2],[0.6, 2.0, -0.55],[0.6, -2.77, -0.2]];
+        _position = [[-0.6, 2.0, -0.55],[-0.6, -2.77, -0.2],[0.6, 2.0, -0.55],[0.6, -2.77, -0.2]];
   };
 };
 
@@ -59,7 +58,7 @@ _lightone_front setLightColor _lightYellow;
 _lightone_front setLightBrightness 0;
 _lightone_front setLightAmbient [1,1,0.1];
 
-_lightone_front lightAttachObject [_vehicle, _pos select 0];
+_lightone_front lightAttachObject [_vehicle, _position select 0];
 
 _lightone_front setLightAttenuation [0.121, 0, 2000, 20];
 _lightone_front setLightIntensity 1;
@@ -75,7 +74,7 @@ _lightone_back setLightColor _lightYellow;
 _lightone_back setLightBrightness 0;
 _lightone_back setLightAmbient [1,1,0.1];
 
-_lightone_back lightAttachObject [_vehicle, _pos select 1];
+_lightone_back lightAttachObject [_vehicle, _position select 1];
 
 _lightone_back setLightAttenuation [0.121, 0, 2000, 20];
 _lightone_back setLightIntensity 1;
@@ -92,7 +91,7 @@ if(_blinker == 2) then {
     _lighttwo_front setLightBrightness 0;
     _lighttwo_front setLightAmbient [1,1,0.1];
     
-    _lighttwo_front lightAttachObject [_vehicle, _pos select 2];
+    _lighttwo_front lightAttachObject [_vehicle, _position select 2];
     
     _lighttwo_front setLightAttenuation [0.121, 0, 2000, 20];
     _lighttwo_front setLightIntensity 1;
@@ -108,7 +107,7 @@ if(_blinker == 2) then {
     _lighttwo_back setLightBrightness 0;
     _lighttwo_back setLightAmbient [1,1,0.1];
     
-    _lighttwo_back lightAttachObject [_vehicle, _pos select 3];
+    _lighttwo_back lightAttachObject [_vehicle, _position select 3];
     
     _lighttwo_back setLightAttenuation [0.121, 0, 2000, 20];
     _lighttwo_back setLightIntensity 1;
@@ -139,7 +138,7 @@ while{(alive _vehicle)} do
 	{
 		_leftYellow = true;
 
-        if(_timestatus) then {
+        if(time_status_day) then {
          _brightnessfact = 25.75;
         } else {
          _brightnessfact = 1;
