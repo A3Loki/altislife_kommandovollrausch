@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=4762;
+		nextID=4770;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=14;
+		nextID=15;
 	};
 	class Camera
 	{
-		pos[]={3259.8313,678.62524,12959.548};
-		dir[]={0.059367284,-0.49195144,-0.86863923};
-		up[]={0.033552129,0.87053609,-0.49094385};
-		aside[]={-0.99770713,-5.8236765e-008,-0.068186708};
+		pos[]={3733.2285,33.632637,13063.34};
+		dir[]={-0.070681706,-0.16824624,-0.98330808};
+		up[]={-0.012089271,0.98568785,-0.16808486};
+		aside[]={-0.9975189,-5.9599697e-006,0.071713641};
 	};
 };
 binarizationWanted=0;
@@ -674,7 +674,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2537;
+		items=2541;
 		class Item0
 		{
 			dataType="Marker";
@@ -1150,7 +1150,7 @@ class Mission
 			name="safezone_athira";
 			type="mil_dot";
 			colorName="ColorPink";
-			angle=224.37819;
+			angle=224.37817;
 			id=50;
 		};
 		class Item49
@@ -2925,7 +2925,7 @@ class Mission
 			position[]={22151.953,3.3612719,14437.795};
 			name="jail_marker";
 			type="Empty";
-			angle=28.449825;
+			angle=28.449823;
 			id=233;
 		};
 		class Item225
@@ -2936,7 +2936,7 @@ class Mission
 			text="Justizvollzugsanstalt Altis";
 			type="mil_dot";
 			colorName="Color4_FD_F";
-			angle=28.449825;
+			angle=28.449823;
 			id=234;
 		};
 		class Item226
@@ -3066,7 +3066,7 @@ class Mission
 			fillName="Horizontal";
 			a=25;
 			b=40;
-			angle=225.47433;
+			angle=225.47432;
 			id=248;
 		};
 		class Item239
@@ -9527,7 +9527,7 @@ class Mission
 			};
 			id=643;
 			type="Land_DisinfectantSpray_F";
-			atlOffset=0.99937057;
+			atlOffset=0.99937439;
 		};
 		class Item578
 		{
@@ -9546,7 +9546,7 @@ class Mission
 			};
 			id=644;
 			type="Land_OfficeCabinet_01_F";
-			atlOffset=0.1056385;
+			atlOffset=0.10562515;
 		};
 		class Item579
 		{
@@ -9564,7 +9564,7 @@ class Mission
 			};
 			id=646;
 			type="Land_Antibiotic_F";
-			atlOffset=1.1510201;
+			atlOffset=1.151022;
 		};
 		class Item580
 		{
@@ -9582,7 +9582,7 @@ class Mission
 			};
 			id=647;
 			type="Land_Antibiotic_F";
-			atlOffset=1.1525021;
+			atlOffset=1.152504;
 		};
 		class Item581
 		{
@@ -9600,7 +9600,7 @@ class Mission
 			};
 			id=648;
 			type="Land_Antibiotic_F";
-			atlOffset=1.1575069;
+			atlOffset=1.1575089;
 		};
 		class Item582
 		{
@@ -9672,7 +9672,7 @@ class Mission
 			};
 			id=652;
 			type="Land_BloodBag_F";
-			atlOffset=1.0356808;
+			atlOffset=1.0356789;
 		};
 		class Item586
 		{
@@ -9690,7 +9690,7 @@ class Mission
 			};
 			id=653;
 			type="Land_BloodBag_F";
-			atlOffset=1.0357227;
+			atlOffset=1.0357208;
 		};
 		class Item587
 		{
@@ -9708,7 +9708,7 @@ class Mission
 			};
 			id=654;
 			type="Land_BloodBag_F";
-			atlOffset=1.0357227;
+			atlOffset=1.0357208;
 		};
 		class Item588
 		{
@@ -9763,7 +9763,7 @@ class Mission
 			};
 			id=657;
 			type="Land_OfficeCabinet_01_F";
-			atlOffset=0.1056385;
+			atlOffset=0.10562515;
 		};
 		class Item591
 		{
@@ -9782,7 +9782,7 @@ class Mission
 			};
 			id=658;
 			type="Land_OfficeCabinet_01_F";
-			atlOffset=0.10564041;
+			atlOffset=0.10562515;
 		};
 		class Item592
 		{
@@ -23342,7 +23342,7 @@ class Mission
 			};
 			id=1565;
 			type="Land_PipeWall_concretel_8m_F";
-			atlOffset=0.70747185;
+			atlOffset=1.0046406;
 		};
 		class Item1308
 		{
@@ -28684,18 +28684,41 @@ class Mission
 					class PositionInfo
 					{
 						position[]={20769.684,36.554638,6796.5059};
-						angles[]={0.0093350215,3.7246904,6.2405448};
+						angles[]={0.0093375118,3.7246897,6.2405472};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this;  this enableSimulation false; this addAction[""Schweere Waffen"",life_fnc_weaponShopMenu,""rebel_heavy"",0,false,false,"""",' license_civ_rebel && license_civ_heavyweapon && playerSide == civilian'];";
+						init="removeallWeapons this;  this enableSimulation false; this addAction[""Schwere Waffen"",life_fnc_weaponShopMenu,""rebel_heavy"",0,false,false,"""",' license_civ_rebel && license_civ_heavyweapon && playerSide == civilian'];";
 						name="reb_1_2_1";
 					};
 					id=1877;
 					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
@@ -31624,7 +31647,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9195.1211,14.399302,21678};
-						angles[]={0.0080009829,3.1694481,0.011995304};
+						angles[]={0.0079936078,3.1694479,0.011990411};
 					};
 					side="East";
 					flags=6;
@@ -31633,9 +31656,33 @@ class Mission
 						skill=0.60000002;
 						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Rebellenmarkt"",life_fnc_virt_menu,""rebel""];  this addAction[""Rebellenkleidung"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Leichte Waffen"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian '];  this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 						name="reb_1";
+						disableSimulation=1;
 					};
 					id=1999;
 					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
@@ -31994,24 +32041,49 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3732.9607,18.87052,12979.817};
-						angles[]={0,6.2207727,6.2826972};
+						position[]={3732.762,18.933182,12978.967};
+						angles[]={0,0.056339227,6.2826962};
 					};
 					side="Civilian";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this allowDamage false;  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide == independent '];  this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""medcloth""]; this addAction[""Arztbedarf"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[""Arztbedarf"",life_fnc_weaponShopMenu,""med_notarzt""]; this setObjectTexture [0,""textures\med\medic_uniform.paa""];";
+						init="this enableSimulation false;  this allowDamage false;  this addAction[""Kantine"",life_fnc_virt_menu,""med""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide == independent '];  this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""medcloth""]; this addAction[""Arztbedarf"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[""Arztbedarf-Notarzt"",life_fnc_weaponShopMenu,""med_notarzt""]; this setObjectTexture [0,""textures\med\art_uniform.jpg""];";
 					};
 					id=2022;
 					type="C_man_1";
+					atlOffset=0.061000824;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2021;
+			atlOffset=0.061000824;
 		};
 		class Item1544
 		{
@@ -32025,24 +32097,49 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3739.1035,18.857805,12985.274};
-						angles[]={0.29261357,5.3315406,0.0038756146};
+						position[]={3739.719,18.949383,12984.092};
+						angles[]={0,4.6066566,6.2826962};
 					};
 					side="Civilian";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this allowDamage false; this addAction[""Fahrzeugladen"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_1"",""med"",""Kavala Hosptial""]];  this addAction[""Lorenzo's Luftfahrt"",life_fnc_vehicleShopMenu,[""med_air"",independent,""medic_spawn_1"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Lade Fahrzeuge...""];   life_garage_sp = ""med_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Lade Fahrzeuge...""];   life_garage_sp = ""medic_spawn_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						init="this enableSimulation false;  this allowDamage false; this addAction[""Fahrzeugladen"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_1"",""med"",""Kavala Hosptial""]];  this addAction[""Lorenzo's Luftfahrt"",life_fnc_vehicleShopMenu,[""med_air"",independent,""medic_spawn_1"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Lade Fahrzeuge...""];   life_garage_sp = ""med_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Lade Fahrzeuge...""];   life_garage_sp = ""medic_spawn_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTexture [0,""textures\med\art_uniform.jpg""]";
 					};
 					id=2024;
 					type="C_man_1";
+					atlOffset=0.090000153;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2023;
+			atlOffset=0.090000153;
 		};
 		class Item1545
 		{
@@ -69974,16 +70071,234 @@ class Mission
 			id=4761;
 			atlOffset=-2.3334012;
 		};
+		class Item2537
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9195.6123,14.599383,21690.012};
+						angles[]={0,1.0226932,0};
+					};
+					side="Independent";
+					flags=3;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[""Mit Che Guevara sprechen"",life_fnc_welcomeReb]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""heavyweapon"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""heavyweapon"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""heavyweapon"",0,false,false,"""",' !license_civ_heavyweapon && playerSide == civilian ']; this setVariable[""realname"",""Che Guevara""];";
+						name="License_rebel";
+					};
+					id=4763;
+					type="I_Story_Colonel_F";
+					atlOffset=0.28100014;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=4762;
+			atlOffset=0.28100014;
+		};
+		class Item2538
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9191.6182,14.384151,21676.125};
+						angles[]={0,2.8460734,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="removeallWeapons this;  this enableSimulation false; this addAction[""Schwere Waffen"",life_fnc_weaponShopMenu,""rebel_heavy"",0,false,false,"""",' license_civ_rebel && license_civ_heavyweapon && playerSide == civilian'];";
+						name="heavy_weapon_rebel_north";
+					};
+					id=4765;
+					type="I_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=4764;
+		};
+		class Item2539
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9170.709,14.402101,21659.553};
+						angles[]={0,1.7854019,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Lade Fahrzeuge...""];   life_garage_sp = ""reb_1"";  }];  this addAction[""Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						name="garage_rebel_north";
+					};
+					id=4767;
+					type="I_G_Soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=4766;
+		};
+		class Item2540
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9171.0059,14.409448,21653.363};
+						angles[]={0,1.2938999,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_1"";  }]; this addAction[""Store vehicle in Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] call life_fnc_MP;   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+						name="air_garage_air_north";
+					};
+					id=4769;
+					type="C_Man_casual_4_F_euro";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=4768;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=49;
+			nextID=53;
 		};
 		class Links
 		{
-			items=49;
+			items=53;
 			class Item0
 			{
 				linkID=0;
@@ -70469,6 +70784,46 @@ class Mission
 				linkID=48;
 				item0=2200;
 				item1=2199;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item49
+			{
+				linkID=49;
+				item0=4765;
+				item1=1909;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item50
+			{
+				linkID=50;
+				item0=4763;
+				item1=1909;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item51
+			{
+				linkID=51;
+				item0=4767;
+				item1=1909;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item52
+			{
+				linkID=52;
+				item0=4769;
+				item1=1909;
 				class CustomData
 				{
 					type="Sync";
