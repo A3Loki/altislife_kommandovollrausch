@@ -253,6 +253,17 @@ switch (_code) do {
 	        };
     };
 
+    //Num6
+    case 77:
+    {
+        if(_shift) then {_handled = true;};
+        if ((_shift) && (vehicle player == player)) then
+        {
+            cutText [format["Einweisen"], "PLAIN DOWN"];
+            player playMove "Acts_ShowingTheRightWay_loop";
+        };
+    };
+
 	//T Key (Trunk)
 	case 20: {
 		if(_shift) then {_handled = true;};
@@ -302,6 +313,14 @@ switch (_code) do {
 			};
 			_handled = true;
 		};
+
+        if(!isNil {vehicle player getVariable "blinkerRight"} && vehicle player != player) then {
+            if (!(vehicle player getVariable "blinkerRight")) then {
+                [vehicle player, 1] spawn life_fnc_blinker;
+            } else {
+                vehicle player setVariable ["blinkerRight", false, true];
+            };
+        };
 	};
 
     //C Sirene Follow Vehicle
@@ -335,6 +354,14 @@ switch (_code) do {
 			};
 			_handled = true;
 		};
+
+		if(!isNil {vehicle player getVariable "blinkerLeft"} && vehicle player != player) then {
+            if (!(vehicle player getVariable "blinkerLeft")) then {
+                [vehicle player, 0] spawn life_fnc_blinker;
+            } else {
+                vehicle player setVariable ["blinkerLeft", false, true];
+            };
+        };
 	};
 
 	case 24:

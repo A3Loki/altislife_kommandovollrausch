@@ -227,6 +227,7 @@ class Life_Client_Core
 		class Misc {};
 		class fadeSound {};
 		class emergencyLights {};
+		class blinker {};
 	};
 	
 	class DynMarket

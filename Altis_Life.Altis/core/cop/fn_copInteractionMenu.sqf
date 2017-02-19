@@ -123,4 +123,5 @@ if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (g
 };
 
 _Btn10 ctrlEnable false;
+_Btn10 ctrlShow false;
 		

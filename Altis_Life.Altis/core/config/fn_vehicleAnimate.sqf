@@ -67,4 +67,11 @@ if(!_preset) then
 			_vehicle setVariable["lights",false,true];
 		};
 	};
+
+	// Vehicle Vars
+	if(typeOf _vehicle in ["C_SUV_01_F"]) then {
+        _vehicle setVariable["blinkerWarn",false,true];
+        _vehicle setVariable["blinkerLeft",false,true];
+        _vehicle setVariable["blinkerRight",false,true];
+    };
 };

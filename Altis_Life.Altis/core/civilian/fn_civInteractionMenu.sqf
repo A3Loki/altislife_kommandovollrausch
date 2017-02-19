@@ -77,3 +77,7 @@ _Btn7 ctrlEnable false;
 _Btn8 ctrlEnable false;
 _Btn9 ctrlEnable false;
 _Btn10 ctrlEnable false;
+_Btn7 ctrlShow false;
+_Btn8 ctrlShow false;
+_Btn9 ctrlShow false;
+_Btn10 ctrlShow false;
