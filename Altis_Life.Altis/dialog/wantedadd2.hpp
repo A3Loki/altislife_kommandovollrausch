@@ -51,7 +51,7 @@ class life_wantedadd2 {
 		
 		class WantedList : Life_RscListBox 
 		{
-			idc = 2401;
+			idc = 9902;
 			text = "";
 			sizeEx = 0.035;
 			colorBackground[] = {0,0,0,0};
