@@ -95,7 +95,7 @@ class CarShops {
 	class cop_car {
 		side = "cop";
 		vehicles[] = {
-			{ "C_Offroad_01_F", 13000, "", { "life_coplevel", -1 } },
+			{ "B_GEN_Offroad_01_gen_F", 13000, "", { "life_coplevel", -1 } },
 			{ "C_SUV_01_F", 20000, "", { "life_coplevel", 2 } },
 			{ "C_Hatchback_01_sport_F", 20000, "", { "life_coplevel", 4 } },
 			{"O_MRAP_02_F", 50000, "gsg" },
