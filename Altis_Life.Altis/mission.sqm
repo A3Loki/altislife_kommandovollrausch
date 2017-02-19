@@ -55949,7 +55949,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTexture [0, ""images\gnra.jpg""];";
+				init="this setObjectTexture [0, ""images\moes.jpg""];";
 				disableSimulation=1;
 			};
 			id=2909;
@@ -69452,7 +69452,7 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this setObjectTexture [0, ""images\gnra.jpg""];";
+				init="this setObjectTexture [0, ""images\moes.jpg""];";
 				disableSimulation=1;
 			};
 			id=3364;
