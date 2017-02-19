@@ -459,7 +459,7 @@ class CfgVehicles {
 	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
             { "GNRA", "cop", {
-                "textures\cop\hatchback_gen.paa"
+                "textures\cop\Hatchback_Gendarm.jpg"
             } }
         };
     };
@@ -568,7 +568,7 @@ class CfgVehicles {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
             } },
 			{ "Polizei", "cop", {
-                "textures\cop\cop_hatch.paa"
+                "textures\cop\Hatchback_Gendarm.jpg"
             } }
         };
     };
@@ -605,7 +605,7 @@ class CfgVehicles {
 	                "textures\civ\suv_jurassic.paa"
             } },
             { "GNRA", "cop", {
-				"textures\cop\SUV_GNRA.paa"
+				"textures\cop\SUV_Gendarm.jpg"
             } }
 	        };
     };
@@ -658,8 +658,8 @@ class CfgVehicles {
 				"textures\cop\hunter_back.jpg"
             } },
             { "GNRA", "cop", {
-                "textures\cop\hunter_GNRA.paa",
-				"textures\cop\hunter_GNRA_BACK.paa"
+                "textures\cop\Hunter_Gendarm_Front.jpg",
+				"textures\cop\Hunter_Gendarm_back.jpg"
             } },
             { "Black", "fed", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"

@@ -105,12 +105,18 @@ if(EQUAL(SEL(_vInfo,1),"civ") && EQUAL(SEL(_vInfo,2),"B_Heli_Light_01_F") && !(E
 	[[_vehicle,"civ_littlebird",true],"life_fnc_vehicleAnimate",_unit,false] call life_fnc_MP;
 };
 
+if(EQUAL(SEL(_vInfo,1),"civ") && !(EQUAL(SEL(_vInfo,8),13))) then {
+	[[_vehicle,"vehicle_blinker",true],"life_fnc_vehicleAnimate",_unit,false] call life_fnc_MP;
+};
+
 if(EQUAL(SEL(_vInfo,1),"cop") && (SEL(_vInfo,2)) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F"]) then {
 	[[_vehicle,"cop_offroad",true],"life_fnc_vehicleAnimate",_unit,false] call life_fnc_MP;
+	[[_vehicle,"vehicle_blinker",true],"life_fnc_vehicleAnimate",_unit,false] call life_fnc_MP;
 };
 
 if(EQUAL(SEL(_vInfo,1),"med") && (SEL(_vInfo,2)) in ["C_Offroad_01_F","C_Van_01_box_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_MRAP_01_F"]) then {
 	[[_vehicle,"med_offroad",true],"life_fnc_vehicleAnimate",_unit,false] call life_fnc_MP;
+	[[_vehicle,"vehicle_blinker",true],"life_fnc_vehicleAnimate",_unit,false] call life_fnc_MP;
 };
 [[1,"Your vehicle is ready!"],"life_fnc_broadcast",_unit,false,true] call life_fnc_MP;
 serv_sv_use deleteAt _servIndex;

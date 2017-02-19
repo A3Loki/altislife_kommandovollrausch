@@ -14,3 +14,15 @@ if (isNil "Waffenschein") then {
     publicVariable "Waffenschein";
 };
 //[] execVM "snow.sqf";
+
+[] spawn
+{
+    while {true} do
+    {
+        if (daytime >= 19 || daytime < 5) then
+        {time_status_day = false;}      // NIGHT}
+        else
+        {time_status_day = true;};      // DAY};
+        uiSleep 30;
+    };
+};

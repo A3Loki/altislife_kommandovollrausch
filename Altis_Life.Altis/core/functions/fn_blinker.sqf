@@ -1,8 +1,6 @@
-#include <macro.h>
-private["_vehicle","_blinker","_position","_blinkerType"];
+private["_vehicle","_blinker","_position","_blinkerType","_attachPos"];
 _vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
-_blinker = [_this,1,Objnull,[Objnull]] call BIS_fnc_param;
-_position = [];
+_blinker = [_this,1,2,[0]] call BIS_fnc_param;
 _blinkerType = "";
 if(isNull _vehicle) exitWith {};
 if(!(typeOf _vehicle in ["C_SUV_01_F"])) exitWith {};
@@ -50,6 +48,8 @@ switch (_blinker) do
   };
 };
 
+if(isNil "_position") exitWith {};
+
 _lightYellow = [20, 20, 0.1];
 
 _lightone_front = "#lightpoint" createVehicle getpos _vehicle;
@@ -58,7 +58,8 @@ _lightone_front setLightColor _lightYellow;
 _lightone_front setLightBrightness 0;
 _lightone_front setLightAmbient [1,1,0.1];
 
-_lightone_front lightAttachObject [_vehicle, _position select 0];
+_attachPos = _position select 0;
+_lightone_front lightAttachObject [_vehicle, _attachPos];
 
 _lightone_front setLightAttenuation [0.121, 0, 2000, 20];
 _lightone_front setLightIntensity 1;
@@ -74,7 +75,8 @@ _lightone_back setLightColor _lightYellow;
 _lightone_back setLightBrightness 0;
 _lightone_back setLightAmbient [1,1,0.1];
 
-_lightone_back lightAttachObject [_vehicle, _position select 1];
+_attachPos = _position select 1;
+_lightone_back lightAttachObject [_vehicle, _attachPos];
 
 _lightone_back setLightAttenuation [0.121, 0, 2000, 20];
 _lightone_back setLightIntensity 1;
@@ -90,8 +92,9 @@ if(_blinker == 2) then {
     _lighttwo_front setLightColor _lightYellow;
     _lighttwo_front setLightBrightness 0;
     _lighttwo_front setLightAmbient [1,1,0.1];
-    
-    _lighttwo_front lightAttachObject [_vehicle, _position select 2];
+
+    _attachPos = _position select 2;
+    _lighttwo_front lightAttachObject [_vehicle, _attachPos];
     
     _lighttwo_front setLightAttenuation [0.121, 0, 2000, 20];
     _lighttwo_front setLightIntensity 1;
@@ -106,8 +109,9 @@ if(_blinker == 2) then {
     _lighttwo_back setLightColor _lightYellow;
     _lighttwo_back setLightBrightness 0;
     _lighttwo_back setLightAmbient [1,1,0.1];
-    
-    _lighttwo_back lightAttachObject [_vehicle, _position select 3];
+
+    _attachPos = _position select 3;
+    _lighttwo_back lightAttachObject [_vehicle, _attachPos];
     
     _lighttwo_back setLightAttenuation [0.121, 0, 2000, 20];
     _lighttwo_back setLightIntensity 1;
