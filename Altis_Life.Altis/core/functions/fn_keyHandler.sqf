@@ -314,14 +314,26 @@ switch (_code) do {
 			_handled = true;
 		};
 
-        if(!isNil {vehicle player getVariable "blinkerRight"} && vehicle player != player) then {
+        if(!isNil {vehicle player getVariable "blinkerRight"} && vehicle player != player && _shift) then {
             if (!(vehicle player getVariable "blinkerRight")) then {
-                [vehicle player, 1] spawn life_fnc_blinker;
+                [[vehicle player, 1],"life_fnc_blinker",true,false] call life_fnc_MP;
             } else {
                 vehicle player setVariable ["blinkerRight", false, true];
             };
         };
 	};
+
+    // B
+	case 48:
+    {
+        if(!isNil {vehicle player getVariable "blinkerWarn"} && vehicle player != player && _shift) then {
+            if (!(vehicle player getVariable "blinkerWarn")) then {
+                [[vehicle player, 2],"life_fnc_blinker",true,false] call life_fnc_MP;
+            } else {
+                vehicle player setVariable ["blinkerWarn", false, true];
+            };
+        };
+    };
 
     //C Sirene Follow Vehicle
 	case 46:
@@ -355,9 +367,9 @@ switch (_code) do {
 			_handled = true;
 		};
 
-		if(!isNil {vehicle player getVariable "blinkerLeft"} && vehicle player != player) then {
+		if(!isNil {vehicle player getVariable "blinkerLeft"} && vehicle player != player && !_shift) then {
             if (!(vehicle player getVariable "blinkerLeft")) then {
-                [vehicle player, 0] spawn life_fnc_blinker;
+                [[vehicle player, 0],"life_fnc_blinker",true,false] call life_fnc_MP;
             } else {
                 vehicle player setVariable ["blinkerLeft", false, true];
             };
