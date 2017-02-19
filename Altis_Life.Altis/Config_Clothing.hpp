@@ -103,6 +103,31 @@ class Clothing {
 
 		};
 
+		headgear[] = {
+			{ "NONE", "Remove Hat", 0, { "", "", -1 } },
+			{"H_Cap_red", "", 100, {"", "", -1}},
+			{ "H_Cap_headphones", "", 125 , { "", "", -1 } },
+			{ "H_Beret_02", "", 85 , { "life_mediclevel", "SCALAR", 3 } }
+
+		};
+
+		goggles[] = {
+			{ "NONE", "Remove Glasses", 0, { "", "", -1 } },
+			{ "G_Shades_Black", "", 25, { "", "", -1 } },
+			{ "G_Shades_Blue", "", 20, { "", "", -1 } },
+			{ "G_Sport_Blackred", "", 20, { "", "", -1 } },
+			{ "G_Sport_Checkered", "", 20, { "", "", -1 } },
+			{ "G_Sport_Blackyellow", "", 20, { "", "", -1 } },
+			{ "G_Sport_BlackWhite", "", 20, { "", "", -1 } },
+			{ "G_Squares", "", 10, { "", "", -1 } },
+			{ "G_Aviator", "", 100, { "", "", -1 } },
+			{ "G_Lady_Mirror", "", 150, { "", "", -1 } },
+			{ "G_Lady_Dark", "", 150, { "", "", -1 } },
+			{ "G_Lady_Blue", "", 150, { "", "", -1 } },
+			{ "G_Lowprofile", "", 30, { "", "", -1 } },
+			{ "G_Combat", "", 55, { "", "", -1 } }
+		};
+
 		backpacks[] = {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
 			{ "B_Bergen_mcamo", "", 800, { "", "", -1 } },
@@ -165,7 +190,7 @@ class Clothing {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
 			{ "V_Rangemaster_belt", "", 800, { "life_coplevel", "SCALAR", 1 } },
 			{ "V_RebreatherB", "Atemgeraet", 800, { "life_coplevel", "SCALAR", 1 } },
-			{ "V_TacVest_blk_POLICE", "", 1300, { "life_coplevel", "SCALAR", 2 } },
+			{ "V_TacVest_gen_F", "", 1300, { "life_coplevel", "SCALAR", 2 } },
 			{ "V_PlateCarrier1_blk", "", 1300, { "life_coplevel", "SCALAR", 2 } },
 			{ "V_PlateCarrierIAGL_dgtl", "", 3000, { "life_coplevel", "SCALAR", 4 } },
 			{ "V_PlateCarrierSpec_blk", "", 13000, { "life_coplevel", "SCALAR", 4 } },
@@ -174,7 +199,8 @@ class Clothing {
 			{ "V_PlateCarrier1_rgr", "", 1500, { "life_coplevel", "SCALAR", 5 } },
 			{ "V_PlateCarrier3_rgr", "", 1450, { "life_coplevel", "SCALAR", 5 } },
 			{ "V_HarnessO_gry", "", 2100, { "life_coplevel", "SCALAR", 5 } },
-			{ "V_Chestrig_blk", "", 2300, { "life_coplevel", "SCALAR", 5 } }
+			{ "V_Chestrig_blk", "", 2300, { "life_coplevel", "SCALAR", 5 } },
+			{ "V_PlateCarrierSpec_tna_F", "", 100000, {"life_coplevel", "SCALAR", 10}}
 		};
 
 		backpacks[] = {
