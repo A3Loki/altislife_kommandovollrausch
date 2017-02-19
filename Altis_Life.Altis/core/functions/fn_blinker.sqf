@@ -1,8 +1,10 @@
-private["_vehicle","_blinker","_pos","_blinkerType"];
+#include <macro.h>
+private["_vehicle","_blinker","_pos","_blinkerType","_timestatus"];
 _vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _blinker = [_this,1,Objnull,[Objnull]] call BIS_fnc_param;
 _pos = [];
 _blinkerType = "";
+_timestatus = GVAR_UINS "time_status_day";
 if(isNull _vehicle) exitWith {};
 if(!(typeOf _vehicle in ["C_SUV_01_F"])) exitWith {};
 
@@ -137,7 +139,7 @@ while{(alive _vehicle)} do
 	{
 		_leftYellow = true;
 
-        if (GVAR_UINS "time_status_day") then {
+        if(_timestatus) then {
          _brightnessfact = 25.75;
         } else {
          _brightnessfact = 1;
