@@ -133,6 +133,7 @@ onMapSingleClick "if(_alt) then {vehicle player setPos _pos};"; //Local debug fo
 life_adminLevel = 0;
 life_medicLevel = 0;
 life_copLevel = 0;
+life_donatorLevel = 0;
 CONST(JxMxE_PublishVehicle,"false");
 
 /* Setup radio channels for west/independent/civilian */
