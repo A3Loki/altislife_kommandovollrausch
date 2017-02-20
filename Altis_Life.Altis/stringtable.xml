@@ -3582,6 +3582,10 @@
 			<Original>G.S.G.9</Original>
 			<German>G.S.G.9</German>
 		</Key>
+		<Key ID="STR_License_Donator">
+			<Original>Donator</Original>
+			<German>Donator</German>
+		</Key>
 	</Package>
 	<Package name="More_Item_Strings">
 		<Key ID="STR_ISTR_Blast_VaultOnly">

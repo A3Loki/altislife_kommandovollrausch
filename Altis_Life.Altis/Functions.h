@@ -175,6 +175,9 @@ class Life_Client_Core
 		class s_onCheckedChange {};
 		class revokeLicense {};
 		class WantedPersonList {};
+		class wanted2 {};
+		class wantedadd2 {};
+		class wantedAddP {};
 	};
 	
 	class Functions
