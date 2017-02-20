@@ -220,7 +220,11 @@ class CfgVehicles {
 		garageSell[] = { 0, 85000, 0, 0 };
 		insurance = 16000;
 		chopShop = 45000;
-		textures[] = {};
+		textures[] = {
+			{ "GIGN", "cop", {
+                "textures\cop\ghost_gign.jpg"
+            } }
+		};
 	};
 
 	class B_MRAP_01_hmg_F : Default {
@@ -415,9 +419,6 @@ class CfgVehicles {
 	                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
             } },
             { "ART", "med", {
-	                "textures\med\offroad_med.paa"
-            } },
-            { "ART", "med", {
 	                "textures\med\medic_offroad.jpg"
             } },
             { "Taxi", "civ", {
@@ -477,9 +478,6 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
-        	{ "HyperBeast", "civ", {
-                "textures\civ\hyper_quad.paa"
-            } },
 			{ "Brown", "cop", {
                 "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
             } },
@@ -589,9 +587,6 @@ class CfgVehicles {
         	{ "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
             } },
-			{ "Notarzt", "med", {
-	                "textures\med\med_suv.paa"
-            } },
 			{ "ART", "med", {
 	                "textures\med\suv_art.jpg"
             } },
@@ -600,12 +595,6 @@ class CfgVehicles {
             } },
 			{ "Orange", "civ", {
 	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
-            } },
-			{ "Asiimov", "civ", {
-	                "textures\civ\asiimov_suv.paa"
-            } },
-			{ "Hyperbeast", "civ", {
-	                "textures\civ\hyperbeast_suv.paa"
             } },
 			{ "Jurassic Park", "civ", {
 	                "textures\civ\suv_jurassic.paa"
@@ -648,10 +637,6 @@ class CfgVehicles {
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
             } },
-			{ "Notarzt", "med", {
-                "textures\med\rtwfront.paa",
-				"textures\med\rtwback.paa"
-            } },
             { "ART", "med", {
                 "textures\med\art_truck_front.jpg",
 				"textures\med\art_truck_back.jpg"
@@ -666,10 +651,6 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
-        	{ "SEK", "cop", {
-                "textures\cop\hunter_front.jpg",
-				"textures\cop\hunter_back.jpg"
-            } },
             { "GNRA", "cop", {
                 "textures\cop\Hunter_Gendarm_Front.jpg",
 				"textures\cop\Hunter_Gendarm_back.jpg"
@@ -733,9 +714,6 @@ class CfgVehicles {
             } },
 			{ "Rebel Digital", "reb", {
 	                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
-            } },
-            { "Notarzt", "med", {
-                "textures\med\medic_humming.paa"
             } },
             { "ART", "med", {
                 "textures\med\art_humming.jpg"

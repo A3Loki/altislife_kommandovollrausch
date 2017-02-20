@@ -37,13 +37,8 @@ if(playerSide == west) then {
 
 if(playerSide == independent) then {
 	switch(_type) do {
-		case "U_C_WorkerCoveralls" : {
+		case "U_I_HeliPilotCoveralls" : {
 			_path = "textures\med\art_uniform.jpg";
-			_unit setObjectTextureGlobal [0,_path];
-		};
-
-		case "U_I_CombatUniform" : {
-			_path = "textures\med\med_uniform.jpg";
 			_unit setObjectTextureGlobal [0,_path];
 		};
 	};
