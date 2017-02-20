@@ -80088,19 +80088,6 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item254
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={3622.8687,6.7543955,13386.383};
-						angles[]={6.2685208,0,0.029324362};
-					};
-					init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects this)";
-					id=5204;
-					type="Logic";
-					atlOffset=-3.9100647e-005;
-				};
 				class Item255
 				{
 					dataType="Object";
@@ -81141,7 +81128,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this setPos [getPos this select 0, getPos this select 1, -0,2]; this setVectorUp [0,0,1];";
+				init="this allowDamage false; this setPos [getPos this select 0, getPos this select 1, -0.2]; this setVectorUp [0,0,1];";
 			};
 			id=5253;
 			type="Land_CarService_F";
@@ -81677,7 +81664,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""schilder\autov.jpg""]";
+				init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""textures\signs\autov.jpg""]";
 			};
 			id=5280;
 			type="SignAd_Sponsor_F";
@@ -81960,7 +81947,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""schilder\autov2.jpg""]; this setVectorUp [0,0,1];";
+				init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""textures\signs\autov2.jpg""]; this setVectorUp [0,0,1];";
 			};
 			id=5296;
 			type="Land_Billboard_F";
@@ -82212,7 +82199,7 @@ class Mission
 				ammo=0;
 				lock="LOCKEDPLAYER";
 				fuel=0;
-				init="this allowDamage false; this enableSimulation false; this setObjectTextureGlobal [0,""skins\car\taxi_suv.jpg""];";
+				init="this allowDamage false; this enableSimulation false; this setObjectTextureGlobal [0,""textures\civ\taxi_suv.jpg""];";
 			};
 			id=5309;
 			type="C_SUV_01_F";
@@ -82234,7 +82221,7 @@ class Mission
 				ammo=0;
 				lock="LOCKEDPLAYER";
 				fuel=0;
-				init="this allowDamage false; this enableSimulation false; this setObjectTextureGlobal [0,""skins\car\taxi_suv.jpg""];";
+				init="this allowDamage false; this enableSimulation false; this setObjectTextureGlobal [0,""textures\civ\taxi_suv.jpg""];";
 			};
 			id=5310;
 			type="C_SUV_01_F";
@@ -82252,7 +82239,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""schilder\taxi.jpg""]; this setPos [getPos this select 0, getPos this select 1, -1]";
+				init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""textures\signs\taxi.jpg""]; this setPos [getPos this select 0, getPos this select 1, -1]";
 			};
 			id=5311;
 			type="SignAd_Sponsor_F";
@@ -82271,7 +82258,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""schilder\taxi.jpg""]; this setPos [getPos this select 0, getPos this select 1, -1]";
+				init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""textures\signs\taxi.jpg""]; this setPos [getPos this select 0, getPos this select 1, -1]";
 			};
 			id=5312;
 			type="SignAd_Sponsor_F";
@@ -82290,7 +82277,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this setObjectTexture [0, ""schilder\taxi.jpg""]; this setPos [getPos this select 0, getPos this select 1, 7]";
+				init="this allowDamage false; this setObjectTexture [0, ""textures\signs\taxi.jpg""]; this setPos [getPos this select 0, getPos this select 1, 7]";
 			};
 			id=5313;
 			type="Land_Billboard_F";
@@ -82309,7 +82296,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""schilder\soon.jpg""]; this setPos [getPos this select 0, getPos this select 1, -1]";
+				init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""textures\signs\soon.jpg""]; this setPos [getPos this select 0, getPos this select 1, -1]";
 			};
 			id=5314;
 			type="SignAd_Sponsor_F";
@@ -82328,7 +82315,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""schilder\krankenhaus.jpg""]; this setPos [getPos this select 0, getPos this select 1, -1]";
+				init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""textures\signs\krankenhaus.jpg""]; this setPos [getPos this select 0, getPos this select 1, -1]";
 			};
 			id=5315;
 			type="SignAd_Sponsor_F";
