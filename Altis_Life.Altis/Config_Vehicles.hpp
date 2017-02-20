@@ -739,6 +739,9 @@ class CfgVehicles {
             } },
             { "ART", "med", {
                 "textures\med\art_humming.jpg"
+            } },
+            { "GNRA", "cop", {
+                "textures\cop\humming_gendarm.jpg"
             } }
         };
     };
@@ -797,7 +800,11 @@ class CfgVehicles {
 		 storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {};
+        textures[] = {
+            { "GNRA", "cop", {
+                "textures\cop\Hellcat_Gendarm.jpg"
+            } }
+        };
 	};
 
 	class O_Truck_02_transport_F {
