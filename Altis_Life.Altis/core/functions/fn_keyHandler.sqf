@@ -254,7 +254,7 @@ switch (_code) do {
     };
 
     //Num6
-    case 77:
+    /*case 77:
     {
         if(_shift) then {_handled = true;};
         if ((_shift) && (vehicle player == player)) then
@@ -262,7 +262,7 @@ switch (_code) do {
             cutText [format["Einweisen"], "PLAIN DOWN"];
             player playMove "Acts_ShowingTheRightWay_loop";
         };
-    };
+    };*/
 
 	//T Key (Trunk)
 	case 20: {

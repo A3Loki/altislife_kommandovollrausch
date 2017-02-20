@@ -237,6 +237,7 @@ class Licenses {
 	LICENSEMACRO(Theorie,"STR_License_Theorie","Theorie",250000,false,"civ")
 	LICENSEMACRO(ausweis,"STR_License_Ausweis","ausweis",250,false,"civ")
 	LICENSEMACRO(gsg,"STR_License_GSG","gsg",1000,false,"cop")
+	LICENSEMACRO(donator,"STR_License_Donator","donator",15000,false,"civ")
 };
 
 class VirtualShops {
