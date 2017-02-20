@@ -17,6 +17,7 @@ if(playerSide == civilian) then
     _pgText ctrlSetText format["%2 (1%1)...","%",_upp];
     _progress progressSetPosition 0.01;
     _cP = 0.01;
+    player setDir (getDir player + 90);
 
     while{true} do
     {
