@@ -27,6 +27,8 @@ if (isNil "Waffenschein") then {
     };
 };
 
+publicVariable "time_status_day";
+
 // Housing
 donator_houses = [];
 
