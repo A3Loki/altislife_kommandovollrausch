@@ -108,10 +108,11 @@ publicVariable "TON_fnc_clientGangLeader";
 */
 
 /*********** ADMIN ***********/
-/*KV_admin_uids = compileFinal ["76561198077148178"];
+/*KV_admin_uids = compileFinal "[""76561198077148178""]";
 
 KV_fnc_admin =
 compileFinal "
+    private[""_player"",""_admin""];
     _player = _this;
     _admin = if(getPlayerUID _player in KV_admin_uids) then {true} else {false};
     _admin;

@@ -11,7 +11,7 @@ class CarShops {
 		vehicles[] = {
 			{ "C_Hatchback_01_F", 9500, "ausweis" },
 			{ "C_Offroad_01_F", 12500, "ausweis" },
-			{ "C_SUV_01_F", 30000, "ausweis" },
+			{ "C_SUV_01_F", 35000, "ausweis" },
 			{ "C_Hatchback_01_sport_F", 55000, "ausweis" }
 		};
 	};
