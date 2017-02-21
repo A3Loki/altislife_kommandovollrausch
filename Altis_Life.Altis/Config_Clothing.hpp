@@ -317,7 +317,7 @@ class Clothing {
 		};
 
 		vests[] = {
-		    { "NONE",                       "Weste entfernen",  0, { "", "", -1 } }
+		    { "NONE",                       "Weste entfernen",  0, { "", "", -1 } },
 			{ "V_Chestrig_khk",             "",                 2500, { "", "", -1 } },
 			{ "V_Chestrig_rgr",             "",                 2500, { "", "", -1 } },
 			{ "V_Chestrig_blk",             "",                 2500, { "", "", -1 } },
