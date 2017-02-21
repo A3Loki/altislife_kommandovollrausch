@@ -12,8 +12,12 @@
 #define Btn4 37453
 #define Btn5 37454
 #define Btn6 37455
+#define Btn7 37456
+#define Btn8 37457
+#define Btn9 37458
+#define Btn10 37459
 #define Title 37401
-private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_Btn9","_Btn10"];
 if(!dialog) then {
 	createDialog "vInteraction_Menu";
 };
@@ -29,6 +33,10 @@ _Btn3 = _display displayCtrl Btn3;
 _Btn4 = _display displayCtrl Btn4;
 _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
+_Btn7 = _display displayCtrl Btn7;
+_Btn8 = _display displayCtrl Btn8;
+_Btn9 = _display displayCtrl Btn9;
+_Btn10 = _display displayCtrl Btn10;
 life_vInact_curTarget = _curTarget;
 
 //Set Repair Action
@@ -66,6 +74,11 @@ if(playerSide == west) then {
 			if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
 		};
 	};
+
+	_Btn7 ctrlShow false;
+    _Btn8 ctrlShow false;
+    _Btn9 ctrlShow false;
+    _Btn10 ctrlShow false;
 	
 } else {
 	
@@ -107,4 +120,8 @@ if(playerSide == west) then {
 
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
+	_Btn7 ctrlShow false;
+    _Btn8 ctrlShow false;
+    _Btn9 ctrlShow false;
+    _Btn10 ctrlShow false;
 };
