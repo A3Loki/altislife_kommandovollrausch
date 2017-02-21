@@ -781,6 +781,9 @@ class CfgVehicles {
         textures[] = {
             { "GNRA", "cop", {
                 "textures\cop\Hellcat_Gendarm.jpg"
+            } },
+            { "FUCK THE POLICE", "rebel", {
+                "textures\civ\Hellcat_rebell.jpg"
             } }
         };
 	};
