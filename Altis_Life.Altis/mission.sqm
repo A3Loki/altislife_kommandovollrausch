@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=24;
+		nextID=28;
 	};
 	class Camera
 	{
-		pos[]={3584.5334,95.094467,13301.758};
-		dir[]={0.42129049,-0.59176117,0.68730581};
-		up[]={0.30927643,0.80607784,0.50456178};
-		aside[]={0.85259897,1.9691652e-007,-0.52260911};
+		pos[]={3621.8354,111.65345,13232.229};
+		dir[]={0.51542056,-0.34727213,0.78350037};
+		up[]={0.1909152,0.93771827,0.29021314};
+		aside[]={0.83548117,-2.0553125e-007,-0.5496158};
 	};
 };
 binarizationWanted=0;
@@ -2546,11 +2546,12 @@ class Mission
 		class Item181
 		{
 			dataType="Marker";
-			position[]={15596.775,18.531496,17184.191};
-			name="medic_spawn_2";
+			position[]={15596.775,-4.9859723e-030,17184.189};
+			name="medic_spawn_athira";
 			type="Empty";
-			angle=320.65738;
+			angle=320.65698;
 			id=193;
+			atlOffset=-18.531496;
 		};
 		class Item182
 		{
@@ -2724,11 +2725,12 @@ class Mission
 		class Item199
 		{
 			dataType="Marker";
-			position[]={15573.91,18.490637,17202.232};
-			name="med_car_3";
+			position[]={15573.91,-5.8034217e-008,17202.232};
+			name="med_car_athira";
 			type="Empty";
-			angle=229.37419;
+			angle=229.37396;
 			id=211;
+			atlOffset=-18.490637;
 		};
 		class Item200
 		{
@@ -70047,7 +70049,7 @@ class Mission
 			};
 			id=5180;
 			type="Land_CinderBlocks_F";
-			atlOffset=3.1746101;
+			atlOffset=3.1704865;
 		};
 		class Item2611
 		{
@@ -71494,17 +71496,40 @@ class Mission
 							class PositionInfo
 							{
 								position[]={15591.025,18.546301,17191.469};
-								angles[]={0.010664274,5.5988193,0};
+								angles[]={0.010663962,5.598824,0};
 							};
 							side="Civilian";
 							flags=4;
 							class Attributes
 							{
 								skill=0.60000002;
-								init="this enableSimulation false;  this allowDamage false;  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide == independent '];  this addAction[""EMS Item Shop"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[""Sanitäterausrüstung"",life_fnc_weaponShopMenu,""med_notarzt""];  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_2"",""med"",""Kavala Hosptial""]];  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_3"",""med"",""Kavala Hosptial""]];  this addAction[""Car Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_spawn_3""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  this setObjectTexture [0,""textures\med\art_uniform.jpg""];";
+								init="this enableSimulation false;  this allowDamage false;  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide == independent '];  this addAction[""EMS Item Shop"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[""Sanitäterausrüstung"",life_fnc_weaponShopMenu,""med_notarzt""];  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_athira"",""med"",""Kavala Hosptial""]];  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_athira"",""med"",""Kavala Hosptial""]];  this addAction[""Car Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_athira""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_spawn_athira""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  this setObjectTexture [0,""textures\med\art_uniform.jpg""];";
 							};
 							id=1968;
 							type="B_RangeMaster_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.99000001;
+										};
+									};
+								};
+								nAttributes=1;
+							};
 						};
 						class Item56
 						{
@@ -80294,7 +80319,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3654.626,8.625186,13380.239};
+								position[]={3654.9856,8.0756998,13380.617};
 								angles[]={0,5.4500871,0};
 							};
 							side="West";
@@ -80302,14 +80327,14 @@ class Mission
 							class Attributes
 							{
 								skill=0.60000002;
-								init="[Funker, ""SIT"", ""FULL""] call BIS_fnc_ambientAnim;removeAllWeapons this;" \n "this allowDamage false; this enableSimulation false;  this addAction[""GNRA-Ausrüstung"",life_fnc_virt_menu,""cop""];this addAction[""Sosntiges"",life_fnc_weaponShopMenu,""cop_attach""]; this addAction[""Rekruten"",life_fnc_weaponShopMenu,""cop_recruit""]; this addAction[""Wachtmeister"",life_fnc_weaponShopMenu,""cop_officer""];this addAction[""Oberwachtmeister"",life_fnc_weaponShopMenu,""cop_detective""];this addAction[""Hauptwachtmeister"",life_fnc_weaponShopMenu,""cop_sergeant""];this addAction[""Leutnant"",life_fnc_weaponShopMenu,""cop_master_sergeant""];this addAction[""Oberleutnant"",life_fnc_weaponShopMenu,""cop_captain""];this addAction[""Hauptmann"",life_fnc_weaponShopMenu,""cop_commander""];this addAction[""Stabshauptmann"",life_fnc_weaponShopMenu,""cop_major""];this addAction[""Major"",life_fnc_weaponShopMenu,""cop_colonel""];this addAction[""General"",life_fnc_weaponShopMenu,""cop_ass_chief""];this addAction[""GIGN"",life_fnc_weaponShopMenu,""cop_chief""];this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""cop""];this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""coastguard"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""coastguard"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""coastguard"",0,false,false,"""",' !license_cop_cg && playerSide == west '];";
+								init="removeAllWeapons this;" \n "this allowDamage false; this enableSimulation false;  this addAction[""GNRA-Ausrüstung"",life_fnc_virt_menu,""cop""];this addAction[""Sosntiges"",life_fnc_weaponShopMenu,""cop_attach""]; this addAction[""Rekruten"",life_fnc_weaponShopMenu,""cop_recruit""]; this addAction[""Wachtmeister"",life_fnc_weaponShopMenu,""cop_officer""];this addAction[""Oberwachtmeister"",life_fnc_weaponShopMenu,""cop_detective""];this addAction[""Hauptwachtmeister"",life_fnc_weaponShopMenu,""cop_sergeant""];this addAction[""Leutnant"",life_fnc_weaponShopMenu,""cop_master_sergeant""];this addAction[""Oberleutnant"",life_fnc_weaponShopMenu,""cop_captain""];this addAction[""Hauptmann"",life_fnc_weaponShopMenu,""cop_commander""];this addAction[""Stabshauptmann"",life_fnc_weaponShopMenu,""cop_major""];this addAction[""Major"",life_fnc_weaponShopMenu,""cop_colonel""];this addAction[""General"",life_fnc_weaponShopMenu,""cop_ass_chief""];this addAction[""GIGN"",life_fnc_weaponShopMenu,""cop_chief""];this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""cop""];this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""coastguard"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""coastguard"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""coastguard"",0,false,false,"""",' !license_cop_cg && playerSide == west '];";
 								name="Funker";
 								disableSimulation=1;
 								ignoreByDynSimulGrid=1;
 							};
 							id=4773;
 							type="B_GEN_Soldier_F";
-							atlOffset=0.48421383;
+							atlOffset=0.88309383;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -80377,7 +80402,7 @@ class Mission
 					{
 					};
 					id=4771;
-					atlOffset=0.48421383;
+					atlOffset=0.88309383;
 				};
 				class Item250
 				{
@@ -80763,7 +80788,7 @@ class Mission
 				};
 			};
 			id=5214;
-			atlOffset=-12.926868;
+			atlOffset=-12.928032;
 		};
 		class Item2623
 		{
@@ -84589,7 +84614,7 @@ class Mission
 			};
 			id=5392;
 			type="WaterPump_01_forest_F";
-			atlOffset=0.13638687;
+			atlOffset=0.090921402;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -84630,7 +84655,7 @@ class Mission
 			};
 			id=5393;
 			type="Land_PressureWasher_01_F";
-			atlOffset=0.077703476;
+			atlOffset=0.077705383;
 			class CustomAttributes
 			{
 				class Attribute0
