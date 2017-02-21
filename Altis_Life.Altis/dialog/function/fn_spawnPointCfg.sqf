@@ -1,10 +1,10 @@
 /*
 	File: fn_spawnPointCfg.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master configuration for available spawn points depending on the units side.
-	
+
 	Return:
 	[Spawn Marker,Spawn Name,Image Path]
 */
@@ -24,13 +24,13 @@ switch (_side) do
 			["cop_spawn_5","HW Patrol","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 		];
 	};
-	
+
 	case civilian:
 	{
 		_return = [
 			["spawn_first","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
-		
+
 		if(license_civ_ausweis && playerSide == civilian) then {
 		_return = [
 			["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -49,24 +49,24 @@ switch (_side) do
 		if(__GETC__(life_donator) > 0) then {
 		_return = _return + [
 			["donator_spawn","Donator","\a3\ui_f\data\map\MapControl\tourism_ca.paa"]
-		];			
+		];
 	};
-	*/	
+	*/
 		if(count life_houses > 0) then {
 			{
 				_pos = call compile format["%1",_x select 0];
 				_house = nearestBuilding _pos;
 				_houseName = getText(configFile >> "CfgVehicles" >> (typeOf _house) >> "displayName");
-				
+
 				_return pushBack [format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"];
 			} foreach life_houses;
-		};	
+		};
 	};
-	
+
 	case independent: {
 		_return = [
 			["medic_spawn_1","Kavala Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Athira Regional","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_athira","Athira Regional","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			["medic_spawn_3","Pygros Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
 	};
