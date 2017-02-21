@@ -62,12 +62,12 @@ switch (_side) do
 			} foreach life_houses;
 		};
 	};
-
+/* medic_spawn_athira, medic_spawn_3(Pyrgos) spawnmarker*/
 	case independent: {
 		_return = [
 			["medic_spawn_1","Kavala Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_athira","Athira Regional","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_3","Pygros Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["medic_spawn_1","Athira - Nicht verfuegbar!","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_1","Pygros - Nicht verfügbar!","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
 	};
 };
