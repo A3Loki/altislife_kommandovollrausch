@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1545;
+	toggles=1673;
 	class ItemIDProvider
 	{
 		nextID=5418;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=32;
+		nextID=34;
 	};
 	class Camera
 	{
-		pos[]={3922.8914,355.64828,12765.554};
-		dir[]={-0.76187265,-0.46887317,-0.44716996};
-		up[]={-0.40450782,0.8831628,-0.2374178};
-		aside[]={-0.50622946,-1.3851095e-006,0.86251593};
+		pos[]={4044.3503,355.64828,12805.979};
+		dir[]={0.64013439,-0.46386367,0.61242121};
+		up[]={0.33519253,0.88589478,0.32068068};
+		aside[]={0.69129324,-1.9841536e-007,-0.72257608};
 	};
 };
 binarizationWanted=0;
@@ -2549,7 +2549,7 @@ class Mission
 			position[]={15596.775,-4.9859723e-030,17184.189};
 			name="medic_spawn_athira";
 			type="Empty";
-			angle=320.65689;
+			angle=320.65686;
 			id=193;
 			atlOffset=-18.531496;
 		};
@@ -2702,7 +2702,7 @@ class Mission
 			text="Hier ensteht ein neues Krankenhaus!";
 			type="loc_Hospital";
 			colorName="ColorRed";
-			angle=314.08295;
+			angle=314.08292;
 			id=208;
 			atlOffset=2.640958e+020;
 		};
@@ -28295,18 +28295,41 @@ class Mission
 					class PositionInfo
 					{
 						position[]={20791.686,34.627293,6851.0889};
-						angles[]={0.015998369,4.2749057,0.013332055};
+						angles[]={0.016004669,4.2749047,0.013334315};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Rebellenfahrzeuge"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""rebcar_sela1"",""rebcar_sela2""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Rebellenfahrzeuge"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""rebcar_sela1"",""rebcar_sela2""],""civ"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
 						name="reb_1_3_1";
 					};
 					id=1881;
 					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
@@ -29469,18 +29492,41 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9170.2471,14.406778,21656.045};
-						angles[]={0.0012918708,1.9199357,0};
+						angles[]={0.0012915437,1.9199319,0};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeugladen"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeugladen"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""civ"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
 						name="reb_1_3_2";
 					};
 					id=2001;
 					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
@@ -83915,7 +83961,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this enableSimulation false;  this allowDamage false; this addAction[""Fahrzeugladen"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_1"",""med"",""Kavala Hosptial""]];  this addAction[""Lorenzo's Luftfahrt"",life_fnc_vehicleShopMenu,[""med_air"",independent,""med_car_1"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Lade Fahrzeuge...""];   life_garage_sp = ""med_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Lade Fahrzeuge...""];   life_garage_sp = ""medic_spawn_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+				init="this enableSimulation false;  this allowDamage false; this addAction[""Fahrzeugladen"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_1"",""med"",""Kavala Hosptial""]];  this addAction[""Lorenzo's Luftfahrt"",life_fnc_vehicleShopMenu,[""med_air"",independent,""medic_spawn_1"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Lade Fahrzeuge...""];   life_garage_sp = ""med_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Lade Fahrzeuge...""];   life_garage_sp = ""medic_spawn_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				disableSimulation=1;
 			};
 			id=5375;
