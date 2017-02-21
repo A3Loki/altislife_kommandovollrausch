@@ -108,7 +108,7 @@ publicVariable "TON_fnc_clientGangLeader";
 */
 
 /*********** ADMIN ***********/
-KV_admin_uids = compileFinal ["76561198077148178"];
+/*KV_admin_uids = compileFinal ["76561198077148178"];
 
 KV_fnc_admin =
 compileFinal "
@@ -117,7 +117,7 @@ compileFinal "
     _admin;
 ";
 
-publicVariable "KV_fnc_admin";
+publicVariable "KV_fnc_admin";*/
 
 //To EMS
 TON_fnc_cell_emsrequest = 

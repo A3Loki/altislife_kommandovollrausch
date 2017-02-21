@@ -11,7 +11,7 @@ _uid = getPlayerUID player;
 
 if(isNull _house) exitWith {};
 if(!(_house isKindOf "House_F")) exitWith {};
-if((_house in donator_houses) && (FETCH_CONST(life_donatorLevel) == 0)) exitWith {};
+if((_house in donator_houses) && (FETCH_CONST(life_donatorLevel) == 0)) exitWith {hint "Dies sind Donatorhäuser"};
 if((_house GVAR ["house_owned",false])) exitWith {hint "Das Haus wurde bereits verkauft..."};
 if(!isNil {(_house GVAR "house_sold")}) exitWith {hint localize "STR_House_Sell_Process"};
 if(!license_civ_home) exitWith {hint localize "STR_House_License"};

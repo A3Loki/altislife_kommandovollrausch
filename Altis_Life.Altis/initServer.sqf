@@ -27,15 +27,3 @@ if(!(_this select 0)) exitWith {}; //Not server
 	[ [ 3657, 13077, 10 ], 1121119 ],
 	[ [ 3657, 13077, 10 ], 1121148 ]
 ];
-
-// Housing
-donator_houses = [];
-
-{
-    _pos = getMarkerPos _x;
-    _houses = nearestObjects [_pos, ["House_F"], 120];
-
-    {
-        donator_houses pushBack _x;
-    } forEach _houses;
-} forEach ["D_Area_1", "D_Area_2"];

@@ -80088,6 +80088,19 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item254
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={3622.8687,6.7543955,13386.383};
+						angles[]={6.2685208,0,0.029324362};
+					};
+					init="";
+					id=5204;
+					type="Logic";
+					atlOffset=-3.9100647e-005;
+				};
 				class Item255
 				{
 					dataType="Object";
@@ -82329,8 +82342,8 @@ class Mission
 			class Attributes
 			{
 				name="Eingang_AuD_3";
-				condition="(bargate animationSourcePhase ""Door_1_source"" >= 0.1) && life_donatorLevel == 0";
-				onActivation="bargate animateSource [""Door_1_source"",0,1];";
+				condition="(Eingang_AuD_3 animationSourcePhase ""Door_1_source"" >= 0.1) && !license_civ_donator";
+				onActivation="Eingang_AuD_3 animateSource [""Door_1_source"",0,1];";
 				sizeA=10;
 				sizeB=10;
 				sizeC=5;
@@ -82352,8 +82365,8 @@ class Mission
 			class Attributes
 			{
 				name="Eingang_AuD_4";
-				condition="(bargate animationSourcePhase ""Door_1_source"" >= 0.1) && life_donatorLevel == 0";
-				onActivation="bargate animateSource [""Door_1_source"",0,1];";
+				condition="(Eingang_AuD_4 animationSourcePhase ""Door_1_source"" >= 0.1) && !license_civ_donator";
+				onActivation="Eingang_AuD_4 animateSource [""Door_1_source"",0,1];";
 				sizeA=10;
 				sizeB=10;
 				sizeC=5;
@@ -82375,8 +82388,8 @@ class Mission
 			class Attributes
 			{
 				name="Eingang_AuD_5";
-				condition="(bargate animationSourcePhase ""Door_1_source"" >= 0.1) && life_copLevel == 0";
-				onActivation="bargate animateSource [""Door_1_source"",0,1];";
+				condition="";
+				onActivation="";
 				sizeA=10;
 				sizeB=5;
 				sizeC=5;

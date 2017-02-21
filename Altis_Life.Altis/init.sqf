@@ -26,3 +26,17 @@ if (isNil "Waffenschein") then {
         uiSleep 30;
     };
 };
+
+// Housing
+donator_houses = [];
+
+{
+    _pos = getMarkerPos _x;
+    _houses = nearestObjects [_pos, ["House_F"], 120];
+
+    {
+        donator_houses pushBack _x;
+    } forEach _houses;
+} forEach ["D_Area_1", "D_Area_2"];
+
+publicVariable "donator_houses";
