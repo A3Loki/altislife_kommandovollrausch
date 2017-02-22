@@ -12,6 +12,9 @@ _target = cursorTarget;
 if(isNull _target) exitWith {};
 if(!isPlayer _target) exitWith {};
 
-if("tf_fadak_2" in assignedItems cursorTarget) then {
-cursorTarget removeweapon "tf_fadak_2";
+if("ItemRadio" in assignedItems _target) then {
+    _target unassignItem "ItemRadio";
+    _target removeItems "ItemRadio";
+    player addItem "ItemRadio";
+    hint "Sie besitzten nun das Handy des Opfers";
 } else { hint "Die Person hat kein Smartphone!"};
