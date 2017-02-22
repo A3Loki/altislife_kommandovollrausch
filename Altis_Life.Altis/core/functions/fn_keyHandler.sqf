@@ -316,7 +316,7 @@ switch (_code) do {
 
         if(!isNil {vehicle player getVariable "blinkerRight"} && vehicle player != player && !_shift) then {
             if (!(vehicle player getVariable "blinkerRight")) then {
-                [[vehicle player, 1],"life_fnc_blinker",nil,true] call life_fnc_MP;
+                [player, 1] spawn life_fnc_blinker;
             } else {
                 vehicle player setVariable ["blinkerRight", false, true];
             };
@@ -328,7 +328,7 @@ switch (_code) do {
     {
         if(!isNil {vehicle player getVariable "blinkerWarn"} && vehicle player != player && !_shift) then {
             if (!(vehicle player getVariable "blinkerWarn")) then {
-                [[vehicle player, 2],"life_fnc_blinker",nil,true] call life_fnc_MP;
+                [player, 2] spawn life_fnc_blinker;
             } else {
                 vehicle player setVariable ["blinkerWarn", false, true];
             };
@@ -369,7 +369,7 @@ switch (_code) do {
 
 		if(!isNil {vehicle player getVariable "blinkerLeft"} && vehicle player != player && !_shift) then {
             if (!(vehicle player getVariable "blinkerLeft")) then {
-                [[vehicle player, 0],"life_fnc_blinker",nil,true] call life_fnc_MP;
+                [player, 0] spawn life_fnc_blinker;
             } else {
                 vehicle player setVariable ["blinkerLeft", false, true];
             };

@@ -1,48 +1,31 @@
-private["_vehicle","_blinker","_position","_blinkerType","_attachPos"];
-_vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
+private["_player","_vehicle","_blinker","_position","_blinkerType","_attachPos"];
+_player = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _blinker = [_this,1,2,[0]] call BIS_fnc_param;
 _blinkerType = "";
+_vehicle = vehicle _player;
 if(isNull _vehicle) exitWith {};
 if(!(typeOf _vehicle in ["C_SUV_01_F"])) exitWith {};
 
 switch (_blinker) do
 {
   case 0: {
-        if (!(_vehicle getVariable "blinkerLeft")) then
-        {
-            _vehicle setVariable["blinkerLeft",true,true];
-            _vehicle setVariable["blinkerWarn",false,true];
-            _vehicle setVariable["blinkerRight",false,true];
-        } else
-        {
-            _vehicle setVariable["blinkerLeft",false,true];
-        };
+        _vehicle setVariable["blinkerWarn",false,true];
+        _vehicle setVariable["blinkerRight",false,true];
+
         _blinkerType = "blinkerLeft";
         _position = [[-0.6, 2.0, -0.55],[-0.6, -2.77, -0.2]];
   };
   case 1: {
-        if (!(_vehicle getVariable "blinkerRight")) then
-        {
-            _vehicle setVariable["blinkerRight",true,true];
-            _vehicle setVariable["blinkerLeft",false,true];
-            _vehicle setVariable["blinkerWarn",false,true];
-        } else
-        {
-            _vehicle setVariable["blinkerRight",false,true];
-        };
+        _vehicle setVariable["blinkerLeft",false,true];
+        _vehicle setVariable["blinkerWarn",false,true];
+
         _blinkerType = "blinkerRight";
         _position = [[0.6, 2.0, -0.55],[0.6, -2.77, -0.2]];
   };
   case 2: {
-        if (!(_vehicle getVariable "blinkerWarn")) then
-        {
-            _vehicle setVariable["blinkerWarn",true,true];
-            _vehicle setVariable["blinkerLeft",false,true];
-            _vehicle setVariable["blinkerRight",false,true];
-        } else
-        {
-            _vehicle setVariable["blinkerWarn",false,true];
-        };
+        _vehicle setVariable["blinkerLeft",false,true];
+        _vehicle setVariable["blinkerRight",false,true];
+
         _blinkerType = "blinkerWarn";
         _position = [[-0.6, 2.0, -0.55],[-0.6, -2.77, -0.2],[0.6, 2.0, -0.55],[0.6, -2.77, -0.2]];
   };
@@ -125,6 +108,8 @@ if(_blinker == 2) then {
 
 _leftYellow = true;
 _brightnessfact = 0;
+
+if (_player == player) then { vehicle player setVariable [_blinkerType, true, true]; _players = []; { if (player != _x) then { _players pushBack _x; }; } forEach playableUnits; [vehicle player, _blinker] remoteExec ["life_fnc_blinker", _players]; };
 
 while{(alive _vehicle)} do
 {
