@@ -1,5 +1,5 @@
 author = "Tonic and Itsyuka edited by KV Team";
-onLoadName = "Kommando Vollrausch V0.672";
+onLoadName = "Kommando Vollrausch V0.865";
 onLoadMission = "Beginne ein neues Leben! Entscheide dich fuer einen Beruf und baue dir eine Monopolstellung auf, schliesse dich den Gesetzeshuetern an oder zahle es der Obrigkeit heim.";
 joinUnassigned = 1;
 respawn = BASE;
@@ -251,6 +251,16 @@ class CfgDebriefing
 		title = "Zutritt verweigert!";
 		subtitle = "Du wurdest suspendiert!";
 		description = "Scheinbar hast du dich daneben benommen und wurdest daher vom Dienst suspendiert.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+
+    class Kicked
+	{
+		title = "Kicked";
+		subtitle = "Du wurdest gekickt!";
+		description = "Falls dies ein Irrtum sein sollte, melde dich bitte im Teamspeak: freibier.sytes.net";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};

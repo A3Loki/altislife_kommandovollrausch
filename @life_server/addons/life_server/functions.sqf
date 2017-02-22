@@ -228,7 +228,7 @@ compileFinal "
     _unit   = player;
 
     if(_unit call KV_fnc_admin) then {
-        {endMission "FAIL";} remoteExec ["BIS_fnc_call", _target];
+        {["Kicked",FALSE,TRUE] call BIS_fnc_endMission;} remoteExec ["BIS_fnc_call", _target];
     };
 ";
 
