@@ -15,7 +15,7 @@ waitUntil {scriptDone _handle};
 
 //Load player with default cop gear.
 
- if((FETCH_CONST(life_coplevel)) == 1) then
+ if((FETCH_CONST(life_coplevel)) > -1) then
 {
 player addUniform "U_Rangemaster";
 player addVest "V_Rangemaster_belt";

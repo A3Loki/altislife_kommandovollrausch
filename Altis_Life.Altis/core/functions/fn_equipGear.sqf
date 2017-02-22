@@ -42,10 +42,12 @@ if(playerSide == independent) then {
 			_unit setObjectTextureGlobal [0,_path];
 		};
 	};
-	if((backpack player) == "B_Bergen_mcamo") then {
+	/*if((backpack player) == "B_Bergen_mcamo") then {
 		(unitBackpack _unit) setObjectTextureGlobal [0, "textures\med\medic_backpack.paa"];
-	};	if((backpack player) == "B_Bergen_rgr") then {
-		(unitBackpack _unit) setObjectTextureGlobal [0, "textures\med\art_backpack.jpg"];
+	};	*/
+
+	if((backpack player) == "B_Bergen_rgr") then {
+		(unitBackpack _unit) setObjectTextureGlobal [0, ""];
 	};
 };
 /*
