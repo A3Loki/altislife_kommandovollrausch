@@ -113,9 +113,10 @@ KV_temp_banned_players = [];
 
 KV_fnc_admin =
 compileFinal "
-    private[""_player"",""_admin""];
+    private[""_player"",""_admin"",""_admins""];
     _player = _this;
-    _admin = if(getPlayerUID _player in KV_admin_uids) then {true} else {false};
+    _admins = call KV_admin_uids;
+    _admin = if((getPlayerUID _player) in _admins) then {true} else {false};
     _admin;
 ";
 
@@ -132,36 +133,37 @@ compileFinal "
     if(_unit call KV_fnc_admin) then {
         _create = createVehicle [_object, _pos, [], _radius, _special];
         _create setDir _dir;
-        ["Object wurde erstellt."] remoteExec ["KV_fnc_throwMsg", _unit];
+        [""Object wurde erstellt.""] remoteExec [""KV_fnc_throwMsg"", _unit];
     };
 ";
 
 KV_fnc_changePos =
 compileFinal "
-    private[""_unit"", ""_pos_target"", ""_type"", ""_dir""];
+    private[""_unit"", ""_pos_target"", ""_type"", ""_dir"", ""_vehicle""];
     _pos_target = _this select 0;
     _type       = _this select 1;
-    _unit       = player;
+    _vehicle    = _this select 2;
+    _unit       = [player, vehicle player] select _vehicle;
 
     _dir        = getDir _unit;
 
     if(_unit call KV_fnc_admin) then {
         switch(_type) do {
-            case "tpto": {
+            case ""tpto"": {
                 _unit setPos _pos_target;
                 _unit setDir _dir;
             };
-            case "tphere": {
+            case ""tphere"": {
                 _pos_target setPos (getPos _unit);
                 _pos_target setDir _dir;
-                ["Du wurdest zu einem Admin teleportiert."] remoteExec ["KV_fnc_throwMsg", _pos_target];
+                [""Du wurdest zu einem Admin teleportiert.""] remoteExec [""KV_fnc_throwMsg"", _pos_target];
             };
-            case "tpall": {
+            case ""tpall"": {
                 _unit = getPosATL _unit;
                 {
                     _x setPosATL _unit;
                     _x setDir _dir;
-                    ["Du wurdest zu einem Admin teleportiert."] remoteExec ["KV_fnc_throwMsg", _x];
+                    [""Du wurdest zu einem Admin teleportiert.""] remoteExec [""KV_fnc_throwMsg"", _x];
                 } forEach _pos_target;
             };
         };
@@ -171,30 +173,30 @@ compileFinal "
 KV_fnc_cleanVehicles =
 compileFinal "
     private[""_unit""];
-    _unit = player
+    _unit = player;
 
     if(_unit call KV_fnc_admin) then {
         {
             deleteVehicle _x;
         } forEach allDead;
-        ["Alle zerstoerten Fahrzeuge wurden entfernt"] remoteExec ["KV_fnc_throwMsg", _unit];
+        [""Alle zerstoerten Fahrzeuge wurden entfernt""] remoteExec [""KV_fnc_throwMsg"", _unit];
     };
 ";
 
 KV_fnc_freezePlayer =
 compileFinal "
-    private[""_unit"", ""_target"", ""active""];
+    private[""_unit"", ""_target"", ""_active""];
     _target = _this select 0;
     _active = _this select 1;
     _unit   = player;
 
     if(_unit call KV_fnc_admin) then {
         if(_active) then {
-            {disableUserInput true;} remoteExec ["BIS_fnc_call", _target];
-            ["Du wurdest eingefroren."] remoteExec ["KV_fnc_throwMsg", _target];
+            {disableUserInput true;} remoteExec [""BIS_fnc_call"", _target];
+            [""Du wurdest eingefroren.""] remoteExec [""KV_fnc_throwMsg"", _target];
         } else {
-            {disableUserInput false;} remoteExec ["BIS_fnc_call", _target];
-            ["Du bist nun nicht mehr eingefroren."] remoteExec ["KV_fnc_throwMsg", _target];
+            {disableUserInput false;} remoteExec [""BIS_fnc_call"", _target];
+            [""Du bist nun nicht mehr eingefroren.""] remoteExec [""KV_fnc_throwMsg"", _target];
         };
     };
 ";
@@ -204,18 +206,19 @@ compileFinal "
     private[""_unit"", ""_target"", ""_cash"", ""_type""];
     _target = _this select 0;
     _cash   = _this select 1;
+    _type   = _this select 2;
     _unit   = player;
 
     if(_unit call KV_fnc_admin) then {
         switch(_type) do {
-            case "add": {
-                {life_cash =+ _cash} remoteExec ["BIS_fnc_call", _target];
+            case ""add"": {
+                {life_cash =+ _cash} remoteExec [""BIS_fnc_call"", _target];
             };
-            case "sub": {
-                {life_cash =- _cash} remoteExec ["BIS_fnc_call", _target];
+            case ""sub"": {
+                {life_cash =- _cash} remoteExec [""BIS_fnc_call"", _target];
             };
-            case "set": {
-                {life_cash = _cash} remoteExec ["BIS_fnc_call", _target];
+            case ""set"": {
+                {life_cash = _cash} remoteExec [""BIS_fnc_call"", _target];
             };
         };
     };
@@ -228,7 +231,7 @@ compileFinal "
     _unit   = player;
 
     if(_unit call KV_fnc_admin) then {
-        {["Kicked",FALSE,TRUE] call BIS_fnc_endMission;} remoteExec ["BIS_fnc_call", _target];
+        {[""Kicked"",FALSE,TRUE] call BIS_fnc_endMission;} remoteExec [""BIS_fnc_call"", _target];
     };
 ";
 
@@ -240,7 +243,7 @@ compileFinal "
 
     if(_unit call KV_fnc_admin) then {
         KV_temp_banned_players pushBack (getPlayerUID _target);
-        {["Banned",FALSE,TRUE] call BIS_fnc_endMission;} remoteExec ["BIS_fnc_call", _target];
+        {[""Banned"",FALSE,TRUE] call BIS_fnc_endMission;} remoteExec [""BIS_fnc_call"", _target];
     };
 ";
 
@@ -251,6 +254,7 @@ compileFinal "
     hint _message;
 ";
 
+publicVariable "KV_admin_uids";
 publicVariable "KV_temp_banned_players";
 publicVariable "KV_fnc_admin";
 publicVariable "KV_fnc_spawnObject";
@@ -258,6 +262,8 @@ publicVariable "KV_fnc_changePos";
 publicVariable "KV_fnc_cleanVehicles";
 publicVariable "KV_fnc_freezePlayer";
 publicVariable "KV_fnc_changeCash";
+publicVariable "KV_fnc_kickPlayer";
+publicVariable "KV_fnc_banPLayer";
 publicVariable "KV_fnc_throwMsg";
 /*********** ADMIN ***********/
 

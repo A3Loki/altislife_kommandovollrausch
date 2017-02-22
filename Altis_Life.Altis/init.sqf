@@ -24,7 +24,7 @@ if (isNil "Waffenschein") then {
 {
     while {true} do
     {
-        if (daytime >= 19 || daytime < 5) then
+        if (daytime >= 17 || daytime < 9) then
         {time_status_day = false;}      // NIGHT}
         else
         {time_status_day = true;};      // DAY};
