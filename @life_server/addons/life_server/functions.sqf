@@ -108,7 +108,7 @@ publicVariable "TON_fnc_clientGangLeader";
 */
 
 /*********** ADMIN ***********/
-/*KV_admin_uids = compileFinal "[""76561198077148178""]";
+KV_admin_uids = compileFinal "[""76561198077148178""]";
 
 KV_fnc_admin =
 compileFinal "
@@ -118,7 +118,109 @@ compileFinal "
     _admin;
 ";
 
-publicVariable "KV_fnc_admin";*/
+KV_fnc_spawnObject =
+compileFinal "
+    private[""_unit"", ""_object"", ""_pos"", ""_dir"", ""_radius"", ""_special""];
+    _unit       = _this select 0;
+    _object     = _this select 1;
+    _pos        = _this select 2;
+    _dir        = _this select 3;
+    _radius     = _this select 4;
+    _special    = _this select 5;
+
+    if(_unit call KV_fnc_admin) then {
+        _create = createVehicle [_object, _pos, [], _radius, _special];
+        _create setDir _dir;
+        hint "Object wurde erstellt.";
+        [["Object wurde erstellt."],""KV_fnc_throwMsg"",_unit,false] call life_fnc_MP;
+    };
+";
+
+KV_fnc_changePos =
+compileFinal "
+    private[""_unit"", ""_pos_target"", ""_type"", ""_dir"", ""_tpto"", ""_tphere"", ""_tpall""];
+    _unit       = _this select 0;
+    _pos_target = _this select 1;
+    _type       = _this select 2;
+
+    _dir        = getDir _unit;
+
+    _tpto       = 0;
+    _tphere     = 1;
+    _tpall      = 2;
+
+    if(_unit call KV_fnc_admin) then {
+        switch(_type) do {
+            case _tpto: {
+                _unit setPos _pos_target;
+                _unit setDir _dir;
+            };
+            case _tphere: {
+                _pos_target setPos (getPos _unit);
+                _pos_target setDir _dir;
+                [["Du wurdest zu einem Admin teleportiert."],""KV_fnc_throwMsg"",_pos_target,false] call life_fnc_MP;
+            };
+            case _tpall: {
+                _unit = getPosATL _unit;
+                {
+                    _x setPosATL _unit;
+                    _x setDir _dir;
+                    [["Du wurdest zu einem Admin teleportiert."],""KV_fnc_throwMsg"",_x,false] call life_fnc_MP;
+                } forEach _pos_target;
+            };
+        };
+    };
+";
+
+KV_fnc_cleanVehicles =
+compileFinal "
+    private[""_unit""];
+    _unit = _this select 0;
+
+    if(_unit call KV_fnc_admin) then {
+        {
+            deleteVehicle _x;
+        } forEach allDead;
+        [["Alle zerstoerten Fahrzeuge wurden entfernt"],""KV_fnc_throwMsg"",_unit,false] call life_fnc_MP;
+    };
+";
+
+KV_fnc_freezePlayer =
+compileFinal "
+    private[""_unit"", ""_target"", ""active""];
+    _unit   = _this select 0;
+    _target = _this select 1;
+    _active = _this select 2;
+
+    if(_unit call KV_fnc_admin) then {
+        if(_active) then {
+            [{disableUserInput true;},""KV_fnc_throwCmd"", _target, false] call life_fnc_MP;
+            [["Du wurdest eingefroren."],""KV_fnc_throwMsg"",_target,false] call life_fnc_MP;
+        } else {
+            [{disableUserInput false;},""KV_fnc_throwCmd"", _target, false] call life_fnc_MP;
+            [["Du bist nun nicht mehr eingefroren."],""KV_fnc_throwMsg"",_target,false] call life_fnc_MP;
+        };
+    };
+";
+
+KV_fnc_throwMsg =
+compileFinal "
+    private[""_message""];
+    _message = _this select 0;
+    hint _message;
+";
+
+KV_fnc_throwCmd =
+compileFinal _this;
+
+publicVariable "KV_fnc_admin";
+publicVariable "KV_fnc_spawnObject";
+publicVariable "KV_fnc_changePos";
+publicVariable "KV_fnc_cleanVehicles";
+publicVariable "KV_fnc_freezePlayer";
+publicVariable "KV_fnc_throwMsg";
+publicVariable "KV_fnc_throwCmd";
+/*********** ADMIN ***********/
 
 //To EMS
 TON_fnc_cell_emsrequest = 
