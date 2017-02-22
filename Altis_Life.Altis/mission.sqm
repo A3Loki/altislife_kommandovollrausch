@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1673;
+	toggles=1545;
 	class ItemIDProvider
 	{
 		nextID=5418;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=34;
+		nextID=36;
 	};
 	class Camera
 	{
-		pos[]={4044.3503,355.64828,12805.979};
-		dir[]={0.64013439,-0.46386367,0.61242121};
-		up[]={0.33519253,0.88589478,0.32068068};
-		aside[]={0.69129324,-1.9841536e-007,-0.72257608};
+		pos[]={3831.8813,584.0058,12000.768};
+		dir[]={0.75913197,-0.48498961,0.4341813};
+		up[]={0.42101911,0.87450492,0.24080002};
+		aside[]={0.49647993,1.7695129e-008,-0.86805534};
 	};
 };
 binarizationWanted=0;
@@ -2702,7 +2702,7 @@ class Mission
 			text="Hier ensteht ein neues Krankenhaus!";
 			type="loc_Hospital";
 			colorName="ColorRed";
-			angle=314.08292;
+			angle=314.08289;
 			id=208;
 			atlOffset=2.640958e+020;
 		};
@@ -28302,7 +28302,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Rebellenfahrzeuge"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""rebcar_sela1"",""rebcar_sela2""],""civ"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Rebellenfahrzeuge"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""rebcar_sela1"",""rebcar_sela2""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
 						name="reb_1_3_1";
 					};
 					id=1881;
@@ -29499,7 +29499,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeugladen"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""civ"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeugladen"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
 						name="reb_1_3_2";
 					};
 					id=2001;

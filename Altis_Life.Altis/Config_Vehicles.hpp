@@ -81,7 +81,6 @@ class CarShops {
 			{ "B_G_Offroad_01_F", 55000, "rebel" },
 			{ "B_MRAP_01_F", 950000, "rebel" },
 			{ "O_MRAP_02_F", 1150000, "rebel" },
-			{ "I_MRAP_03_F", 4200000, "rebel" },
 			{ "B_Heli_Light_01_F", 325000, "rebel" },
 			{ "O_Heli_Light_02_unarmed_F", 1550000, "rebel" },
 			{ "I_Heli_light_03_unarmed_F", 1800000, "rebel" },
@@ -782,7 +781,7 @@ class CfgVehicles {
             { "GNRA", "cop", {
                 "textures\cop\Hellcat_Gendarm.jpg"
             } },
-            { "FUCK THE POLICE", "rebel", {
+            { "SeeleDerRebellen", "reb", {
                 "textures\civ\Hellcat_rebell.jpg"
             } }
         };
