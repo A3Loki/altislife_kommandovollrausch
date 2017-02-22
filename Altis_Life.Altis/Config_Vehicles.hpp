@@ -763,7 +763,9 @@ class CfgVehicles {
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_dahoman_co.paa"
             } },
             { "Medic", "med", {
-                "textures\med\medic_mowhawk.jpg"
+                "textures\med\art_mowhawk.jpg",
+				"textures\med\art_mowhawk2.jpg",
+				"textures\med\art_mowhawk3.jpg"
             } }
 
         };
