@@ -4172,7 +4172,7 @@
 		</Key>
 		<Key ID="STR_pInAct_SearchPlayer">
 			<Original>Search Player</Original>
-			<German>Spieler durchsuchen</German>
+			<German>Durchsuchen</German>
 			<French>Fouiller Joueur</French>
 			<Italian>Ricerca Giocatore</Italian>
 			<Portuguese>Buscar por Jogador</Portuguese>
@@ -4194,21 +4194,21 @@
 		</Key>
 		<Key ID="STR_pInAct_Escort">
 			<Original>Escort Player</Original>
-			<German>Spieler eskortieren</German>
+			<German>Eskortieren</German>
 			<French>Escorter Joueur</French>
 			<Italian>Scorta Giocatore</Italian>
 			<Portuguese>Escoltar Jogador</Portuguese>
 		</Key>
 		<Key ID="STR_pInAct_TicketBtn">
 			<Original>Ticket Player</Original>
-			<German>Strafzettel ausstellen</German>
+			<German>Strafzettel</German>
 			<French>Amende Joueur</French>
 			<Italian>Multa Giocatore</Italian>
 			<Portuguese>Multar Jogador</Portuguese>
 		</Key>
 		<Key ID="STR_pInAct_Arrest">
 			<Original>Send to jail</Original>
-			<German>Ins Gefängnis stecken</German>
+			<German>Gefängnis</German>
 			<French>Envoyer en prison</French>
 			<Italian>Arresta</Italian>
 			<Portuguese>Enviar p/ Prisão</Portuguese>

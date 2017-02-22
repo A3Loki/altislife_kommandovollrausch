@@ -8,6 +8,7 @@
 private["_path","_unit","_type"];
 _unit = [_this,0] call BIS_fnc_param;
 _type = [_this,1,"",[""]] call BIS_fnc_param;
+
 /*
 if(playerSide == west) then {
 	switch(_type) do {
@@ -28,11 +29,12 @@ if(playerSide == west) then {
 			//_unit setObjectTextureGlobal [0,_path];
 		};
 	};
-	*/
-	if((backpack player) == "B_Bergen_mcamo")  then {
-		//(unitBackpack _unit) setObjectTextureGlobal [0, "textures\cop\cop_backpack.paa"];
-		(unitBackpack player) setObjectTextureGlobal [0, ""];
-	};
+*/
+
+if((backpack player) == "B_Bergen_mcamo")  then {
+    //(unitBackpack _unit) setObjectTextureGlobal [0, "textures\cop\cop_backpack.paa"];
+    (unitBackpack player) setObjectTextureGlobal [0, ""];
+};
 
 
 if(playerSide == independent) then {
@@ -41,15 +43,17 @@ if(playerSide == independent) then {
 			_path = "textures\med\art_uniform.jpg";
 			_unit setObjectTextureGlobal [0,_path];
 		};
+		case "U_C_WorkerCoveralls" : {
+		    _path = "textures\med\art_uniform.jpg";
+		    _unit setObjectTextureGlobal [0,_path];
+		};
 	};
-	/*if((backpack player) == "B_Bergen_mcamo") then {
-		(unitBackpack _unit) setObjectTextureGlobal [0, "textures\med\medic_backpack.paa"];
-	};	*/
 
 	if((backpack player) == "B_Bergen_rgr") then {
 		(unitBackpack _unit) setObjectTextureGlobal [0, ""];
 	};
 };
+
 /*
 if(playerSide == civilian) then {
 	switch(_type) do {

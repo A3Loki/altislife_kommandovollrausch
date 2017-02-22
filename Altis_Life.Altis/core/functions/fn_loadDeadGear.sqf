@@ -48,9 +48,9 @@ if(!(EQUAL(_backpack,""))) then {_handle = [_backpack,true,false,false,false] sp
 	waitUntil {scriptDone _handle};
 } foreach _magazines;
 
-if(!(EQUAL(_primary,""))) then {[_primary,true,false,false,false] spawn life_fnc_handleItem;};
-if(!(EQUAL(_launcher,""))) then {[_launcher,true,false,false,false] spawn life_fnc_handleItem;};
-if(!(EQUAL(_handgun,""))) then {[_handgun,true,false,false,false] spawn life_fnc_handleItem;};
+if(!(EQUAL(_primary,""))) then {_handle = [_primary,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(!(EQUAL(_launcher,""))) then {_handle = [_launcher,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(!(EQUAL(_handgun,""))) then {_handle = [_handgun,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 
 {_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} foreach _items;
 {[_x,true,false,false,true] call life_fnc_handleItem;} foreach (_uitems);

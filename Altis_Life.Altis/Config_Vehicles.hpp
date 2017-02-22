@@ -6,7 +6,7 @@ class CarShops {
 		{ varname, >= value} this is a "level" requirement mainly used by cops and rebels, do not fill this in if you are not utilizing it.
 	*/
 
-		class civ_car {
+    class civ_car {
 		side = "civ";
 		vehicles[] = {
 			{ "C_Hatchback_01_F", 9500, "ausweis" },
@@ -121,7 +121,7 @@ class CarShops {
 		side = "cop";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 200000, "cAir", { "life_coplevel", 3 } },
-			{ "O_Heli_Light_02_unarmed_F", 200000, "cAir", { "life_coplevel", 6 } },
+			{ "C_Heli_Light_01_civil_F", 200000, "cAir", { "life_coplevel", 3 } },
 			{ "I_Heli_light_03_unarmed_F", 200000, "cAir", { "life_coplevel", 7 } },
 			{ "B_Heli_Transport_01_F", 200000, "cAir", { "life_coplevel", 9 } }
 		};
@@ -131,7 +131,7 @@ class CarShops {
 		side = "cop";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 200000, "cAir", { "life_coplevel", 3 } },
-			{ "O_Heli_Light_02_unarmed_F", 200000, "cAir", { "life_coplevel", 6 } },
+			{ "C_Heli_Light_01_civil_F", 200000, "cAir", { "life_coplevel", 3 } },
 			{ "I_Heli_light_03_unarmed_F", 200000, "cAir", { "life_coplevel", 7 } },
 			{ "B_Heli_Transport_01_F", 200000, "cAir", { "life_coplevel", 9 } }
 		};
@@ -672,9 +672,6 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
-        	{ "Sheriff", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
-            } },
 			{ "Black", "med", {
 	                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
             } },
@@ -904,7 +901,11 @@ class CfgVehicles {
 		 storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {};
+        textures[] = {
+            { "GNRA", "cop", {
+                "textures\cop\humming_gendarm.jpg"
+            } }
+        };
 	};
 
 	class B_SDV_01_F {
