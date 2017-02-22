@@ -85,7 +85,7 @@ if(_bool) then {
 				if(EQUAL(_item,"MineDetector")) then {
 					player addItem _item;
 				} else {
-					player addWeapon _item;
+					player addWeaponGlobal _item;
 				};
 			} else {
 				switch(SEL(_details,5)) do {
