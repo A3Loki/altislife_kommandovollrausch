@@ -36,7 +36,7 @@ if(Theoriepunkte >= 8) then {
         _Frage ctrlSetStructuredText parseText format ["<t color='#FF0000'><t size='2'><t align='center'>Herzlichen Glueckwunsch<br/><br/><t color='#ffffff'><t align='left'><t size='1'> Du hast die Fahrpruefung erfolgreich berstanden! "];
         _Abbruch ctrlShow true;
         _Abbruch ctrlSettext "Abbrechen";
-        _Abbruch buttonSetAction "closeDialog 0;0 cutText["""",""BLACK IN""];player setPos getMarkerPos ""LastPos"";player allowDamage true; deleteMarker ""LastPos"";";
+        _Abbruch buttonSetAction "closeDialog 0;0 cutText["""",""BLACK IN""];";
         license_civ_driver = true;
 } else {
         _Frage ctrlSetStructuredText parseText format ["<t color='#FF0000'><t size='2'><t align='center'>Durchgefallen!<br/><br/><t color='#ffffff'><t align='left'><t size='1'>Du hast leider nicht bestanden. Du hast nun eine Cool-Down Strafe von 10 Minuten. Der Dialog schliesst sich gleich automatisch und bringt dich zurueck wo du her kamst. Nutz die 10 Minuten sinnvoll und lerne! Viel Erfolg beim naechsten Versuch"];
@@ -44,9 +44,6 @@ if(Theoriepunkte >= 8) then {
         closeDialog 0;
         Theoriestrafe = true;
         0 cutText["","BLACK IN"];
-        player setPos getMarkerPos "LastPos";
-        player allowDamage true;
-        deleteMarker "LastPos";
         sleep 600;
         Theoriestrafe = false;
         };

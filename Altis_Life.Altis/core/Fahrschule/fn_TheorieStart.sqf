@@ -23,7 +23,7 @@ _Start = _display displayCtrl 2403;
 _Abbruch = _display displayCtrl 2404;
 _Counter = _display displayCtrl 1105;
 
-_Abbruch buttonSetAction "closeDialog 0; 0 cutText["""",""BLACK IN""]; player setPos getMarkerPos ""LastPos""; player allowDamage true; deleteMarker ""LastPos"";";
+_Abbruch buttonSetAction "closeDialog 0; 0 cutText["""",""BLACK IN""];";
 
 
 switch (_random) do {
