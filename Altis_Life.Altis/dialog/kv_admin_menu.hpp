@@ -6,7 +6,7 @@ class life_kv_admin_menu {
 	onLoad = "[] spawn life_fnc_kv_adminMenu;";
 	
 	class controlsBackground {
-		class kv_menuBackground: RscText
+		class kv_menuBackground: Life_RscText
 		{
 			idc = 75281;
 			x = 0.2525 * safezoneW + safezoneX;
@@ -15,7 +15,7 @@ class life_kv_admin_menu {
 			h = 0.66 * safezoneH;
 			colorBackground[] = {0,0,0,0.4};
 		};
-		class kv_menuTitle: RscText
+		class kv_menuTitle: Life_RscText
 		{
 			idc = 75282;
 			text = "Admin Menu"; //--- ToDo: Localize;
@@ -25,7 +25,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			colorBackground[] = {1,0,0,1};
 		};
-		class RscText_75283: RscText
+		class RscText_75283: Life_RscText
 		{
 			idc = 75283;
 			x = 0.267969 * safezoneW + safezoneX;
@@ -34,7 +34,7 @@ class life_kv_admin_menu {
 			h = 0.561 * safezoneH;
 			colorBackground[] = {0,0,0,0.6};
 		};
-		class kv_playerTitle: RscText
+		class kv_playerTitle: Life_RscText
 		{
 			idc = 75284;
 			text = "Spieler"; //--- ToDo: Localize;
@@ -44,7 +44,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			colorBackground[] = {1,0,0,1};
 		};
-		class RscText_75285: RscText
+		class RscText_75285: Life_RscText
 		{
 			idc = 75285;
 			x = 0.448438 * safezoneW + safezoneX;
@@ -53,7 +53,7 @@ class life_kv_admin_menu {
 			h = 0.451 * safezoneH;
 			colorBackground[] = {0,0,0,0.6};
 		};
-		class kv_vehiclesTitle: RscText
+		class kv_vehiclesTitle: Life_RscText
 		{
 			idc = 75286;
 			text = "Fahrzeuge"; //--- ToDo: Localize;
@@ -63,7 +63,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			colorBackground[] = {1,0,0,1};
 		};
-		class RscText_75287: RscText
+		class RscText_75287: Life_RscText
 		{
 			idc = 75287;
 			x = 0.608281 * safezoneW + safezoneX;
@@ -72,7 +72,7 @@ class life_kv_admin_menu {
 			h = 0.066 * safezoneH;
 			colorBackground[] = {0,0,0,0.6};
 		};
-		class kv_moneyTitle: RscText
+		class kv_moneyTitle: Life_RscText
 		{
 			idc = 75288;
 			text = "Geld"; //--- ToDo: Localize;
@@ -82,7 +82,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			colorBackground[] = {1,0,0,1};
 		};
-		class RscText_75289: RscText
+		class RscText_75289: Life_RscText
 		{
 			idc = 75289;
 			x = 0.608281 * safezoneW + safezoneX;
@@ -91,7 +91,7 @@ class life_kv_admin_menu {
 			h = 0.484 * safezoneH;
 			colorBackground[] = {0,0,0,0.6};
 		};
-		class kv_functionsTitle: RscText
+		class kv_functionsTitle: Life_RscText
 		{
 			idc = 75290;
 			text = "Admin Funktionen"; //--- ToDo: Localize;
@@ -101,7 +101,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			colorBackground[] = {1,0,0,1};
 		};
-		class RscText_75291: RscText
+		class RscText_75291: Life_RscText
 		{
 			idc = 75291;
 			x = 0.448438 * safezoneW + safezoneX;
@@ -110,7 +110,7 @@ class life_kv_admin_menu {
 			h = 0.099 * safezoneH;
 			colorBackground[] = {0,0,0,0.6};
 		};
-		class kv_typeTitle: RscText
+		class kv_typeTitle: Life_RscText
 		{
 			idc = 75292;
 			text = "Fahrzeug Art"; //--- ToDo: Localize;
@@ -123,7 +123,7 @@ class life_kv_admin_menu {
 	};
 	
 	class controls {
-		class kv_closeMenu: RscButtonMenu
+		class kv_closeMenu: Life_RscButtonMenu
 		{
 			idc = 75293;
 			text = "Close"; //--- ToDo: Localize;
@@ -133,7 +133,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action = "closeDialog 0;";
 		};
-		class kv_kickPlayer: RscButtonMenu
+		class kv_kickPlayer: Life_RscButtonMenu
 		{
 			idc = 75294;
 			text = "Kick"; //--- ToDo: Localize;
@@ -143,7 +143,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[] spawn life_fnc_kv_adminKick;";
 		};
-		class kv_banPlayer: RscButtonMenu
+		class kv_banPlayer: Life_RscButtonMenu
 		{
 			idc = 75295;
 			text = "Ban"; //--- ToDo: Localize;
@@ -153,7 +153,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[] spawn life_fnc_kv_adminBan;";
 		};
-		class kv_spectatePlayer: RscButtonMenu
+		class kv_spectatePlayer: Life_RscButtonMenu
 		{
 			idc = 75296;
 			text = "Spectate"; //--- ToDo: Localize;
@@ -163,7 +163,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "closeDialog 0; [] spawn life_fnc_kv_adminSpectate;";
 		};
-		class kv_spawnObject: RscButtonMenu
+		class kv_spawnObject: Life_RscButtonMenu
 		{
 			idc = 75297;
 			text = "Spawn Vehicle / Object"; //--- ToDo: Localize;
@@ -173,7 +173,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[] spawn life_fnc_kv_adminSpawnObject;";
 		};
-		class kv_addMoney: RscButtonMenu
+		class kv_addMoney: Life_RscButtonMenu
 		{
 			idc = 75298;
 			text = "Add"; //--- ToDo: Localize;
@@ -183,7 +183,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[""add""] spawn life_fnc_kv_adminCash;";
 		};
-		class kv_subMoney: RscButtonMenu
+		class kv_subMoney: Life_RscButtonMenu
 		{
 			idc = 75299;
 			text = "Sub"; //--- ToDo: Localize;
@@ -193,7 +193,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[""sub""] spawn life_fnc_kv_adminCash;";
 		};
-		class kv_setMoney: RscButtonMenu
+		class kv_setMoney: Life_RscButtonMenu
 		{
 			idc = 75300;
 			text = "Set"; //--- ToDo: Localize;
@@ -203,7 +203,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[""set""] spawn life_fnc_kv_adminCash;";
 		};
-		class kv_freezePlayer: RscButtonMenu
+		class kv_freezePlayer: Life_RscButtonMenu
 		{
 			idc = 75301;
 			text = "Freeze Player"; //--- ToDo: Localize;
@@ -213,7 +213,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[] spawn life_fnc_kv_adminFreeze;";
 		};
-		class kv_typeLand: RscButtonMenu
+		class kv_typeLand: Life_RscButtonMenu
 		{
 			idc = 75302;
 			text = "Land"; //--- ToDo: Localize;
@@ -223,7 +223,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[""Land""] spawn life_fnc_kv_adminChangeVehType;";
 		};
-		class kv_typeAir: RscButtonMenu
+		class kv_typeAir: Life_RscButtonMenu
 		{
 			idc = 75303;
 			text = "Luft"; //--- ToDo: Localize;
@@ -233,7 +233,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[""Air""] spawn life_fnc_kv_adminChangeVehType;";
 		};
-		class kv_typeSea: RscButtonMenu
+		class kv_typeSea: Life_RscButtonMenu
 		{
 			idc = 75304;
 			text = "Sea"; //--- ToDo: Localize;
@@ -243,7 +243,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[""Sea""] spawn life_fnc_kv_adminChangeVehType;";
 		};
-		class kv_typeObject: RscButtonMenu
+		class kv_typeObject: Life_RscButtonMenu
 		{
 			idc = 75305;
 			text = "Object"; //--- ToDo: Localize;
@@ -253,7 +253,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[""Object""] spawn life_fnc_kv_adminChangeVehType;";
 		};
-		class kv_deleteDead: RscButtonMenu
+		class kv_deleteDead: Life_RscButtonMenu
 		{
 			idc = 75306;
 			text = "Zerstoerte Objekte"; //--- ToDo: Localize;
@@ -263,7 +263,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[] spawn life_fnc_kv_adminDeadVeh;";
 		};
-		class kv_playerList: RscListbox
+		class kv_playerList: Life_RscListbox
 		{
 			idc = 75307;
 			x = 0.273125 * safezoneW + safezoneX;
@@ -271,7 +271,7 @@ class life_kv_admin_menu {
 			w = 0.149531 * safezoneW;
 			h = 0.517 * safezoneH;
 		};
-		class kv_vehicleList: RscListbox
+		class kv_vehicleList: Life_RscListbox
 		{
 			idc = 75308;
 			x = 0.453594 * safezoneW + safezoneX;
@@ -279,7 +279,7 @@ class life_kv_admin_menu {
 			w = 0.128906 * safezoneW;
 			h = 0.407 * safezoneH;
 		};
-		class kv_moneyInput: RscEdit
+		class kv_moneyInput: Life_RscEdit
 		{
 			idc = 75309;
 			x = 0.613438 * safezoneW + safezoneX;
@@ -287,7 +287,7 @@ class life_kv_admin_menu {
 			w = 0.113437 * safezoneW;
 			h = 0.022 * safezoneH;
 		};
-		class kv_tpTo: RscButtonMenu
+		class kv_tpTo: Life_RscButtonMenu
 		{
 			idc = 75310;
 			text = "Zu Spieler porten"; //--- ToDo: Localize;
@@ -297,7 +297,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[""tpto""] spawn life_fnc_kv_adminTeleport;";
 		};
-		class kv_tpHere: RscButtonMenu
+		class kv_tpHere: Life_RscButtonMenu
 		{
 			idc = 75311;
 			text = "Spieler herporten"; //--- ToDo: Localize;
@@ -307,7 +307,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[""tphere""] spawn life_fnc_kv_adminTeleport;";
 		};
-		class kv_tpAll: RscButtonMenu
+		class kv_tpAll: Life_RscButtonMenu
 		{
 			idc = 75312;
 			text = "Alle herporten"; //--- ToDo: Localize;
