@@ -32,5 +32,3 @@ switch(_type) do {
    _vehList lbAdd getText (configFile >> "CfgVehicles" >> _x >> "displayName");
    _vehList lbSetData [(lbSize _vehList) - 1, _x];
 } forEach _selectedVehicles;
-
-hint format["%1 wurde gefreezed/entfreezed.", _name];

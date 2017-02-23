@@ -7,7 +7,7 @@
 	Menu Handler
 */
 if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
-private["_display","_list","_side"];
+private["_display","_list","_side","_vehList","_landVeh","_airVeh","_seaVeh","objVeh"];
 disableSerialization;
 waitUntil {!isNull (findDisplay 75280)};
 _list = CONTROL(75280,75307);

@@ -6,7 +6,7 @@
 	Description:
 	Kick Handler
 */
-private["_uid", "_name"];
+private["_uid", "_name", "_unit"];
 if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
 
 if((lbCurSel 75307) == -1) exitWith {"Es wurde kein Spieler ausgewaehlt."};
