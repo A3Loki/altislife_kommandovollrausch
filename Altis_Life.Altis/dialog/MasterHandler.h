@@ -31,3 +31,4 @@
 #include "revoke_license.h"
 #include "wantedadd2.hpp"
 #include "emergencyLightsConfig.hpp"
+#include "kv_admin_menu.hpp"

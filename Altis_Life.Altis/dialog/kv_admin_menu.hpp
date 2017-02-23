@@ -3,7 +3,7 @@ class life_kv_admin_menu {
 	name= "life_kv_admin_menu";
 	movingEnable = false;
 	enableSimulation = true;
-	onLoad = "[] spawn life_fnc_kvAdminMenu;";
+	onLoad = "[] spawn life_fnc_kv_adminMenu;";
 	
 	class controlsBackground {
 		class kv_menuBackground: RscText
