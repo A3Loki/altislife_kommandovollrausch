@@ -108,7 +108,7 @@ publicVariable "TON_fnc_clientGangLeader";
 */
 
 /*********** ADMIN ***********/
-KV_admin_uids = compileFinal "[""76561198077148178""]";
+KV_admin_uids = compileFinal "[""76561198077148178"",""76561197972350240""]";
 KV_temp_banned_players = [];
 
 KV_fnc_admin =
@@ -198,7 +198,7 @@ compileFinal "
     _unit   = player;
 
     if(_unit call KV_fnc_admin) then {
-        if(!_target call KV_fnc_getFreeze) then {
+        if(!(_target call KV_fnc_getFreeze)) then {
             {disableUserInput true;} remoteExec [""BIS_fnc_call"", _target];
             [""Du wurdest eingefroren.""] remoteExec [""KV_fnc_throwMsg"", _target];
         } else {

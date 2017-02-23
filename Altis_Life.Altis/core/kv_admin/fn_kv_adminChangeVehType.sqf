@@ -7,7 +7,7 @@
 	Change Vehicle Type Handler
 */
 if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
-private["type", "_vehList", "_selectedVehicles"];
+private["_type", "_vehList", "_selectedVehicles"];
 _type = _this select 0;
 _vehList = CONTROL(75280,75308);
 
