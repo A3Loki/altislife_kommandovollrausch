@@ -292,7 +292,7 @@ class playerSettings {
 			y = 0.7016 * safezoneH + safezoneY;
 			w = 0.028875 * safezoneW;
 			h = 0.0504 * safezoneH;
-			onButtonClick = "createDialog ""Life_cell_phone"";";
+			onButtonClick = "[] call life_fnc_cellPhoneHandler;";
 			tooltip = $STR_PM_CellPhone;
 			
 			colorBackground[] = {-1,-1,-1,-1};

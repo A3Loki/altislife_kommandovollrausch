@@ -178,6 +178,7 @@ class Life_Client_Core
 		class wanted2 {};
 		class wantedadd2 {};
 		class wantedAddP {};
+		class cellPhoneHandler {};
 	};
 	
 	class Functions

@@ -9,7 +9,7 @@
 private["_display","_units","_type"];
 
 disableSerialization;
-if(player getVariable["restrained",true]) exitWith {hint "Du bist gefesselt"; closeDialog 0;};
+//if(player getVariable["restrained",true]) exitWith {hint "Du bist gefesselt"; closeDialog 0;};
 waitUntil {!isNull findDisplay 3000};
 _display = findDisplay 3000;
 _units = _display displayCtrl 3004;
