@@ -1,121 +1,321 @@
-class life_admin_menu {
+class life_kv_admin_menu {
 	idd = 75280;
-	name= "life_admin_menu";
+	name= "life_kv_admin_menu";
 	movingEnable = false;
 	enableSimulation = true;
-	onLoad = "[] spawn life_fnc_adminMenu;";
+	onLoad = "[] spawn life_fnc_kvAdminMenu;";
 	
 	class controlsBackground {
-		class Life_RscTitleBackground:Life_RscText {
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
-			idc = -1;
-			x = 0.1;
-			y = 0.2;
-			w = 0.8;
-			h = (1 / 25);
+		class kv_menuBackground: RscText
+		{
+			idc = 75281;
+			x = 0.2525 * safezoneW + safezoneX;
+			y = 0.17 * safezoneH + safezoneY;
+			w = 0.500156 * safezoneW;
+			h = 0.66 * safezoneH;
+			colorBackground[] = {0,0,0,0.4};
 		};
-		
-		class MainBackground:Life_RscText {
-			colorBackground[] = {0, 0, 0, 0.7};
-			idc = -1;
-			x = 0.1;
-			y = 0.2 + (11 / 250);
-			w = 0.8;
-			h = 0.6 - (2 / 250);
+		class kv_menuTitle: RscText
+		{
+			idc = 75282;
+			text = "Admin Menu"; //--- ToDo: Localize;
+			x = 0.2525 * safezoneW + safezoneX;
+			y = 0.17 * safezoneH + safezoneY;
+			w = 0.500156 * safezoneW;
+			h = 0.022 * safezoneH;
+			colorBackground[] = {1,0,0,1};
+		};
+		class RscText_75283: RscText
+		{
+			idc = 75283;
+			x = 0.267969 * safezoneW + safezoneX;
+			y = 0.214 * safezoneH + safezoneY;
+			w = 0.159844 * safezoneW;
+			h = 0.561 * safezoneH;
+			colorBackground[] = {0,0,0,0.6};
+		};
+		class kv_playerTitle: RscText
+		{
+			idc = 75284;
+			text = "Spieler"; //--- ToDo: Localize;
+			x = 0.267969 * safezoneW + safezoneX;
+			y = 0.214 * safezoneH + safezoneY;
+			w = 0.159844 * safezoneW;
+			h = 0.022 * safezoneH;
+			colorBackground[] = {1,0,0,1};
+		};
+		class RscText_75285: RscText
+		{
+			idc = 75285;
+			x = 0.448438 * safezoneW + safezoneX;
+			y = 0.214 * safezoneH + safezoneY;
+			w = 0.139219 * safezoneW;
+			h = 0.451 * safezoneH;
+			colorBackground[] = {0,0,0,0.6};
+		};
+		class kv_vehiclesTitle: RscText
+		{
+			idc = 75286;
+			text = "Fahrzeuge"; //--- ToDo: Localize;
+			x = 0.448438 * safezoneW + safezoneX;
+			y = 0.214 * safezoneH + safezoneY;
+			w = 0.139219 * safezoneW;
+			h = 0.022 * safezoneH;
+			colorBackground[] = {1,0,0,1};
+		};
+		class RscText_75287: RscText
+		{
+			idc = 75287;
+			x = 0.608281 * safezoneW + safezoneX;
+			y = 0.214 * safezoneH + safezoneY;
+			w = 0.12375 * safezoneW;
+			h = 0.066 * safezoneH;
+			colorBackground[] = {0,0,0,0.6};
+		};
+		class kv_moneyTitle: RscText
+		{
+			idc = 75288;
+			text = "Geld"; //--- ToDo: Localize;
+			x = 0.608281 * safezoneW + safezoneX;
+			y = 0.214 * safezoneH + safezoneY;
+			w = 0.12375 * safezoneW;
+			h = 0.022 * safezoneH;
+			colorBackground[] = {1,0,0,1};
+		};
+		class RscText_75289: RscText
+		{
+			idc = 75289;
+			x = 0.608281 * safezoneW + safezoneX;
+			y = 0.324 * safezoneH + safezoneY;
+			w = 0.12375 * safezoneW;
+			h = 0.484 * safezoneH;
+			colorBackground[] = {0,0,0,0.6};
+		};
+		class kv_functionsTitle: RscText
+		{
+			idc = 75290;
+			text = "Admin Funktionen"; //--- ToDo: Localize;
+			x = 0.608281 * safezoneW + safezoneX;
+			y = 0.324 * safezoneH + safezoneY;
+			w = 0.12375 * safezoneW;
+			h = 0.022 * safezoneH;
+			colorBackground[] = {1,0,0,1};
+		};
+		class RscText_75291: RscText
+		{
+			idc = 75291;
+			x = 0.448438 * safezoneW + safezoneX;
+			y = 0.709 * safezoneH + safezoneY;
+			w = 0.139219 * safezoneW;
+			h = 0.099 * safezoneH;
+			colorBackground[] = {0,0,0,0.6};
+		};
+		class kv_typeTitle: RscText
+		{
+			idc = 75292;
+			text = "Fahrzeug Art"; //--- ToDo: Localize;
+			x = 0.448437 * safezoneW + safezoneX;
+			y = 0.709 * safezoneH + safezoneY;
+			w = 0.139219 * safezoneW;
+			h = 0.022 * safezoneH;
+			colorBackground[] = {1,0,0,1};
 		};
 	};
 	
 	class controls {
-
-		
-		class Title : Life_RscTitle {
-			colorBackground[] = {0, 0, 0, 0};
-			idc = 75281;
-			text = "$STR_Admin_Title";
-			x = 0.1;
-			y = 0.2;
-			w = 0.6;
-			h = (1 / 25);
-		};
-		
-		class PlayerList_Admin : Life_RscListBox 
+		class kv_closeMenu: RscButtonMenu
 		{
-			idc = 75282;
-			text = "";
-			sizeEx = 0.035;
-			//colorBackground[] = {0,0,0,0};
-			onLBSelChanged = "[_this] spawn life_fnc_adminQuery";
-			
-			x = 0.12; y = 0.26;
-			w = 0.30; h = 0.4;
+			idc = 75293;
+			text = "Close"; //--- ToDo: Localize;
+			x = 0.701094 * safezoneW + safezoneX;
+			y = 0.83 * safezoneH + safezoneY;
+			w = 0.0515625 * safezoneW;
+			h = 0.022 * safezoneH;
+			action = "closeDialog 0;";
 		};
-
-		class VehiclesAir : Life_RscButtonMenu {
-            idc = 75283;
-            text = "Air";
-            onButtonClick = "closeDialog 0;";
-
-            x = 0.435; y = 0.26;
-            w = 0.05; h = 0.05;
-        };
-
-        class VehiclesLand : Life_RscButtonMenu {
-            idc = 75284;
-            text = "Land";
-            onButtonClick = "closeDialog 0;";
-
-            x = 0.435; y = 0.36;
-            w = 0.05; h = 0.05;
-        };
-
-        class VehiclesWater : Life_RscButtonMenu {
-            idc = 75285;
-            text = "Water";
-            onButtonClick = "closeDialog 0;";
-
-            x = 0.435; y = 0.46;
-            w = 0.05; h = 0.05;
-        };
-
-        class VehiclesObjects : Life_RscButtonMenu {
-            idc = 75286;
-            text = "Objects";
-            onButtonClick = "closeDialog 0;";
-
-            x = 0.435; y = 0.56;
-            w = 0.05; h = 0.05;
-        };
-		
-		class PlayerList_Admin : Life_RscListBox
-        {
-            idc = 75287;
-            text = "";
-            sizeEx = 0.035;
-            //colorBackground[] = {0,0,0,0};
-            onLBSelChanged = "[_this] spawn life_fnc_adminQuery";
-
-            x = 0.5; y = 0.26;
-            w = 0.30; h = 0.4;
-        };
-
-		class CloseButtonKey : Life_RscButtonMenu {
-			idc = -1;
-			text = "$STR_Global_Close";
-			onButtonClick = "closeDialog 0;";
-			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.88 - (1 / 25);
-			w = (6.25 / 40);
-			h = (1 / 25);
+		class kv_kickPlayer: RscButtonMenu
+		{
+			idc = 75294;
+			text = "Kick"; //--- ToDo: Localize;
+			x = 0.267969 * safezoneW + safezoneX;
+			y = 0.786 * safezoneH + safezoneY;
+			w = 0.04125 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[] spawn life_fnc_kv_adminKick;";
 		};
-		
-		class AdminID : Life_RscButtonMenu {
-			idc = -1;
-			text = "$STR_Admin_GetID";
-			onButtonClick = "[] call life_fnc_admingetID;";
-			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.88 - (1 / 25);
-			w = (6.25 / 40);
-			h = (1 / 25);
+		class kv_banPlayer: RscButtonMenu
+		{
+			idc = 75295;
+			text = "Ban"; //--- ToDo: Localize;
+			x = 0.314375 * safezoneW + safezoneX;
+			y = 0.786 * safezoneH + safezoneY;
+			w = 0.0464063 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[] spawn life_fnc_kv_adminBan;";
+		};
+		class kv_spectatePlayer: RscButtonMenu
+		{
+			idc = 75296;
+			text = "Spectate"; //--- ToDo: Localize;
+			x = 0.365937 * safezoneW + safezoneX;
+			y = 0.786 * safezoneH + safezoneY;
+			w = 0.061875 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "closeDialog 0; [] spawn life_fnc_kv_adminSpectate;";
+		};
+		class kv_spawnObject: RscButtonMenu
+		{
+			idc = 75297;
+			text = "Spawn Vehicle / Object"; //--- ToDo: Localize;
+			x = 0.448437 * safezoneW + safezoneX;
+			y = 0.676 * safezoneH + safezoneY;
+			w = 0.139219 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[] spawn life_fnc_kv_adminSpawnObject;";
+		};
+		class kv_addMoney: RscButtonMenu
+		{
+			idc = 75298;
+			text = "Add"; //--- ToDo: Localize;
+			x = 0.608281 * safezoneW + safezoneX;
+			y = 0.291 * safezoneH + safezoneY;
+			w = 0.0360937 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[""add""] spawn life_fnc_kv_adminCash;";
+		};
+		class kv_subMoney: RscButtonMenu
+		{
+			idc = 75299;
+			text = "Sub"; //--- ToDo: Localize;
+			x = 0.654688 * safezoneW + safezoneX;
+			y = 0.291 * safezoneH + safezoneY;
+			w = 0.0360937 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[""sub""] spawn life_fnc_kv_adminCash;";
+		};
+		class kv_setMoney: RscButtonMenu
+		{
+			idc = 75300;
+			text = "Set"; //--- ToDo: Localize;
+			x = 0.701094 * safezoneW + safezoneX;
+			y = 0.291 * safezoneH + safezoneY;
+			w = 0.0309375 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[""set""] spawn life_fnc_kv_adminCash;";
+		};
+		class kv_freezePlayer: RscButtonMenu
+		{
+			idc = 75301;
+			text = "Freeze Player"; //--- ToDo: Localize;
+			x = 0.613437 * safezoneW + safezoneX;
+			y = 0.357 * safezoneH + safezoneY;
+			w = 0.113437 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[] spawn life_fnc_kv_adminFreeze;";
+		};
+		class kv_typeLand: RscButtonMenu
+		{
+			idc = 75302;
+			text = "Land"; //--- ToDo: Localize;
+			x = 0.453594 * safezoneW + safezoneX;
+			y = 0.742 * safezoneH + safezoneY;
+			w = 0.0567187 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[""Land""] spawn life_fnc_kv_adminChangeVehType;";
+		};
+		class kv_typeAir: RscButtonMenu
+		{
+			idc = 75303;
+			text = "Luft"; //--- ToDo: Localize;
+			x = 0.525781 * safezoneW + safezoneX;
+			y = 0.742 * safezoneH + safezoneY;
+			w = 0.0567187 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[""Air""] spawn life_fnc_kv_adminChangeVehType;";
+		};
+		class kv_typeSea: RscButtonMenu
+		{
+			idc = 75304;
+			text = "Sea"; //--- ToDo: Localize;
+			x = 0.453594 * safezoneW + safezoneX;
+			y = 0.775 * safezoneH + safezoneY;
+			w = 0.0567187 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[""Sea""] spawn life_fnc_kv_adminChangeVehType;";
+		};
+		class kv_typeObject: RscButtonMenu
+		{
+			idc = 75305;
+			text = "Object"; //--- ToDo: Localize;
+			x = 0.525781 * safezoneW + safezoneX;
+			y = 0.775 * safezoneH + safezoneY;
+			w = 0.0567187 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[""Object""] spawn life_fnc_kv_adminChangeVehType;";
+		};
+		class kv_deleteDead: RscButtonMenu
+		{
+			idc = 75306;
+			text = "Zerstoerte Objekte"; //--- ToDo: Localize;
+			x = 0.613437 * safezoneW + safezoneX;
+			y = 0.39 * safezoneH + safezoneY;
+			w = 0.113437 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[] spawn life_fnc_kv_adminDeadVeh;";
+		};
+		class kv_playerList: RscListbox
+		{
+			idc = 75307;
+			x = 0.273125 * safezoneW + safezoneX;
+			y = 0.247 * safezoneH + safezoneY;
+			w = 0.149531 * safezoneW;
+			h = 0.517 * safezoneH;
+		};
+		class kv_vehicleList: RscListbox
+		{
+			idc = 75308;
+			x = 0.453594 * safezoneW + safezoneX;
+			y = 0.247 * safezoneH + safezoneY;
+			w = 0.128906 * safezoneW;
+			h = 0.407 * safezoneH;
+		};
+		class kv_moneyInput: RscEdit
+		{
+			idc = 75309;
+			x = 0.613438 * safezoneW + safezoneX;
+			y = 0.247 * safezoneH + safezoneY;
+			w = 0.113437 * safezoneW;
+			h = 0.022 * safezoneH;
+		};
+		class kv_tpTo: RscButtonMenu
+		{
+			idc = 75310;
+			text = "Zu Spieler porten"; //--- ToDo: Localize;
+			x = 0.613437 * safezoneW + safezoneX;
+			y = 0.423 * safezoneH + safezoneY;
+			w = 0.113437 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[""tpto""] spawn life_fnc_kv_adminTeleport;";
+		};
+		class kv_tpHere: RscButtonMenu
+		{
+			idc = 75311;
+			text = "Spieler herporten"; //--- ToDo: Localize;
+			x = 0.613437 * safezoneW + safezoneX;
+			y = 0.456 * safezoneH + safezoneY;
+			w = 0.113437 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[""tphere""] spawn life_fnc_kv_adminTeleport;";
+		};
+		class kv_tpAll: RscButtonMenu
+		{
+			idc = 75312;
+			text = "Alle herporten"; //--- ToDo: Localize;
+			x = 0.613437 * safezoneW + safezoneX;
+			y = 0.489 * safezoneH + safezoneY;
+			w = 0.113437 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[""tpall""] spawn life_fnc_kv_adminTeleport;";
 		};
 	};
 };

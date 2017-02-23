@@ -38,6 +38,21 @@ class Life_Client_Core
 		class TheorieEnde {};
 	};
 	
+	class KV_Admin
+	{
+		file = "core\kv_admin";
+		class kv_adminBan {};
+		class kv_adminCash {};
+		class kv_adminChangeVehType {};
+		class kv_adminDeadVeh {};
+		class kv_adminFreeze {};
+		class kv_adminKick {};
+		class kv_adminMenu {};
+		class kv_adminSpawnObject {};
+		class kv_adminSpectate {};
+		class kv_adminTeleport {};
+	};
+	
 	class Admin
 	{
 		file = "core\admin";

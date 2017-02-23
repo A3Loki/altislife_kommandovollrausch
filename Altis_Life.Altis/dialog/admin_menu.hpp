@@ -79,5 +79,15 @@ class life_admin_menu {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+		
+		class AdminMenuKV : Life_RscButtonMenu {
+			idc = -1;
+			text = "Menu";
+			onButtonClick = "closeDialog 0; createDialog ""life_kv_admin_menu"";";
+			x = 0.26 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.88 - (1 / 25);
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
 	};
 };

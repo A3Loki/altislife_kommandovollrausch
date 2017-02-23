@@ -183,15 +183,22 @@ compileFinal "
     };
 ";
 
+KV_fnc_getFreeze =
+compileFinal "
+   private[""_unit"", ""_disabled""];
+   _unit = _this select 0;
+   _disabled = if(userInputDisabled) then {true} else {false};
+   _disabled;
+";
+
 KV_fnc_freezePlayer =
 compileFinal "
-    private[""_unit"", ""_target"", ""_active""];
+    private[""_unit"", ""_target""];
     _target = _this select 0;
-    _active = _this select 1;
     _unit   = player;
 
     if(_unit call KV_fnc_admin) then {
-        if(_active) then {
+        if(!_target call KV_fnc_getFreeze) then {
             {disableUserInput true;} remoteExec [""BIS_fnc_call"", _target];
             [""Du wurdest eingefroren.""] remoteExec [""KV_fnc_throwMsg"", _target];
         } else {
@@ -260,6 +267,7 @@ publicVariable "KV_fnc_admin";
 publicVariable "KV_fnc_spawnObject";
 publicVariable "KV_fnc_changePos";
 publicVariable "KV_fnc_cleanVehicles";
+publicVariable "KV_fnc_getFreeze";
 publicVariable "KV_fnc_freezePlayer";
 publicVariable "KV_fnc_changeCash";
 publicVariable "KV_fnc_kickPlayer";
