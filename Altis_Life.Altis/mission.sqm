@@ -10269,7 +10269,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this setObjectTexture [0, ""images\donatorstrasse.png""]";
+				init="this allowDamage false; this setObjectTexture [0, ""textures\signs\donatorstrasse.jpg""]";
 				disableSimulation=1;
 			};
 			id=666;
