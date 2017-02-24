@@ -163,16 +163,60 @@ class WeaponShops {
         level = -1;
         msg = "";
         items[] = {
-                    {"ItemGPS",                     "", 10},
-                    {"Binocular",                   "", 10},
-                    {"ToolKit",                     "", 10},
-                    {"FirstAidKit",                 "", 10},
-                    {"Medikit",                     "", 10},
-                    {"NVGoggles",                   "", 10},
-                    {"Chemlight_red",               "", 20},
-                    {"Chemlight_yellow",            "", 20},
-                    {"Chemlight_green",             "", 20},
-                    {"Chemlight_blue",              "", 20}
+                    // ** Waffen
+                    {"hgun_Pistol_heavy_01_F",      "", 8000},
+                    {"hgun_PDW2000_F",              "", 20000},
+                    {"hgun_Pistol_heavy_02_F",      "", 30000},
+                    {"SMG_01_F",                    "", 64000},
+                    {"arifle_SDAR_F",               "", 90000},
+                    {"arifle_TRG20_F",              "", 140000},
+                    {"arifle_Katiba_F",             "", 325000},
+                    {"srifle_DMR_06_camo_F",        "", 275000},
+                    {"srifle_DMR_01_DMS_BI_F",      "", 475000},
+                    {"srifle_LRR_camo_F",           "", 975000},
+                    {"srifle_DMR_05_tan_f",         "", 1250000},
+
+                    // ** Magazine
+                    {"11Rnd_45ACP_Mag",             "", 1000},
+                    {"30Rnd_9x21_Mag",              "", 1500},
+                    {"6Rnd_45ACP_Cylinder",         "", 2500},
+                    {"30Rnd_45ACP_Mag_SMG_01",      "", 3400},
+                    {"20Rnd_556x45_UW_mag",         "", 3750},
+                    {"30Rnd_556x45_Stanag",         "", 5650},
+                    {"30Rnd_65x39_caseless_green",  "", 6250},
+                    {"10Rnd_762x54_Mag",            "", 7200},
+                    {"20Rnd_762x51_Mag",            "", 7900},
+                    {"7Rnd_408_Mag",                "", 8500},
+                    {"10Rnd_93x64_DMR_05_Mag",      "", 10000},
+
+                    // ** Aufsätze
+                    {"optic_Arco",                  "", 7500},
+                    {"optic_Hamr",                  "", 10000},
+                    {"optic_Aco",                   "", 2400},
+                    {"optic_Holosight",             "", 3400},
+                    {"optic_MRCO",                  "", 7500},
+                    {"optic_DMS",                   "", 14050},
+                    {"optic_AMS_khk",               "", 24000},
+                    {"bipod_01_F_snd",              "", 75000},
+
+                    // ** DLC ZUBEHÖR
+                    { "bipod_01_F_blk",             "", 15000 },
+                    { "bipod_01_F_mtp",             "", 15000 },
+                    { "bipod_01_F_snd",             "", 15000 },
+                    { "bipod_02_F_blk",             "", 15000 },
+                    { "bipod_02_F_hex",             "", 15000 },
+                    { "bipod_02_F_tan",             "", 15000 },
+                    { "bipod_03_F_blk",             "", 15000 },
+                    { "bipod_03_F_oli",             "", 15000 },
+                    { "optic_AMS",                  "", 65000 },
+                    { "optic_AMS_khk",              "", 65000 },
+                    { "optic_AMS_snd",              "", 65000 },
+                    { "optic_KHS_blk",              "", 65000 },
+                    { "optic_KHS_hex",              "", 65000 },
+                    { "optic_KHS_old",              "", 65000 },
+                    { "optic_KHS_tan",              "", 65000 }
+
+
         };
     };
 
