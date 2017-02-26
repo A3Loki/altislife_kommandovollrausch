@@ -4,7 +4,7 @@ class emergencyLightsConfig
  defaultAttenuation[] = {0.181, 0, 1000, 130};
  class west
  {
-     class C_Offroad_01_F
+     class B_GEN_Offroad_01_gen_F
      {
          class S1
          {
@@ -154,7 +154,7 @@ class emergencyLightsConfig
              timeout = 0;
          };
      };
-     class C_Hatchback_01_F
+     class C_Hatchback_01_sport_F
      {
          class S1
          {
@@ -362,7 +362,7 @@ class emergencyLightsConfig
               timeout = 0;
           };
       };
-      class C_Hatchback_01_F
+      class C_Hatchback_01_sport_F
       {
           class S1
           {

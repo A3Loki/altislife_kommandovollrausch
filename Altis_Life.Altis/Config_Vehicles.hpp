@@ -371,7 +371,12 @@ class CfgVehicles {
 		garageSell[] = { 65000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {};
+        textures[] = {
+        	{ "Rebell", "reb", {
+           			 "textures\civ\ifrit_rebell_front.jpg",
+           			 "textures\civ\ifrit_rebell_back.jpg"
+        } }
+        };
     };
 
 	class I_MRAP_03_F {
@@ -658,9 +663,8 @@ class CfgVehicles {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             } },
 			{ "Digital Rot", "reb", {
-                "textures\civ\digirot_hunter_1.paa",
-                "textures\civ\digirot_hunter_2.paa",
-                "textures\civ\digirot_hunter_3.paa"
+                "textures\civ\hunter_rebell_front.jpg",
+                "textures\civ\hunter_rebell_back.jpg"
             } }
         };
     };
