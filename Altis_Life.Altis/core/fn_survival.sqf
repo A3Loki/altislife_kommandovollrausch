@@ -73,10 +73,10 @@ while {true} do
 			_bp = backpack player;
 			life_maxWeight = life_maxWeightT + (round(FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_bp,"maximumload") / 4));
 
-	if(EQUAL(backback player,"RucksackName")) then {life_maxWeight = life_maxWeight + 30}; //BP-Weight
-	if(EQUAL(backback player,"RucksackName")) then {life_maxWeight = life_maxWeight + 30};
-	if(EQUAL(backback player,"RucksackName")) then {life_maxWeight = life_maxWeight + 30};
-	if(EQUAL(backback player,"RucksackName")) then {life_maxWeight = life_maxWeight + 30};
+	if(EQUAL(backback player,"B_HuntingBackpack")) then {life_maxWeight = life_maxWeight + 30}; //BP-Weight
+	if(EQUAL(backback player,"B_AssaultPack_sgg")) then {life_maxWeight = life_maxWeight + 30};
+	if(EQUAL(backback player,"B_Bergen_mcamo")) then {life_maxWeight = life_maxWeight + 30};
+	if(EQUAL(backback player,"B_Carryall_ocamo")) then {life_maxWeight = life_maxWeight + 30};
 
 			};
 		};

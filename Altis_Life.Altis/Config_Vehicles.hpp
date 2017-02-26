@@ -19,7 +19,7 @@ class CarShops {
 	class civ_quad {
 		side = "civ";
 		vehicles[] = {
-			{ "B_Quadbike_01_F", 2500, "" }
+			{ "B_Quadbike_01_F", 5000, "" }
 		};
 	};
 
