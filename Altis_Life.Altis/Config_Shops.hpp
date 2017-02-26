@@ -33,12 +33,12 @@ class WeaponShops {
         items[] = {
                     // ** Waffen
 					{"hgun_Pistol_heavy_01_F",      "", 12000},
-                    {"hgun_PDW2000_F",              "", 24000},
+                    {"hgun_PDW2000_F",              "", 30000},
                     {"hgun_Pistol_heavy_02_F",      "", 34000},
-                    {"SMG_01_F",                    "", 68000},
-                    {"arifle_SDAR_F",               "", 100000},
-                    {"arifle_TRG20_F",              "", 150000},
-                    {"arifle_Katiba_F",             "", 375000},
+                    {"SMG_01_F",                    "", 75000},
+                    {"arifle_SDAR_F",               "", 150000},
+                    {"arifle_TRG20_F",              "", 200000},
+                    {"arifle_Katiba_F",             "", 500000},
 
                     // ** Magazine
                     {"11Rnd_45ACP_Mag",             "", 1000},
@@ -142,12 +142,12 @@ class WeaponShops {
                     // ** Items
                     {"Binocular",                   "",      150},
                     {"ItemGPS",                     "",      100},
-                    {"ItemRadio",                   "Handy", 10},
-                    {"ItemMap",                     "",      50},
-                    {"ItemCompass",                 "",      50},
-                    {"ItemWatch",                   "",      50},
-                    {"ToolKit",                     "",      250},
-                    {"FirstAidKit",                 "",      150},
+                    {"ItemRadio",                   "Handy", 50},
+                    {"ItemMap",                     "",      10},
+                    {"ItemCompass",                 "",      10},
+                    {"ItemWatch",                   "",      10},
+                    {"ToolKit",                     "",      5000},
+                    {"FirstAidKit",                 "",      500},
                     {"NVGoggles",                   "",      15000},
                     {"Chemlight_red",               "",      300},
                     {"Chemlight_yellow",            "",      300},
@@ -233,11 +233,11 @@ class WeaponShops {
                     {"ItemCompass",                 "",      10},
                     {"ItemGPS",                     "",      10},
                     {"ItemRadio",                   "Handy", 10},
-                    {"ToolKit",                     "",      10},
-                    {"FirstAidKit",                 "",      150},
-                    {"NVGoggles_OPFOR",             "",      10},
-                    {"acc_flashlight",              "",      10},
-                    {"acc_pointer_IR",              "",      10},
+                    {"ToolKit",                     "",      1000},
+                    {"FirstAidKit",                 "",      200},
+                    {"NVGoggles_OPFOR",             "",      5000},
+                    {"acc_flashlight",              "",      100},
+                    {"acc_pointer_IR",              "",      100},
 
                     // ** Throwable
                     {"Chemlight_red",               "",      10},
@@ -365,7 +365,7 @@ class WeaponShops {
                     {"muzzle_snds_H",               "6.5mm Schalldämpfer",      20000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             5000},
+                    {"B_UavTerminal",               "UAV Terminal",             50000},
                     {"Rangefinder",                 "Entfernungsmesser",        35000}
         };
     };
@@ -410,7 +410,7 @@ class WeaponShops {
                     {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             5000},
+                    {"B_UavTerminal",               "UAV Terminal",             50000},
                     {"Rangefinder",                 "Entfernungsmesser",        35000}
         };
     };
@@ -455,7 +455,7 @@ class WeaponShops {
                     {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             5000},
+                    {"B_UavTerminal",               "UAV Terminal",             50000},
                     {"Rangefinder",                 "Entfernungsmesser",        35000}
         };
     };
@@ -500,7 +500,7 @@ class WeaponShops {
                     {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             5000},
+                    {"B_UavTerminal",               "UAV Terminal",             50000},
                     {"Rangefinder",                 "Entfernungsmesser",        35000}
         };
     };
@@ -545,7 +545,7 @@ class WeaponShops {
                     {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             5000},
+                    {"B_UavTerminal",               "UAV Terminal",             50000},
                     {"Rangefinder",                 "Entfernungsmesser",        35000}
         };
     };
@@ -590,7 +590,7 @@ class WeaponShops {
                     {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             5000},
+                    {"B_UavTerminal",               "UAV Terminal",             50000},
                     {"Rangefinder",                 "Entfernungsmesser",        35000}
         };
     };
@@ -635,7 +635,7 @@ class WeaponShops {
                     {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             5000},
+                    {"B_UavTerminal",               "UAV Terminal",             50000},
                     {"Rangefinder",                 "Entfernungsmesser",        35000}
         };
     };
@@ -656,6 +656,7 @@ class WeaponShops {
                     {"arifle_MXM_F",                "MXM DMR",                  65000},
                     {"srifle_EBR_F",                "MK18 EMR",                 100000},
                     {"srifle_DMR_02_camo_F",        "MAR-10 .338",              450000},
+		            ["arifle_MXM_RCO_pointer_snds_F", "Fertige MXM RCO",        100000},
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
@@ -682,7 +683,7 @@ class WeaponShops {
                     {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             5000},
+                    {"B_UavTerminal",               "UAV Terminal",             50000},
                     {"Rangefinder",                 "Entfernungsmesser",        35000}
         };
     };
@@ -696,9 +697,9 @@ class WeaponShops {
                     {"ItemGPS",                     "", 10},
                     {"Binocular",                   "", 10},
                     {"ToolKit",                     "", 10},
-                    {"FirstAidKit",                 "", 10},
-                    {"Medikit",                     "", 10},
-                    {"NVGoggles",                   "", 10},
+                    {"FirstAidKit",                 "", 100},
+                    {"Medikit",                     "", 100},
+                    {"NVGoggles",                   "", 5000},
                     {"Chemlight_red",               "", 20},
                     {"Chemlight_yellow",            "", 20},
                     {"Chemlight_green",             "", 20},
@@ -716,9 +717,9 @@ class WeaponShops {
                     {"ItemGPS",                     "", 10},
                     {"Binocular",                   "", 10},
                     {"ToolKit",                     "", 10},
-                    {"FirstAidKit",                 "", 10},
-                    {"Medikit",                     "", 10},
-                    {"NVGoggles",                   "", 10},
+                    {"FirstAidKit",                 "", 100},
+                    {"Medikit",                     "", 100},
+                    {"NVGoggles",                   "", 5000},
                     {"Chemlight_red",               "", 20},
                     {"Chemlight_yellow",            "", 20},
                     {"Chemlight_green",             "", 20},
