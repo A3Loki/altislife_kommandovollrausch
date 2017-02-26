@@ -656,7 +656,7 @@ class WeaponShops {
                     {"arifle_MXM_F",                "MXM DMR",                  65000},
                     {"srifle_EBR_F",                "MK18 EMR",                 100000},
                     {"srifle_DMR_02_camo_F",        "MAR-10 .338",              450000},
-		            ["arifle_MXM_RCO_pointer_snds_F", "Fertige MXM RCO",        100000},
+					{"arifle_MXM_RCO_pointer_snds_F", "Fertige MXM RCO",        100000},
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
