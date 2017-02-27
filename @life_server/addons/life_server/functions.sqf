@@ -144,6 +144,8 @@ compileFinal "
     _type       = _this select 1;
     _vehicle    = _this select 2;
     _unit       = [player, vehicle player] select _vehicle;
+    
+    if(isPlayer _pos_target) then {_pos_target = getPos _pos_target};
 
     _dir        = getDir _unit;
 
@@ -186,7 +188,7 @@ compileFinal "
 KV_fnc_getFreeze =
 compileFinal "
    private[""_unit"", ""_disabled""];
-   _unit = _this select 0;
+   _unit = _this;
    _disabled = if(userInputDisabled) then {true} else {false};
    _disabled;
 ";
@@ -194,7 +196,7 @@ compileFinal "
 KV_fnc_freezePlayer =
 compileFinal "
     private[""_unit"", ""_target""];
-    _target = _this select 0;
+    _target = _this;
     _unit   = player;
 
     if(_unit call KV_fnc_admin) then {

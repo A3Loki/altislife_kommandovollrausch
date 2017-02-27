@@ -80,6 +80,7 @@ class Life_Client_Core
 		class medicLights {};
 		class medicSiren {};
 		class medicSiren2 {};
+		class medInteractionMenu {};
 	};
 	
 	class Actions

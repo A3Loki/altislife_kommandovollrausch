@@ -127,6 +127,129 @@ class emergencyLightsConfig
              timeout = .06;
          };
      };
+     class B_GEN_Offroad_01_gen_F
+     {
+         class S1
+         {
+             status = true;
+             color[] = {0.0863, 0.5137, 0.9412};
+             ambientColor[] = {0.1,0.1,1};
+             brightnessMinimum = 0;
+             brightnessMaximum = 6;
+             position[] = {-0.560547,0.109863,0.441497};
+             attenuation[] = {};
+             phaseTime = 0.2;
+             timeout = 0;
+         };
+         class S2
+         {
+             status = true;
+             color[] = {0.0863, 0.5137, 0.9412};
+             ambientColor[] = {0.1,0.1,1};
+             brightnessMinimum = 0;
+             brightnessMaximum = 6;
+             position[] = {0.487427,0.103027,0.441497};
+             attenuation[] = {};
+             phaseTime = 0.2;
+             timeout = .06;
+         };
+         class S3
+         {
+             status = true;
+             color[] = {0.0863, 0.5137, 0.9412};
+             ambientColor[] = {0.1,0.1,1};
+             brightnessMinimum = 0;
+             brightnessMaximum = 6;
+             position[] = {-0.422607,0.106934,0.441497};
+             attenuation[] = {};
+             phaseTime = 0.2;
+             timeout = 0;
+         };
+         class S4
+         {
+             status = true;
+             color[] = {0.0863, 0.5137, 0.9412};
+             ambientColor[] = {0.1,0.1,1};
+             brightnessMinimum = 0;
+             brightnessMaximum = 6;
+             position[] = {0.35144,0.104004,0.441497};
+             attenuation[] = {};
+             phaseTime = 0.2;
+             timeout = .06;
+         };
+         class S5
+         {
+             status = true;
+             color[] = {0.0863, 0.5137, 0.9412};
+             ambientColor[] = {0.1,0.1,1};
+             brightnessMinimum = 0;
+             brightnessMaximum = 6;
+             position[] = {-0.261597,0.104004,0.441497};
+             attenuation[] = {};
+             phaseTime = 0.2;
+             timeout = 0;
+         };
+         class S6
+         {
+             status = true;
+             color[] = {0.0863, 0.5137, 0.9412};
+             ambientColor[] = {0.1,0.1,1};
+             brightnessMinimum = 0;
+             brightnessMaximum = 6;
+             position[] = {0.208374,0.103027,0.441497};
+             attenuation[] = {};
+             phaseTime = 0.2;
+             timeout = .06;
+         };
+         class S7
+         {
+             status = true;
+             color[] = {0.0863, 0.5137, 0.9412};
+             ambientColor[] = {0.1,0.1,1};
+             brightnessMinimum = 0;
+             brightnessMaximum = 6;
+             position[] = {-0.108643,0.103027,0.441497};
+             attenuation[] = {};
+             phaseTime = 0.2;
+             timeout = 0;
+         };
+         class S8
+         {
+             status = true;
+             color[] = {0.0863, 0.5137, 0.9412};
+             ambientColor[] = {0.1,0.1,1};
+             brightnessMinimum = 0;
+             brightnessMaximum = 6;
+             position[] = {0.0594482,0.10791,0.441497};
+             attenuation[] = {};
+             phaseTime = 0.2;
+             timeout = .06;
+         };
+         class S9
+         {
+             status = true;
+             color[] = {2.55, 0.00, 0.00};
+             ambientColor[] = {0.1,0.1,1};
+             brightnessMinimum = 0;
+             brightnessMaximum = 6;
+             position[] = {-0.560547,0.109863,0.441497};
+             attenuation[] = {};
+             phaseTime = 0.2;
+             timeout = 0;
+         };
+         class S10
+         {
+             status = true;
+             color[] = {2.55, 0.00, 0.00};
+             ambientColor[] = {0.1,0.1,1};
+             brightnessMinimum = 0;
+             brightnessMaximum = 6;
+             position[] = {0.487427,0.103027,0.441497};
+             attenuation[] = {};
+             phaseTime = 0.2;
+             timeout = .06;
+         };
+     };
      class C_SUV_01_F
      {
          class S1

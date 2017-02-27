@@ -218,7 +218,7 @@ class Licenses {
 	LICENSEMACRO(dive,"STR_License_Diving","dive",2000,false,"civ")
 	LICENSEMACRO(oil,"STR_License_Oil","oil",10000,false,"civ")
 	LICENSEMACRO(cAir,"STR_License_Pilot","cAir",250000,false,"cop")
-	LICENSEMACRO(coastguard,"STR_License_CG","cg",8000,false,"cop")
+	LICENSEMACRO(coastguard,"STR_License_CG","coastguard",8000,false,"cop")
 	LICENSEMACRO(heroin,"STR_License_Heroin","heroin",25000,true,"civ")
 	LICENSEMACRO(marijuana,"STR_License_Marijuana","marijuana",19500,true,"civ")
 	LICENSEMACRO(medmarijuana,"STR_License_Medmarijuana","medmarijuana",15000,false,"civ")
@@ -293,7 +293,7 @@ class VirtualShops {
 
 	class coffee {
 		name = "STR_Shops_Coffee";
-		items[] = { "coffee", "donuts" };
+		items[] = { "coffee", "donut" };
 	};
 	
 	class drugdealer {
@@ -333,12 +333,12 @@ class VirtualShops {
 
 	class cop {
 		name = "STR_Shops_Cop";
-		items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit_grilled", "tbacon", "redgull", "fuelFull", "defusekit", "blindfold", "lockpick" };
+		items[] = { "donut", "coffee", "spikeStrip", "waterBottle", "rabbit_grilled", "tbacon", "redgull", "fuelFull", "defusekit", "blindfold", "lockpick" };
 	};
 	
 	class med {
 		name = "STR_Shops_Med";
-		items[] = { "donuts", "coffee","waterBottle", "rabbit_grilled", "redgull" };
+		items[] = { "donut", "coffee","waterBottle", "rabbit_grilled", "redgull" };
 	};
 
 	class cement {

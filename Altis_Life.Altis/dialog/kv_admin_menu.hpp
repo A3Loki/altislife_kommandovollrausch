@@ -282,6 +282,7 @@ class life_kv_admin_menu {
 		class kv_moneyInput: Life_RscEdit
 		{
 			idc = 75309;
+			text = "1";
 			x = 0.613438 * safezoneW + safezoneX;
 			y = 0.247 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;

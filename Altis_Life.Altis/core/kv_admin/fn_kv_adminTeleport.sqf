@@ -8,7 +8,7 @@
 */
 if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
 private["_player", "_name", "_type"];
-_type = _this select 0;
+_type = _this;
 
 switch(_type) do {
    case "tpto";

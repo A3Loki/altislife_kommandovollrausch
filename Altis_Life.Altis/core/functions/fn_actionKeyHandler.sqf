@@ -74,6 +74,9 @@ if(isPlayer _curTarget && player distance _curTarget < 3 && _curTarget isKindOf 
 if(!dialog && playerSide == west && (player distance _curTarget < 5)) then {
 		[_curTarget] call life_fnc_copInteractionMenu;
 	};
+if(!dialog && playerSide == independent && (player distance _curTarget < 5)) then {
+		[_curTarget] call life_fnc_medInteractionMenu;
+	};
 if(!dialog && playerSide == civilian && (player distance _curTarget < 5)) then {
 		[_curTarget] call life_fnc_civInteractionMenu;
 	};

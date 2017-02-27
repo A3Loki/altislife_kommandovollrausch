@@ -24,10 +24,10 @@ lbClear _vehList;
 } foreach playableUnits;
 
 _landVeh = [];
-if(isNull (player getVariable "landVeh")) then {
+if(isNil {player getVariable "landVeh"}) then {
    {
       if((configName _x) isKindOf "Car" && (getNumber(_x >> "scope") == 2)) then {
-         _landConfig pushBack (configName _x);
+         _landVeh pushBack (configName _x);
       }
    } forEach ("true" configClasses (configFile >> "CfgVehicles"));
    player setVariable ["landVeh", _landVeh];
@@ -36,7 +36,7 @@ if(isNull (player getVariable "landVeh")) then {
 };
 
 _airVeh = [];
-if(isNull (player getVariable "airVeh")) then {
+if(isNil {player getVariable "airVeh"}) then {
    {
       if((configName _x) isKindOf "Air" && (getNumber(_x >> "scope") == 2)) then {
          _airVeh pushBack (configName _x);
@@ -48,7 +48,7 @@ if(isNull (player getVariable "airVeh")) then {
 };
 
 _seaVeh = [];
-if(isNull (player getVariable "seaVeh")) then {
+if(isNil {player getVariable "seaVeh"}) then {
    {
       if((configName _x) isKindOf "Ship" && (getNumber(_x >> "scope") == 2)) then {
          _seaVeh pushBack (configName _x);
@@ -60,7 +60,7 @@ if(isNull (player getVariable "seaVeh")) then {
 };
 
 _objVeh = [];
-if(isNull (player getVariable "objVeh")) then {
+if(isNil {player getVariable "objVeh"}) then {
    {
       if((configName _x) isKindOf "Thing" && (getNumber(_x >> "scope") == 2)) then {
          _objVeh pushBack (configName _x);
@@ -72,8 +72,8 @@ if(isNull (player getVariable "objVeh")) then {
 };
 
 {
-   _vehList lbAdd getText (configFile >> "CfgVehicles" >> _x >> "displayName");
-   _vehList lbSetData [(lbSize _vehList) - 1, _x];
+   _vehList lbAdd (getText (configFile >> "CfgVehicles" >> _x >> "displayName"));
+   _vehList lbSetData [(lbSize _vehList)-1, str(_x)];
 } forEach _landVeh;
 
 if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
