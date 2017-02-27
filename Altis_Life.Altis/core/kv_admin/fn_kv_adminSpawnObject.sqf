@@ -15,5 +15,5 @@ if((lbCurSel 75308) == -1) exitWith {"Es wurde kein Object ausgewaehlt."};
 _object = lbData[75308, lbCurSel (75308)];
 _name = lbText[75308, lbCurSel (75308)];
 
-[[_object, position player, getDir player, 2, "NONE"], "KV_fnc_spawnObject", player, false] call life_fnc_MP;
+[[_object, position player, getDir player, 0, "NONE"], "KV_fnc_spawnObject", player, false] call life_fnc_MP;
 hint format["%1 wurde erstellt", _name];

@@ -73,7 +73,7 @@ if(isNil {player getVariable "objVeh"}) then {
 
 {
    _vehList lbAdd (getText (configFile >> "CfgVehicles" >> _x >> "displayName"));
-   _vehList lbSetData [(lbSize _vehList)-1, str(_x)];
+   _vehList lbSetData [(lbSize _vehList)-1, _x];
 } forEach _landVeh;
 
 if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};

@@ -221,13 +221,13 @@ compileFinal "
     if(_unit call KV_fnc_admin) then {
         switch(_type) do {
             case ""add"": {
-                {life_cash =+ _cash} remoteExec [""BIS_fnc_call"", _target];
+                [_cash, {life_cash =+ _this}] remoteExec [""BIS_fnc_call"", _target];
             };
             case ""sub"": {
-                {life_cash =- _cash} remoteExec [""BIS_fnc_call"", _target];
+                [_cash, {life_cash =- _this}] remoteExec [""BIS_fnc_call"", _target];
             };
             case ""set"": {
-                {life_cash = _cash} remoteExec [""BIS_fnc_call"", _target];
+                [_cash, {life_cash = _this}] remoteExec [""BIS_fnc_call"", _target];
             };
         };
     };
