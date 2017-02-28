@@ -318,5 +318,15 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[""tpall""] spawn life_fnc_kv_adminTeleport;";
 		};
+		class kv_tpMap: RscButtonMenu
+		{
+			idc = 75313;
+			text = "Auf Karte porten"; //--- ToDo: Localize;
+			x = 0.613437 * safezoneW + safezoneX;
+			y = 0.522 * safezoneH + safezoneY;
+			w = 0.113437 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "closeDialog 0; [""tpmap""] spawn life_fnc_kv_adminTeleport;";
+		};
 	};
 };

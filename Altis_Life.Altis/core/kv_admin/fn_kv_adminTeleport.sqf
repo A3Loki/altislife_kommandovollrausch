@@ -26,4 +26,9 @@ switch(_type) do {
       [[playableUnits, _type, true], "KV_fnc_changePos", player, false] call life_fnc_MP;
       hint "Teleport wurde ausgefuehrt.";
    };
+   case "tpmap": {
+      openMap true;
+      onMapSingleClick "[[_pos, ""tpto"", true], ""KV_fnc_changePos"", player, false] call life_fnc_MP; onMapSingleClick """";";
+      hint "Teleport wurde ausgefuehrt.";
+   };
 };
