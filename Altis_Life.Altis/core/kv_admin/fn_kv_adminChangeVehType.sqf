@@ -9,11 +9,14 @@
 if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
 private["_type", "_vehList", "_selectedVehicles"];
 disableSerialization;
+waitUntil {!isNull (findDisplay 75280)};
 _type = _this;
 _vehList = CONTROL(75280,75308);
 _selectedVehicles = [];
 
 lbClear _vehList;
+
+hint _type;
 
 switch(_type) do {
    case "Land": {
@@ -31,6 +34,6 @@ switch(_type) do {
 };
 
 {
-   _vehList lbAdd getText (configFile >> "CfgVehicles" >> _x >> "displayName");
-   _vehList lbSetData [(lbSize _vehList) - 1, _x];
+   _vehList lbAdd (getText (configFile >> "CfgVehicles" >> _x >> "displayName"));
+   _vehList lbSetData [(lbSize _vehList)-1, _x];
 } forEach _selectedVehicles;

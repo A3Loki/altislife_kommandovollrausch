@@ -10,7 +10,7 @@ if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
 private["_object", "_name"];
 disableSerialization;
 
-if((lbCurSel 75308) == -1) exitWith {"Es wurde kein Object ausgewaehlt."};
+if((lbCurSel 75308) == -1) exitWith {hint "Es wurde kein Object ausgewaehlt."};
 
 _object = lbData[75308, lbCurSel (75308)];
 _name = lbText[75308, lbCurSel (75308)];
