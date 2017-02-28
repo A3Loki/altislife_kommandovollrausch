@@ -318,7 +318,7 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[""tpall""] spawn life_fnc_kv_adminTeleport;";
 		};
-		class kv_tpMap: RscButtonMenu
+		class kv_tpMap: Life_RscButtonMenu
 		{
 			idc = 75313;
 			text = "Auf Karte porten"; //--- ToDo: Localize;

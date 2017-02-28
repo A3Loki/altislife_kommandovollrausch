@@ -354,4 +354,3 @@ class VirtualShops {
 
 #include "Config_Vehicles.hpp"
 #include "Config_Houses.hpp"
-#include "dialog/emergencyLightsConfig.hpp"
