@@ -8,7 +8,7 @@
 */
 if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
 private["_player", "_name", "_type", "_cash"];
-_type = _this;
+_type = _this select 0;
 
 if((lbCurSel 75307) == -1) exitWith {hint "Es wurde kein Spieler ausgewaehlt."};
 
