@@ -1,3 +1,12 @@
+/*
+    File: fn_blinker.sqf
+    Author: Loki
+
+    Description:
+    Blinker erstellen
+*/
+
+
 private["_player","_vehicle","_blinker","_position","_blinkerType","_attachPos"];
 _player = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _blinker = [_this,1,2,[0]] call BIS_fnc_param;

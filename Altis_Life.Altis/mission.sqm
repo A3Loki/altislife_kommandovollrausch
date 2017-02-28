@@ -71008,7 +71008,7 @@ class Mission
 							class Attributes
 							{
 								init="removeAllWeapons this; this allowDamage false; this enableSimulation false; this addAction[""Drug Dealer"",life_fnc_virt_menu,""drugdealer"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; this addAction[""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse '];";
-								name="Dealer_hafen";
+								name="Dealer_1";
 								disableSimulation=1;
 								ignoreByDynSimulGrid=1;
 								class Inventory
@@ -85014,7 +85014,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						name="dealer_1";
+						name="dealer_12";
 						disableSimulation=1;
 						ignoreByDynSimulGrid=1;
 					};
