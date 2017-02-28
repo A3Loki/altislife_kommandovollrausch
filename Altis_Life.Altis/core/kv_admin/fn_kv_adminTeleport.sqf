@@ -27,7 +27,6 @@ switch(_type) do {
       hint "Teleport wurde ausgefuehrt.";
    };
    case "tpmap": {
-      openMap true;
       onMapSingleClick "[[_pos, ""tpto"", true], ""KV_fnc_changePos"", player, false] call life_fnc_MP; onMapSingleClick """";";
       hint "Teleport wurde ausgefuehrt.";
    };

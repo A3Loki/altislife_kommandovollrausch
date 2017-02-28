@@ -195,12 +195,13 @@ compileFinal "
 
 KV_fnc_freezePlayer =
 compileFinal "
-    private[""_unit"", ""_target""];
+    private[""_unit"", ""_target"", ""_freezed""];
     _target = _this;
     _unit   = player;
 
     if(_unit call KV_fnc_admin) then {
-        if(!(_target call KV_fnc_getFreeze)) then {
+        _freezed = _target call KV_fnc_getFreeze;
+        if(!_freezed) then {
             {disableUserInput true;} remoteExec [""BIS_fnc_call"", _target];
             [""Du wurdest eingefroren.""] remoteExec [""KV_fnc_throwMsg"", _target];
         } else {
