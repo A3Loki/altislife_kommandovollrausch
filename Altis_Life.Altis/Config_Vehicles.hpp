@@ -595,9 +595,6 @@ class CfgVehicles {
 			{ "Orange", "civ", {
 	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
-			{ "Jurassic Park", "civ", {
-	                "textures\civ\suv_jurassic.paa"
-            } },
             { "GNRA", "cop", {
 				"textures\cop\SUV_Gendarm.jpg"
             } },
