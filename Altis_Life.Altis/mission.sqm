@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=5654;
+		nextID=5656;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3494.5493,135.4574,12713.699};
-		dir[]={0.23625617,-0.46140081,0.85529172};
-		up[]={0.12287217,0.88714218,0.44481111};
-		aside[]={0.96400374,-1.4046673e-006,-0.26629788};
+		pos[]={3597.9207,197.3076,12771.753};
+		dir[]={0.31512943,-0.47934967,0.81923932};
+		up[]={0.17212264,0.87757343,0.44745657};
+		aside[]={0.93342823,-1.2095552e-006,-0.35906571};
 	};
 };
 binarizationWanted=0;
@@ -722,7 +722,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2848;
+		items=2850;
 		class Item0
 		{
 			dataType="Marker";
@@ -87458,11 +87458,11 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this allowDamage false; this setObjectTexture [0, ""textures\signs\perso.jpg""]";
+				init="this allowDamage false; this setObjectTexture [0, """"]";
 			};
 			id=5578;
 			type="SignAd_SponsorS_F";
-			atlOffset=0.11812782;
+			atlOffset=0.11812687;
 		};
 		class Item2778
 		{
@@ -87476,7 +87476,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this allowDamage false; this setObjectTexture [0, ""textures\signs\perso.jpg""]";
+				init="this allowDamage false; this setObjectTexture [0, """"]";
 			};
 			id=5579;
 			type="SignAd_SponsorS_F";
@@ -90152,6 +90152,113 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item2848
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3682.8987,10.694706,13132.69};
+				angles[]={0.022662206,4.7343798,0.022662206};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="zebrastreifen_1 setObjectTexture [0,""images\zebrastreifen.paa""]; zebrastreifen_1 setVectorDirAndUp [[0,1,-360],[-90,10,1]];";
+				name="zebrastreifen_2";
+				disableSimulation=1;
+			};
+			id=5654;
+			type="UserTexture10m_F";
+			atlOffset=0.020000458;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2849
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3622.637,10.260741,13088.151};
+				angles[]={0.0066671576,4.7847853,6.2765183};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="zebrastreifen_1 setObjectTexture [0,""images\zebrastreifen.paa""]; zebrastreifen_1 setVectorDirAndUp [[0,1,-360],[-90,10,1]];";
+				name="zebrastreifen_3";
+				disableSimulation=1;
+			};
+			id=5655;
+			type="UserTexture10m_F";
+			atlOffset=-0.0039997101;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="images\zebrastreifen.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 	};
