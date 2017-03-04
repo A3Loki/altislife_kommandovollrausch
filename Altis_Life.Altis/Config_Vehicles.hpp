@@ -353,7 +353,12 @@ class CfgVehicles {
 		garageSell[] = { 150000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {};
+        textures[] = {
+            { "Devil", "civ", {
+                "textures\civ\civ_hemtt_devil_0.jpg",
+                "textures\civ\civ_hemtt_devil_1.jpg",
+            } }
+        };
     };
 
 	class B_Truck_01_transport_F {
@@ -362,7 +367,12 @@ class CfgVehicles {
 		garageSell[] = { 135000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {};
+        textures[] = {
+            { "Devil", "civ", {
+                "textures\civ\civ_hemtt_devil_0.jpg",
+                "textures\civ\civ_hemtt_devil_1.jpg",
+            } }
+        };
     };
 
 	class O_MRAP_02_F {
@@ -371,7 +381,40 @@ class CfgVehicles {
 		garageSell[] = { 65000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {};
+        textures[] = {
+            { "TarnRot", "reb", {
+                "textures\civ\ifrit_r1.jpg",
+				"textures\civ\ifrit_r2.jpg"
+            } },
+            { "Black Rebell", "reb", {
+                "textures\civ\ifrit_rebell_front.jpg",
+                "textures\civ\ifrit_rebell_back.jpg",
+            } },
+            { "Slovakiadragon", "adm", {
+                "textures\admin\ifrit_admin_front.jpg",
+                "textures\admin\ifrit_sl.jpg",
+            } },
+            { "Abdul", "adm", {
+                "textures\admin\ifrit_admin_front.jpg",
+                "textures\admin\ifrit_da.jpg",
+            } },
+            { "Graf", "adm", {
+                "textures\admin\ifrit_admin_front.jpg",
+                "textures\admin\ifrit_graf.jpg",
+            } },
+            { "JimBeam", "adm", {
+                "textures\admin\ifrit_admin_front.jpg",
+                "textures\admin\ifrit_jimbeam.jpg",
+            } },
+            { "Loki", "adm", {
+                "textures\admin\ifrit_admin_front.jpg",
+                "textures\admin\ifrit_loki.jpg",
+            } },
+            { "Falcone", "adm", {
+                "textures\admin\ifrit_admin_front.jpg",
+                "textures\admin\ifrit_df.jpg",
+            } }
+        };
     };
 
 	class I_MRAP_03_F {
@@ -420,8 +463,14 @@ class CfgVehicles {
             { "ART", "med", {
 	                "textures\med\medic_offroad.jpg"
             } },
-            { "Taxi", "civ", {
-	                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
+            { "Dodge", "civ", {
+	                "textures\civ\civ_offroad_dodge.jpg"
+            } },
+            { "Weed", "civ", {
+	                "textures\civ\civ_offroad_weed.jpg"
+            } },
+            { "Pokemon", "civ", {
+	                "textures\civ\pokemon_off.jpg"
             } }
 	    };
     };
@@ -466,6 +515,15 @@ class CfgVehicles {
             } },
             { "GNRA", "cop", {
                 "textures\cop\Hatchback_Gendarm.jpg"
+            } },
+            { "Metallica", "civ", {
+                "textures\civ\civ_hatchback_metallica.jpg"
+            } },
+            { "Monster", "civ", {
+                "textures\civ\hatchback_sport_ken_block.jpg"
+            } },
+            { "Ghostbuster", "civ", {
+                "textures\civ\ghost_hatchback_sport.jpg"
             } }
         };
     };
@@ -572,6 +630,12 @@ class CfgVehicles {
             } },
 			{ "Polizei", "cop", {
                 "textures\cop\Hatchback_Gendarm.jpg"
+            } },
+			{ "Mario", "civ", {
+                "textures\cop\hatchbackv1.jpg"
+            } },
+			{ "Peach", "civ", {
+                "textures\cop\hatchbackv2.jpg"
             } }
         };
     };
@@ -600,6 +664,36 @@ class CfgVehicles {
             } },
             { "GIGN", "cop", {
                 "textures\cop\SUV_GIGN.jpg"
+            } },
+            { "Batman", "civ", {
+                "textures\civ\batman_suv.jpg"
+            } },
+            { "Carbon", "civ", {
+                "textures\civ\carbon_suv.jpg"
+            } },
+            { "Ferrari", "civ", {
+                "textures\civ\civ_suv_ferrari.jpg"
+            } },
+            { "KV Green", "civ", {
+                "textures\civ\civ_suv_server.jpg"
+            } },
+            { "KV Weiss", "civ", {
+                "textures\civ\civ_suv_server_weiss.jpg"
+            } },
+            { "Skull", "civ", {
+                "textures\civ\civ_suv_skull.jpg"
+            } },
+            { "Lady", "civ", {
+                "textures\civ\pink_suv.jpg"
+            } },
+            { "Rostlaube", "reb", {
+                "textures\civ\suv_alt.jpg"
+            } },
+            { "VIP", "vip", {
+                "textures\civ\suv_vip.jpg"
+            } },
+            { "Taxi", "civ", {
+                "textures\civ\taxi_suv.jpg"
             } }
 	        };
     };
@@ -658,6 +752,10 @@ class CfgVehicles {
                 "textures\civ\digirot_hunter_1.paa",
                 "textures\civ\digirot_hunter_2.paa",
                 "textures\civ\digirot_hunter_3.paa"
+            } },
+			{ "Black Rebell", "reb", {
+                "textures\civ\hunter_rebell_front.jpg",
+                "textures\civ\hunter_rebell_back.jpg",
             } }
         };
     };
@@ -917,8 +1015,13 @@ class CfgVehicles {
 		 storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {};
-	};
+        textures[] = {
+            { "Devil", "civ", {
+                "textures\civ\civ_hemtt_devil_0.jpg",
+                "textures\civ\civ_hemtt_devil_1.jpg",
+            } }
+        };
+    };
 
 	class C_Offroad_02_unarmed_F {
 		vItemSpace = 185;
