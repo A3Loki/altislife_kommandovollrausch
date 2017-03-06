@@ -10180,7 +10180,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this setObjectTexture [0, ""images\kv_sign.jpg""]";
+				init="this allowDamage false; this setObjectTexture [0, ""images\intrologo.paa""]";
 				disableSimulation=1;
 			};
 			id=666;
@@ -10203,7 +10203,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="images\kv_sign.jpg";
+							value="images\intrologo.paa";
 						};
 					};
 				};
