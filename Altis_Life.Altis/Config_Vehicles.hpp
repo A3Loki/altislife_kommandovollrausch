@@ -749,9 +749,8 @@ class CfgVehicles {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             } },
 			{ "Digital Rot", "reb", {
-                "textures\civ\digirot_hunter_1.paa",
-                "textures\civ\digirot_hunter_2.paa",
-                "textures\civ\digirot_hunter_3.paa"
+                "textures\civ\digirot_hunter_1.jpg",
+                "textures\civ\digirot_hunter_2.jpg"
             } },
 			{ "Black Rebell", "reb", {
                 "textures\civ\hunter_rebell_front.jpg",

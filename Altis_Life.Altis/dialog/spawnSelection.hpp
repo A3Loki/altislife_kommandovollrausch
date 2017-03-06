@@ -9,7 +9,7 @@ class life_spawn_selection
 		class NativeGamerBackGround : Life_RscPicture
 		{
 		idc = -1;
-		text = "images\taucher.jpg";
+		text = "images\spawnscreen.jpg";
 		x = 0.0 * safezoneW + safezoneX;
 		y = 0.0 * safezoneH + safezoneY;
 		w = 1.0 * safezoneW;
@@ -19,7 +19,7 @@ class life_spawn_selection
 		class NativeGamerSpawnmenu : life_RscPicture
 		{
 			idc = -1;
-			text = "images\nativegamerspawn.paa";
+			text = "images\spawnscreen2.jpg";
 			x = 0;
 			y = 0;
 			w = 1;
