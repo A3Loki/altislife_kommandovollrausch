@@ -686,7 +686,7 @@ class CfgVehicles {
             { "Lady", "civ", {
                 "textures\civ\pink_suv.jpg"
             } },
-            { "Rostlaube", "reb", {
+            { "Rostlaube", "civ", {
                 "textures\civ\suv_alt.jpg"
             } },
             { "VIP", "vip", {
