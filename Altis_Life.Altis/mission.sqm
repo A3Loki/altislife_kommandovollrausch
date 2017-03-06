@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=50;
+		nextID=52;
 	};
 	class Camera
 	{
-		pos[]={3641.2136,106.65981,13089.014};
-		dir[]={0.0035564315,-0.99884921,-0.04783877};
-		up[]={0.074052259,0.047951594,-0.99610072};
-		aside[]={-0.99724817,1.542503e-009,-0.074137524};
+		pos[]={3622.5532,27.326693,13115.892};
+		dir[]={-0.61092734,-0.76640397,-0.19855855};
+		up[]={-0.72889394,0.64233357,-0.23689805};
+		aside[]={-0.3091003,-2.5524059e-007,0.9510473};
 	};
 };
 binarizationWanted=0;
@@ -7880,6 +7880,7 @@ class Mission
 				angles[]={0.0026520467,4.3871293,6.2805333};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -7887,7 +7888,7 @@ class Mission
 			};
 			id=539;
 			type="Land_RattanChair_01_F";
-			atlOffset=0.89842987;
+			atlOffset=0.001783371;
 		};
 		class Item490
 		{
@@ -7898,6 +7899,7 @@ class Mission
 				angles[]={0.0026520467,3.4271982,6.2805333};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -7905,7 +7907,7 @@ class Mission
 			};
 			id=540;
 			type="Land_RattanChair_01_F";
-			atlOffset=0.89842987;
+			atlOffset=0.001783371;
 		};
 		class Item491
 		{
@@ -7924,7 +7926,7 @@ class Mission
 			};
 			id=541;
 			type="Land_RattanChair_01_F";
-			atlOffset=0.044137955;
+			atlOffset=0.047496796;
 		};
 		class Item492
 		{
@@ -7935,6 +7937,7 @@ class Mission
 				angles[]={0.0026520467,1.5549295,6.2805333};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -7942,7 +7945,7 @@ class Mission
 			};
 			id=542;
 			type="Land_RattanChair_01_F";
-			atlOffset=0.89842987;
+			atlOffset=0.0017547607;
 		};
 		class Item493
 		{
@@ -7961,7 +7964,7 @@ class Mission
 			};
 			id=543;
 			type="Land_RattanChair_01_F";
-			atlOffset=0.044137955;
+			atlOffset=0.047498703;
 		};
 		class Item494
 		{
@@ -7980,7 +7983,7 @@ class Mission
 			};
 			id=544;
 			type="Land_RattanChair_01_F";
-			atlOffset=0.046907425;
+			atlOffset=0.050268173;
 		};
 		class Item495
 		{
@@ -7999,7 +8002,7 @@ class Mission
 			};
 			id=545;
 			type="Land_RattanChair_01_F";
-			atlOffset=0.046905518;
+			atlOffset=0.050266266;
 		};
 		class Item496
 		{
@@ -8010,6 +8013,7 @@ class Mission
 				angles[]={0.0026520467,0.33319905,6.2805333};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -8017,7 +8021,7 @@ class Mission
 			};
 			id=546;
 			type="Land_RattanChair_01_F";
-			atlOffset=0.89842796;
+			atlOffset=0.0018844604;
 		};
 		class Item497
 		{
@@ -10180,7 +10184,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this setObjectTexture [0, ""images\intrologo.paa""]";
+				init="this allowDamage false; this setObjectTexture [0, ""images\kv_sign.jpg""]";
 				disableSimulation=1;
 			};
 			id=666;
@@ -10203,7 +10207,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="images\intrologo.paa";
+							value="";
 						};
 					};
 				};
@@ -14356,6 +14360,7 @@ class Mission
 			};
 			id=994;
 			type="Land_ConcretePipe_F";
+			atlOffset=0.099515915;
 		};
 		class Item801
 		{
@@ -14374,6 +14379,7 @@ class Mission
 			};
 			id=995;
 			type="Land_ConcretePipe_F";
+			atlOffset=0.0995121;
 		};
 		class Item802
 		{
@@ -30886,7 +30892,6 @@ class Mission
 			};
 			id=2087;
 			type="Land_Metal_rack_F";
-			atlOffset=2.0027161e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -32720,7 +32725,7 @@ class Mission
 			};
 			id=2132;
 			type="Land_OfficeCabinet_01_F";
-			atlOffset=0.057435989;
+			atlOffset=0.057436943;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -32823,7 +32828,6 @@ class Mission
 			};
 			id=2134;
 			type="OfficeTable_01_new_F";
-			atlOffset=-4.7683716e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -32926,7 +32930,7 @@ class Mission
 			};
 			id=2136;
 			type="OfficeTable_01_new_F";
-			atlOffset=0.0045347214;
+			atlOffset=0.004535675;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33602,7 +33606,7 @@ class Mission
 			};
 			id=2152;
 			type="Land_Metal_rack_F";
-			atlOffset=0.073511124;
+			atlOffset=0.073550224;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33643,7 +33647,7 @@ class Mission
 			};
 			id=2153;
 			type="Land_Metal_rack_F";
-			atlOffset=0.072262764;
+			atlOffset=0.072302818;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33765,7 +33769,7 @@ class Mission
 			};
 			id=2156;
 			type="Land_CarBattery_02_F";
-			atlOffset=1.4256935;
+			atlOffset=1.4256897;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33805,7 +33809,7 @@ class Mission
 			};
 			id=2157;
 			type="Land_VRGoggles_01_F";
-			atlOffset=1.4247265;
+			atlOffset=1.4247246;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33845,7 +33849,7 @@ class Mission
 			};
 			id=2158;
 			type="Land_ExtensionCord_F";
-			atlOffset=1.051301;
+			atlOffset=1.0512981;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33885,7 +33889,7 @@ class Mission
 			};
 			id=2159;
 			type="Land_CarBattery_01_F";
-			atlOffset=0.9712925;
+			atlOffset=0.97128677;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33925,7 +33929,7 @@ class Mission
 			};
 			id=2160;
 			type="Land_SurvivalRadio_F";
-			atlOffset=1.4261637;
+			atlOffset=1.426158;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33965,7 +33969,7 @@ class Mission
 			};
 			id=2161;
 			type="Land_Tyre_F";
-			atlOffset=0.0026569366;
+			atlOffset=0.0026531219;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34047,7 +34051,7 @@ class Mission
 			};
 			id=2163;
 			type="Land_Tyre_01_F";
-			atlOffset=0.00084400177;
+			atlOffset=0.00082778931;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34088,7 +34092,7 @@ class Mission
 			};
 			id=2164;
 			type="Land_PalletTrolley_01_yellow_F";
-			atlOffset=0.093752861;
+			atlOffset=0.093777657;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34128,7 +34132,7 @@ class Mission
 			};
 			id=2165;
 			type="Land_Antibiotic_F";
-			atlOffset=1.274972;
+			atlOffset=1.274971;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34168,7 +34172,7 @@ class Mission
 			};
 			id=2166;
 			type="Land_Antibiotic_F";
-			atlOffset=1.3129854;
+			atlOffset=1.3129845;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34208,7 +34212,7 @@ class Mission
 			};
 			id=2167;
 			type="Land_Antibiotic_F";
-			atlOffset=1.27635;
+			atlOffset=1.2763491;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34247,7 +34251,7 @@ class Mission
 			};
 			id=2168;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2662363;
+			atlOffset=1.2662344;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34287,7 +34291,7 @@ class Mission
 			};
 			id=2169;
 			type="Land_Defibrillator_F";
-			atlOffset=0.19498634;
+			atlOffset=0.19498253;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34327,7 +34331,7 @@ class Mission
 			};
 			id=2170;
 			type="Land_Defibrillator_F";
-			atlOffset=0.19641018;
+			atlOffset=0.19640732;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34367,7 +34371,7 @@ class Mission
 			};
 			id=2171;
 			type="Land_DisinfectantSpray_F";
-			atlOffset=0.56143761;
+			atlOffset=0.56143188;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34407,7 +34411,7 @@ class Mission
 			};
 			id=2172;
 			type="Land_DisinfectantSpray_F";
-			atlOffset=0.55859375;
+			atlOffset=0.55858707;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34447,7 +34451,7 @@ class Mission
 			};
 			id=2173;
 			type="Land_DisinfectantSpray_F";
-			atlOffset=0.5580101;
+			atlOffset=0.55800343;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34487,7 +34491,7 @@ class Mission
 			};
 			id=2174;
 			type="Land_PainKillers_F";
-			atlOffset=0.57049847;
+			atlOffset=0.57049656;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34527,7 +34531,7 @@ class Mission
 			};
 			id=2175;
 			type="Land_CerealsBox_F";
-			atlOffset=1.2692394;
+			atlOffset=1.2692337;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34567,7 +34571,7 @@ class Mission
 			};
 			id=2176;
 			type="Land_CerealsBox_F";
-			atlOffset=1.2677927;
+			atlOffset=1.2677851;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34607,7 +34611,7 @@ class Mission
 			};
 			id=2177;
 			type="Land_CerealsBox_F";
-			atlOffset=1.2665749;
+			atlOffset=1.2665691;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34647,7 +34651,7 @@ class Mission
 			};
 			id=2178;
 			type="Land_FoodContainer_01_F";
-			atlOffset=0.015723228;
+			atlOffset=0.015714645;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34687,7 +34691,7 @@ class Mission
 			};
 			id=2179;
 			type="Land_Antibiotic_F";
-			atlOffset=1.3156672;
+			atlOffset=1.3156662;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34727,7 +34731,7 @@ class Mission
 			};
 			id=2180;
 			type="Land_Antibiotic_F";
-			atlOffset=1.3179569;
+			atlOffset=1.317956;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34767,7 +34771,7 @@ class Mission
 			};
 			id=2181;
 			type="Land_Antibiotic_F";
-			atlOffset=1.2766771;
+			atlOffset=1.2766752;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34807,7 +34811,7 @@ class Mission
 			};
 			id=2182;
 			type="Land_Antibiotic_F";
-			atlOffset=1.2764912;
+			atlOffset=1.2764902;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34847,7 +34851,7 @@ class Mission
 			};
 			id=2183;
 			type="Land_Antibiotic_F";
-			atlOffset=1.3123007;
+			atlOffset=1.3122997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34887,7 +34891,7 @@ class Mission
 			};
 			id=2184;
 			type="Land_DrillAku_F";
-			atlOffset=0.51914787;
+			atlOffset=0.5191412;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34966,7 +34970,7 @@ class Mission
 			};
 			id=2186;
 			type="Land_CanisterFuel_F";
-			atlOffset=1.5258789e-005;
+			atlOffset=2.3841858e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -35006,7 +35010,7 @@ class Mission
 			};
 			id=2187;
 			type="Land_CanisterFuel_F";
-			atlOffset=0.099057198;
+			atlOffset=0.099064827;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -47378,7 +47382,7 @@ class Mission
 			};
 			id=3031;
 			type="Land_ChairWood_F";
-			atlOffset=0.0984478;
+			atlOffset=0.097882271;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -47418,7 +47422,7 @@ class Mission
 			};
 			id=3032;
 			type="Land_ChairWood_F";
-			atlOffset=0.10213184;
+			atlOffset=0.10156631;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -47458,7 +47462,7 @@ class Mission
 			};
 			id=3033;
 			type="Land_ChairWood_F";
-			atlOffset=0.097537994;
+			atlOffset=0.096972466;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -47802,7 +47806,7 @@ class Mission
 			};
 			id=3041;
 			type="Land_ShelvesWooden_F";
-			atlOffset=0.077811241;
+			atlOffset=0.076901436;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -48487,7 +48491,7 @@ class Mission
 			};
 			id=3059;
 			type="Land_Notepad_F";
-			atlOffset=0.59526825;
+			atlOffset=0.59524822;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53527,7 +53531,7 @@ class Mission
 			};
 			id=3245;
 			type="Land_Antibiotic_F";
-			atlOffset=1.3184872;
+			atlOffset=1.3184862;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53567,7 +53571,7 @@ class Mission
 			};
 			id=3246;
 			type="Land_Antibiotic_F";
-			atlOffset=1.2772007;
+			atlOffset=1.2771997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53607,7 +53611,7 @@ class Mission
 			};
 			id=3247;
 			type="Land_Antibiotic_F";
-			atlOffset=1.2768793;
+			atlOffset=1.2768774;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53647,7 +53651,7 @@ class Mission
 			};
 			id=3248;
 			type="Land_Antibiotic_F";
-			atlOffset=1.3161974;
+			atlOffset=1.3161964;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53687,7 +53691,7 @@ class Mission
 			};
 			id=3249;
 			type="Land_Antibiotic_F";
-			atlOffset=1.2770166;
+			atlOffset=1.2770157;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53727,7 +53731,7 @@ class Mission
 			};
 			id=3250;
 			type="Land_Antibiotic_F";
-			atlOffset=1.31283;
+			atlOffset=1.312829;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53767,7 +53771,7 @@ class Mission
 			};
 			id=3251;
 			type="Land_Antibiotic_F";
-			atlOffset=1.3135166;
+			atlOffset=1.3135157;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53807,7 +53811,7 @@ class Mission
 			};
 			id=3252;
 			type="Land_Antibiotic_F";
-			atlOffset=1.2755032;
+			atlOffset=1.2755022;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53847,7 +53851,7 @@ class Mission
 			};
 			id=3253;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2730837;
+			atlOffset=1.2730818;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53887,7 +53891,7 @@ class Mission
 			};
 			id=3254;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2719297;
+			atlOffset=1.2719278;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53927,7 +53931,7 @@ class Mission
 			};
 			id=3255;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2720966;
+			atlOffset=1.2720947;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53967,7 +53971,7 @@ class Mission
 			};
 			id=3256;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2715855;
+			atlOffset=1.2715836;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54007,7 +54011,7 @@ class Mission
 			};
 			id=3257;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2713003;
+			atlOffset=1.2712984;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54047,7 +54051,7 @@ class Mission
 			};
 			id=3258;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2717905;
+			atlOffset=1.2717886;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54087,7 +54091,7 @@ class Mission
 			};
 			id=3259;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2716522;
+			atlOffset=1.2716503;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54127,7 +54131,7 @@ class Mission
 			};
 			id=3260;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2728052;
+			atlOffset=1.2728033;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54167,7 +54171,7 @@ class Mission
 			};
 			id=3261;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2725706;
+			atlOffset=1.2725687;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54207,7 +54211,7 @@ class Mission
 			};
 			id=3262;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.272068;
+			atlOffset=1.2720661;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54247,7 +54251,7 @@ class Mission
 			};
 			id=3263;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2715855;
+			atlOffset=1.2715836;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54287,7 +54291,7 @@ class Mission
 			};
 			id=3264;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2710714;
+			atlOffset=1.2710686;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54327,7 +54331,7 @@ class Mission
 			};
 			id=3265;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2708139;
+			atlOffset=1.270812;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54367,7 +54371,7 @@ class Mission
 			};
 			id=3266;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2713041;
+			atlOffset=1.2713022;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54407,7 +54411,7 @@ class Mission
 			};
 			id=3267;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.2718344;
+			atlOffset=1.2718325;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54447,7 +54451,7 @@ class Mission
 			};
 			id=3268;
 			type="Land_VitaminBottle_F";
-			atlOffset=1.272316;
+			atlOffset=1.2723141;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54487,7 +54491,7 @@ class Mission
 			};
 			id=3269;
 			type="Land_PainKillers_F";
-			atlOffset=0.57405663;
+			atlOffset=0.57405472;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54527,7 +54531,7 @@ class Mission
 			};
 			id=3270;
 			type="Land_PainKillers_F";
-			atlOffset=0.57339096;
+			atlOffset=0.57338905;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54567,7 +54571,7 @@ class Mission
 			};
 			id=3271;
 			type="Land_PainKillers_F";
-			atlOffset=0.57260132;
+			atlOffset=0.57259941;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54607,7 +54611,7 @@ class Mission
 			};
 			id=3272;
 			type="Land_PainKillers_F";
-			atlOffset=0.57030869;
+			atlOffset=0.57030678;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54647,7 +54651,7 @@ class Mission
 			};
 			id=3273;
 			type="Land_PainKillers_F";
-			atlOffset=0.57108879;
+			atlOffset=0.57108688;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54687,7 +54691,7 @@ class Mission
 			};
 			id=3274;
 			type="Land_PainKillers_F";
-			atlOffset=0.65715027;
+			atlOffset=0.65714836;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54727,7 +54731,7 @@ class Mission
 			};
 			id=3275;
 			type="Land_PainKillers_F";
-			atlOffset=0.65642166;
+			atlOffset=0.65641975;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54767,7 +54771,7 @@ class Mission
 			};
 			id=3276;
 			type="Land_PainKillers_F";
-			atlOffset=0.65565205;
+			atlOffset=0.65565014;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54807,7 +54811,7 @@ class Mission
 			};
 			id=3277;
 			type="Land_PainKillers_F";
-			atlOffset=0.65488338;
+			atlOffset=0.65488148;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54847,7 +54851,7 @@ class Mission
 			};
 			id=3278;
 			type="Land_PainKillers_F";
-			atlOffset=0.65565872;
+			atlOffset=0.65565681;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54887,7 +54891,7 @@ class Mission
 			};
 			id=3279;
 			type="Land_Defibrillator_F";
-			atlOffset=0.20560646;
+			atlOffset=0.2056036;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54927,7 +54931,7 @@ class Mission
 			};
 			id=3280;
 			type="Land_DrillAku_F";
-			atlOffset=0.51113415;
+			atlOffset=0.51112747;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54967,7 +54971,7 @@ class Mission
 			};
 			id=3281;
 			type="Land_DrillAku_F";
-			atlOffset=0.51959324;
+			atlOffset=0.51958656;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55007,7 +55011,7 @@ class Mission
 			};
 			id=3282;
 			type="Land_DrillAku_F";
-			atlOffset=0.51799107;
+			atlOffset=0.51798534;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55047,7 +55051,7 @@ class Mission
 			};
 			id=3283;
 			type="Land_DrillAku_F";
-			atlOffset=0.51793289;
+			atlOffset=0.51792717;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55087,7 +55091,7 @@ class Mission
 			};
 			id=3284;
 			type="Land_CarBattery_01_F";
-			atlOffset=0.94605637;
+			atlOffset=0.94605064;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55128,7 +55132,7 @@ class Mission
 			};
 			id=3290;
 			type="Land_Metal_rack_F";
-			atlOffset=-1.5258789e-005;
+			atlOffset=6.7710876e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55168,7 +55172,7 @@ class Mission
 			};
 			id=3291;
 			type="Land_DrillAku_F";
-			atlOffset=0.49199772;
+			atlOffset=0.49198532;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55208,7 +55212,7 @@ class Mission
 			};
 			id=3292;
 			type="Land_DrillAku_F";
-			atlOffset=0.49205303;
+			atlOffset=0.49204063;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55248,7 +55252,7 @@ class Mission
 			};
 			id=3293;
 			type="Land_DrillAku_F";
-			atlOffset=0.49368;
+			atlOffset=0.49366856;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55288,7 +55292,7 @@ class Mission
 			};
 			id=3294;
 			type="Land_DrillAku_F";
-			atlOffset=0.48533154;
+			atlOffset=0.48531914;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55328,7 +55332,7 @@ class Mission
 			};
 			id=3295;
 			type="Land_DrillAku_F";
-			atlOffset=0.49322891;
+			atlOffset=0.49321461;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55369,7 +55373,7 @@ class Mission
 			};
 			id=3296;
 			type="Land_Metal_rack_F";
-			atlOffset=0.0026168823;
+			atlOffset=0.0027122498;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55410,7 +55414,7 @@ class Mission
 			};
 			id=3302;
 			type="Land_Hammer_F";
-			atlOffset=0.0055103302;
+			atlOffset=0.0055036545;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55451,7 +55455,7 @@ class Mission
 			};
 			id=3303;
 			type="Land_Hammer_F";
-			atlOffset=0.0096712112;
+			atlOffset=0.0096645355;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55492,7 +55496,7 @@ class Mission
 			};
 			id=3304;
 			type="Land_Hammer_F";
-			atlOffset=0.00552845;
+			atlOffset=0.0055217743;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55533,7 +55537,7 @@ class Mission
 			};
 			id=3305;
 			type="Land_Hammer_F";
-			atlOffset=0.0072813034;
+			atlOffset=0.0072746277;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55573,7 +55577,7 @@ class Mission
 			};
 			id=3306;
 			type="Land_Axe_F";
-			atlOffset=1.4003553;
+			atlOffset=1.4003525;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55613,7 +55617,7 @@ class Mission
 			};
 			id=3307;
 			type="Land_BucketNavy_F";
-			atlOffset=0.0086116791;
+			atlOffset=0.0085935593;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55654,7 +55658,7 @@ class Mission
 			};
 			id=3308;
 			type="Land_BucketNavy_F";
-			atlOffset=0.0088291168;
+			atlOffset=0.008810997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55694,7 +55698,7 @@ class Mission
 			};
 			id=3309;
 			type="Land_GasTank_01_blue_F";
-			atlOffset=0.0024595261;
+			atlOffset=0.0024242401;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55775,7 +55779,7 @@ class Mission
 			};
 			id=3311;
 			type="Land_FireExtinguisher_F";
-			atlOffset=0.0014638901;
+			atlOffset=0.0014486313;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55816,7 +55820,7 @@ class Mission
 			};
 			id=3312;
 			type="Land_ToolTrolley_02_F";
-			atlOffset=0.018475533;
+			atlOffset=0.018432617;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55857,7 +55861,7 @@ class Mission
 			};
 			id=3313;
 			type="Land_OfficeCabinet_01_F";
-			atlOffset=0.068919182;
+			atlOffset=0.068958282;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55917,7 +55921,7 @@ class Mission
 			};
 			id=3314;
 			type="Land_OfficeCabinet_01_F";
-			atlOffset=0.075386047;
+			atlOffset=0.075417519;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55977,7 +55981,7 @@ class Mission
 			};
 			id=3315;
 			type="OfficeTable_01_new_F";
-			atlOffset=0.00030517578;
+			atlOffset=0.00026226044;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56154,7 +56158,7 @@ class Mission
 			};
 			id=3319;
 			type="Land_PCSet_01_case_F";
-			atlOffset=0.041959763;
+			atlOffset=0.041974068;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56195,7 +56199,7 @@ class Mission
 			};
 			id=3321;
 			type="Land_TableDesk_F";
-			atlOffset=-5.8174133e-005;
+			atlOffset=-4.1007996e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56477,7 +56481,7 @@ class Mission
 			};
 			id=3328;
 			type="Land_PCSet_01_case_F";
-			atlOffset=0.038331985;
+			atlOffset=0.038345337;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56518,7 +56522,7 @@ class Mission
 			};
 			id=3329;
 			type="Land_OfficeChair_01_F";
-			atlOffset=0.10608292;
+			atlOffset=0.10605621;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56559,7 +56563,7 @@ class Mission
 			};
 			id=3331;
 			type="Land_OfficeCabinet_01_F";
-			atlOffset=0.087115288;
+			atlOffset=0.08710289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56619,7 +56623,7 @@ class Mission
 			};
 			id=3332;
 			type="Land_OfficeCabinet_01_F";
-			atlOffset=0.094109535;
+			atlOffset=0.094098091;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56679,7 +56683,7 @@ class Mission
 			};
 			id=3333;
 			type="Land_MapBoard_F";
-			atlOffset=0.073954582;
+			atlOffset=0.073989868;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56720,7 +56724,7 @@ class Mission
 			};
 			id=3334;
 			type="Land_ShelvesWooden_F";
-			atlOffset=0.078410149;
+			atlOffset=0.078426361;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -80622,7 +80626,7 @@ class Mission
 			};
 			id=5292;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.19828796;
+			atlOffset=0.19835854;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -83156,7 +83160,7 @@ class Mission
 			};
 			id=5398;
 			type="Land_ConcretePipe_F";
-			atlOffset=-6.2942505e-005;
+			atlOffset=0.099378586;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -83197,7 +83201,7 @@ class Mission
 			};
 			id=5399;
 			type="Land_ConcretePipe_F";
-			atlOffset=-0.00027656555;
+			atlOffset=0.099159241;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -83566,7 +83570,7 @@ class Mission
 			};
 			id=5411;
 			type="Land_ConcretePipe_F";
-			atlOffset=0.040434837;
+			atlOffset=0.13991547;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -83607,7 +83611,7 @@ class Mission
 			};
 			id=5412;
 			type="Land_ConcretePipe_F";
-			atlOffset=0.029417038;
+			atlOffset=0.12882328;
 			class CustomAttributes
 			{
 				class Attribute0
