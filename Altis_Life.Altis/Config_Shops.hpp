@@ -39,12 +39,14 @@ class WeaponShops {
                     {"arifle_SDAR_F",               "", 150000},
                     {"arifle_TRG20_F",              "", 200000},
                     {"arifle_Katiba_F",             "", 500000},
+					{"arifle_AKS_F",                "", 500000},
 
                     // ** Magazine
                     {"11Rnd_45ACP_Mag",             "", 1000},
                     {"30Rnd_9x21_Mag",              "", 1500},
                     {"6Rnd_45ACP_Cylinder",         "", 2500},
                     {"30Rnd_45ACP_Mag_SMG_01",      "", 3400},
+					{"30Rnd_545x39_Mag_F",          "", 3750},
                     {"20Rnd_556x45_UW_mag",         "", 3750},
                     {"30Rnd_556x45_Stanag",         "", 5650},
                     {"30Rnd_65x39_caseless_green",  "", 6250}
@@ -60,15 +62,27 @@ class WeaponShops {
         items[] = {
 					// ** Waffen
 					{"srifle_DMR_06_camo_F",        "", 300000},
+					{"srifle_DMR_03_F",             "", 300000},
+					{"srifle_DMR_03_woodland_F",    "", 300000},
+					{"arifle_AKM_F",                "", 300000},
 					{"srifle_DMR_01_DMS_BI_F",      "", 500000},
+					{"arifle_AK12_F",               "", 500000},
+					{"arifle_AK12_GL_F",            "", 800000},
                     {"srifle_LRR_camo_F",           "", 1100000},
                     {"srifle_DMR_05_tan_f",         "", 1650000},
 
 					// ** Magazine
+					{"30Rnd_762x39_Mag_f",          "", 7200},
 					{"10Rnd_762x54_Mag",            "", 7200},
                     {"20Rnd_762x51_Mag",            "", 7900},
                     {"7Rnd_408_Mag",                "", 8500},
                     {"10Rnd_93x64_DMR_05_Mag",      "", 10000}
+					{"1Rnd_SmokeRed_Grenade_shell", "", 500}
+                    {"1Rnd_SmokeGreen_Grenade_shell",   "", 500}
+                    {"1Rnd_SmokeYellow_Grenade_shell",  "", 500}
+                    {"1Rnd_SmokePurple_Grenade_shell",  "", 500}
+                    {"1Rnd_SmokeBlue_Grenade_shell",    "", 500}
+                    {"1Rnd_SmokeOrange_Grenade_shell",  "", 500}						
         };
     };
 
@@ -80,7 +94,12 @@ class WeaponShops {
         msg = "";
         items[] = {
                     // ** Aufsätze
-                    {"optic_Arco",                  "", 7500},
+                    {"acc_flashlight",              "", 1000},
+					{"acc_pointer_IR",              "", 1000},
+					{"muzzle_snds_B",               "", 5000},
+					{"muzzle_snds_B_khk_F",         "", 5000},
+					{"optic_Arco",                  "", 7500},
+					{"optic_Arco_ghex_F",           "", 7500},
                     {"optic_Hamr",                  "", 10000},
                     {"optic_Aco",                   "", 2400},
                     {"optic_Holosight",             "", 3400},
