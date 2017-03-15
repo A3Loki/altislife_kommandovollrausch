@@ -76,12 +76,12 @@ class WeaponShops {
 					{"10Rnd_762x54_Mag",            "", 7200},
                     {"20Rnd_762x51_Mag",            "", 7900},
                     {"7Rnd_408_Mag",                "", 8500},
-                    {"10Rnd_93x64_DMR_05_Mag",      "", 10000}
-					{"1Rnd_SmokeRed_Grenade_shell", "", 500}
-                    {"1Rnd_SmokeGreen_Grenade_shell",   "", 500}
-                    {"1Rnd_SmokeYellow_Grenade_shell",  "", 500}
-                    {"1Rnd_SmokePurple_Grenade_shell",  "", 500}
-                    {"1Rnd_SmokeBlue_Grenade_shell",    "", 500}
+                    {"10Rnd_93x64_DMR_05_Mag",      "", 10000},
+					{"1Rnd_SmokeRed_Grenade_shell", "", 500},
+                    {"1Rnd_SmokeGreen_Grenade_shell",   "", 500},
+                    {"1Rnd_SmokeYellow_Grenade_shell",  "", 500},
+                    {"1Rnd_SmokePurple_Grenade_shell",  "", 500},
+                    {"1Rnd_SmokeBlue_Grenade_shell",    "", 500},
                     {"1Rnd_SmokeOrange_Grenade_shell",  "", 500}						
         };
     };
