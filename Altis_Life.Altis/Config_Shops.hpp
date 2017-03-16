@@ -263,8 +263,8 @@ class WeaponShops {
                     {"Chemlight_yellow",            "",      10},
                     {"Chemlight_green",             "",      10},
                     {"Chemlight_blue",              "",      10},
-                    {"SmokeShellGreen",             "",      15000},
-                    {"SmokeShellRed",               "",      15000}
+                    {"SmokeShellGreen",             "",      500},
+                    {"SmokeShellRed",               "",      500}
         };
     };
 
@@ -287,12 +287,12 @@ class WeaponShops {
                     // ** Aufsätze
                     {"optic_Aco",                   "ACO",                      2400},
                     {"optic_Holosight",             "Holovisier",               3200},
-                    {"acc_flashlight",              "Lampe",                    25000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
 
 
                     // ** Items
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
     class cop_officer {
@@ -320,9 +320,9 @@ class WeaponShops {
                     {"optic_Hamr",                  "RCO",                      4500},
                     {"optic_Arco",                  "ARCO",                     7500},
                     {"optic_MRCO",                  "MRCO",                     10000},
-                    {"acc_flashlight",              "Lampe",                    25000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     20000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
 
                     // ** Items
                     {"Rangefinder",                 "Entfernungsmesser",        35000}
@@ -355,12 +355,12 @@ class WeaponShops {
                     {"optic_Arco",                  "ARCO",                     7500},
                     {"optic_MRCO",                  "MRCO",                     10000},
                     {"optic_AMS",                   "AMS",                      5000},
-                    {"acc_flashlight",              "Lampe",                    25000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     20000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
 
                     // ** Items
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
 
         };
     };
@@ -394,13 +394,13 @@ class WeaponShops {
                     {"optic_Arco",                  "ARCO",                     7500},
                     {"optic_MRCO",                  "MRCO",                     10000},
                     {"optic_DMS",                   "DMS",                      14500},
-                    {"acc_flashlight",              "Lampe",                    25000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     20000},
-                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     50000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
 
                     // ** Items
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -437,14 +437,14 @@ class WeaponShops {
                     {"optic_MRCO",                  "MRCO",                     10000},
                     {"optic_DMS",                   "DMS",                      14500},
                     {"optic_KHS_blk",               "Kahlia",                   14500},
-                    {"acc_flashlight",              "Lampe",                    25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     20000},
-                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     50000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
 
                     // ** Items
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -484,15 +484,15 @@ class WeaponShops {
                     {"optic_DMS",                   "DMS",                      14500},
                     {"optic_KHS_blk",               "Kahlia",                   14500},
                     {"optic_AMS",                   "AMS",                      5000},
-                    {"acc_flashlight",              "Lampe",                    25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     20000},
-                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     50000},
-                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       50000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
+                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       4000},
 
                     // ** Items
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -532,15 +532,15 @@ class WeaponShops {
                     {"optic_DMS",                   "DMS",                      14500},
                     {"optic_KHS_blk",               "Kahlia",                   14500},
                     {"optic_AMS",                   "AMS",                      5000},
-                    {"acc_flashlight",              "Lampe",                    25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     20000},
-                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     50000},
-                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       50000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
+                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       4000},
 
                     // ** Items
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -580,15 +580,15 @@ class WeaponShops {
                     {"optic_DMS",                   "DMS",                      14500},
                     {"optic_KHS_blk",               "Kahlia",                   14500},
                     {"optic_AMS",                   "AMS",                      5000},
-                    {"acc_flashlight",              "Lampe",                    25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     20000},
-                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     50000},
-                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       50000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
+                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       4000},
 
                     // ** Items
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -628,15 +628,15 @@ class WeaponShops {
                     {"optic_DMS",                   "DMS",                      14500},
                     {"optic_KHS_blk",               "Kahlia",                   14500},
                     {"optic_AMS",                   "AMS",                      5000},
-                    {"acc_flashlight",              "Lampe",                    25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     20000},
-                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     50000},
-                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       50000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
+                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       4000},
 
                     // ** Items
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -676,15 +676,15 @@ class WeaponShops {
                     {"optic_DMS",                   "DMS",                      14500},
                     {"optic_KHS_blk",               "Kahlia",                   14500},
                     {"optic_AMS",                   "AMS",                      5000},
-                    {"acc_flashlight",              "Lampe",                    25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     20000},
-                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     50000},
-                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       50000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
+                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       4000},
 
                     // ** Items
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -724,15 +724,15 @@ class WeaponShops {
                     {"optic_DMS",                   "DMS",                      14500},
                     {"optic_KHS_blk",               "Kahlia",                   14500},
                     {"optic_AMS",                   "AMS",                      5000},
-                    {"acc_flashlight",              "Lampe",                    25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     20000},
-                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     50000},
-                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       50000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
+                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       4000},
 
                     // ** Items
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
