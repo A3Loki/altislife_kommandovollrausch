@@ -99,7 +99,6 @@ class CarShops {
 			{ "B_GEN_Offroad_01_gen_F", 13000, "", { "life_coplevel", -1 } },
 			{ "C_SUV_01_F", 20000, "", { "life_coplevel", 2 } },
 			{ "C_Hatchback_01_sport_F", 20000, "", { "life_coplevel", 4 } },
-			{"O_MRAP_02_F", 50000, "gsg" },
 			{"B_MRAP_01_F", 50000, "gsg" },
 			{"I_MRAP_03_F", 50000, "gsg"},
 			{"C_Offroad_02_unarmed_F", 15000,"",{"life_coplevel", -1}}
