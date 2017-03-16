@@ -8,7 +8,7 @@
 		edible = EDIBLE; \
 		icon = ICON; \
 	};
-	
+
 #define LICENSEMACRO(NAME,DISPLAYNAME,VARNAME,PRICE,ILLEGAL,SIDE) class NAME { \
 		variable = VARNAME; \
 		displayName = DISPLAYNAME; \
@@ -24,7 +24,7 @@
 
 
 /*
-	Master settings for various features and functionality	
+	Master settings for various features and functionality
 */
 class Life_Settings {
 	/* Persistent Settings */
@@ -34,7 +34,7 @@ class Life_Settings {
 	/* Revive system settings */
 	revive_cops = false; //true to enable cops the ability to revive everyone or false for only medics/ems.
 	revive_fee = 2500; //Revive fee that players have to pay and medics / EMS are rewarded
-	
+
 	/* House related settings */
 	house_limit = 3; //Maximum amount of houses a player can own.
 
@@ -48,7 +48,7 @@ class Life_Settings {
 	total_maxWeight = 150; //Identifies the max carrying weight (gets adjusted throughout game when wearing different types of clothing).
 	total_maxWeightT = 24;  //Static variable for the maximum weight allowed without having a backpack
 	paycheck_period = 30; //Scaled in minutes
-	
+
 	/* Impound Variables */
 	impound_car = 5000; //Price for impounding cars
 	impound_boat = 12000; //Price for impounding boats
@@ -60,16 +60,16 @@ class Life_Settings {
 	/* Job-related stuff */
 	delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25" };
 
-	crimes[] = { 
-		{"STR_Crime_1","350","1"}, 
-		{"STR_Crime_2","1500","2"}, 
-		{"STR_Crime_3","2500","3"}, 
-		{"STR_Crime_4","3500","4"}, 
-		{"STR_Crime_5","10000","5"}, 
-		{"STR_Crime_6","5000","6"}, 
-		{"STR_Crime_7","10000","7"} 
+	crimes[] = {
+		{"STR_Crime_1","350","1"},
+		{"STR_Crime_2","1500","2"},
+		{"STR_Crime_3","2500","3"},
+		{"STR_Crime_4","3500","4"},
+		{"STR_Crime_5","10000","5"},
+		{"STR_Crime_6","5000","6"},
+		{"STR_Crime_7","10000","7"}
 	};
-	
+
 	sellArray[] = {
 		{"arifle_sdar_F", 7500},
 		{"hgun_P07_snds_F", 650},
@@ -200,13 +200,13 @@ class VirtualItems {
 	VITEMMACRO(hamburger, "STR_Item_Hamburger", "Hamburger", 2, 175, 135, false, 100, "icons\burgers.paa")
 	VITEMMACRO(cheeseburger, "STR_Item_Cheeseburger", "Cheeseburger", 2, 175, 135, false, 100, "icons\burgers.paa")
 	VITEMMACRO(gyrosteller, "STR_Item_Gyrosteller", "Gyrosteller", 2, 175, 135, false, 100, "icons\gyrosteller.paa")
-	
+
 };
 
 
 /*
 	Licenses
-	
+
 	Params:
 	CLASS ENTRY,DisplayName,VariableName,price,illegal,side indicator
 */
@@ -238,19 +238,20 @@ class Licenses {
 	LICENSEMACRO(ausweis,"STR_License_Ausweis","ausweis",250,false,"civ")
 	LICENSEMACRO(gsg,"STR_License_GSG","gsg",1000,false,"cop")
 	LICENSEMACRO(donator,"STR_License_Donator","donator",15000,false,"civ")
+	LICENSEMACRO(security,"STR_License_Security","security",15000,false,"civ")
 };
 
 class VirtualShops {
 	class market {
 		name = "STR_Shops_Market";
 		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter" };
-	};	
-	
+	};
+
 	class redburger {
 		name = "STR_Shops_RedBurger";
 		items[] = { "hamburger", "cheeseburger", "cocacola", "fanta", "sprite", "apple", "peach" };
-	};	
-	
+	};
+
 	class gyros {
 		name = "STR_Shops_Gyros";
 		items[] = { "gyrosteller", "cocacola", "fanta", "sprite" };
@@ -259,23 +260,23 @@ class VirtualShops {
 	class handwerk {
 		name = "STR_Shops_Handwerk";
 		items[] = { "lockpick", "pickaxe", "fuelFull", "boltcutter", "storagesmall", "storagebig" };
-	};		
-	
+	};
+
 	class schmuggel {
 		name = "STR_Shops_Schmuggel";
 		items[] = { "weaponmg" };
-	};	
-	
+	};
+
 	class richis {
 		name = "STR_Shops_Richis";
 		items[] = { "storagesmall", "storagebig" };
 	};
-	
+
 	class fleischerei {
 		name = "STR_Shops_Fleischerei";
 		items[] = { "rabbit_grilled", "tbacon", };
 	};
-	
+
 	class rebel {
 		name = "STR_Shops_Rebel";
 		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "cableties", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge", "blindfold" };
@@ -295,7 +296,7 @@ class VirtualShops {
 		name = "STR_Shops_Coffee";
 		items[] = { "coffee", "donut" };
 	};
-	
+
 	class drugdealer {
 		name = "STR_Shops_DrugDealer";
 		items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
@@ -335,7 +336,7 @@ class VirtualShops {
 		name = "STR_Shops_Cop";
 		items[] = { "donut", "coffee", "spikeStrip", "waterBottle", "rabbit_grilled", "tbacon", "redgull", "fuelFull", "defusekit", "blindfold", "lockpick" };
 	};
-	
+
 	class med {
 		name = "STR_Shops_Med";
 		items[] = { "donut", "coffee","waterBottle", "rabbit_grilled", "redgull" };
