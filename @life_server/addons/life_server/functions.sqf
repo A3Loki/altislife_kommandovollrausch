@@ -108,7 +108,7 @@ publicVariable "TON_fnc_clientGangLeader";
 */
 
 /*********** ADMIN ***********/
-KV_admin_uids = compileFinal "[""76561198077148178"",""76561197972350240"",""76561197970753742""]";
+KV_admin_uids = compileFinal "[""76561198077148178"",""76561197972350240"",""76561197970753742"",""76561198020198549""]";
 KV_temp_banned_players = [];
 
 KV_fnc_admin =
