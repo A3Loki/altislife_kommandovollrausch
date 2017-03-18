@@ -112,7 +112,12 @@ class CarShops {
 			{ "C_Heli_Light_01_civil_F",350000, "pilot" },
 			{ "O_Heli_Light_02_unarmed_F", 750000, "pilot" },
 			{ "I_Heli_Transport_02_F",4500000, "pilot" },
-			{ "B_Heli_Transport_03_unarmed_F",6500000, "pilot" }
+			{ "B_Heli_Transport_03_unarmed_F",6500000, "pilot" },
+			{ "C_Plane_Civil_01_F",100000,"pilot"},
+			{ "C_Plane_Civil_01_racing_F",125000,"pilot"},
+			{ "B_T_VTOL_01_infantry_F", 7500000},
+			{ "B_T_VTOL_01_infantry_F", 7500000}
+
 		};
 	};
 
@@ -122,7 +127,8 @@ class CarShops {
 			{ "B_Heli_Light_01_F", 200000, "cAir", { "life_coplevel", 3 } },
 			{ "C_Heli_Light_01_civil_F", 200000, "cAir", { "life_coplevel", 3 } },
 			{ "I_Heli_light_03_unarmed_F", 200000, "cAir", { "life_coplevel", 7 } },
-			{ "B_Heli_Transport_01_F", 200000, "cAir", { "life_coplevel", 9 } }
+			{ "B_Heli_Transport_01_F", 200000, "cAir", { "life_coplevel", 9 } },
+			{ "B_T_VTOL_01_infantry_F", 2500000, "cAir", { "life_coplevel", 9 } }
 		};
 	};
 
@@ -1046,5 +1052,26 @@ class CfgVehicles {
                 "textures\med\art_hemtt2.jpg"
             } }
         };
+	};
+	class C_Plane_Civil_01_racing_F {
+		vItemSpace = 10;
+		 storageFee[] = { 1000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = {};
+	};
+	class C_Plane_Civil_01_F {
+		vItemSpace = 10;
+		 storageFee[] = { 1000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = {};
+	};
+		class B_T_VTOL_01_infantry_F {
+		vItemSpace = 1000;
+		 storageFee[] = { 1000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = {};
 	};
 };
