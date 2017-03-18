@@ -82,7 +82,7 @@ class WeaponShops {
                     {"1Rnd_SmokeYellow_Grenade_shell",  "", 500},
                     {"1Rnd_SmokePurple_Grenade_shell",  "", 500},
                     {"1Rnd_SmokeBlue_Grenade_shell",    "", 500},
-                    {"1Rnd_SmokeOrange_Grenade_shell",  "", 500}						
+                    {"1Rnd_SmokeOrange_Grenade_shell",  "", 500}
         };
     };
 
@@ -747,6 +747,7 @@ class WeaponShops {
                     {"ToolKit",                     "", 10},
                     {"FirstAidKit",                 "", 100},
                     {"Medikit",                     "", 100},
+                    {"ItemMap",                     "",  10},
                     {"NVGoggles",                   "", 5000},
                     {"Chemlight_red",               "", 20},
                     {"Chemlight_yellow",            "", 20},
@@ -765,6 +766,7 @@ class WeaponShops {
                     {"ItemGPS",                     "", 10},
                     {"Binocular",                   "", 10},
                     {"ToolKit",                     "", 10},
+                    {"ItemMap",                     "", 10},
                     {"FirstAidKit",                 "", 100},
                     {"Medikit",                     "", 100},
                     {"NVGoggles",                   "", 5000},
