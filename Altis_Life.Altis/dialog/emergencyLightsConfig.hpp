@@ -277,7 +277,7 @@ class emergencyLightsConfig
              timeout = 0;
          };
      };
-     class C_Hatchback_01_F
+     class C_Hatchback_01_sport_F
      {
          class S1
          {
@@ -485,7 +485,7 @@ class emergencyLightsConfig
               timeout = 0;
           };
       };
-      class C_Hatchback_01_F
+      class C_Hatchback_01_sport_F
       {
           class S1
           {

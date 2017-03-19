@@ -21,7 +21,7 @@ DYNMARKET_UserNotification     = false; // Should the user be informed with a hi
 
 // █████████████████ USER NOTIFICATION TEXTS  █████████████████
 
-DYNMARKET_UserNotification_Text = 
+DYNMARKET_UserNotification_Text =
 [
 	"Die Marktpreise wurden aktualisiert!",
 	"Diese Meldung dient zu Testzwecken."
@@ -33,40 +33,40 @@ DYNMARKET_Items_Groups =
 [
 	["Legal",
 		[
-			["apple",-1,55,85],
-			["peach",-1,55,85],
-			["oil_processed",-1,2000,4500],
-			//["wood",-1,800,2000],
-			//["brett",-1,2300,4100],
-			["copper_refined",-1,1000,6000],
-			["iron_refined",-1,2800,4800],
-			["salt_refined",-1,2800,5200],
-			["glass",-1,2100,4400],
-			["diamond_cut",-1,3500,6200],
-			["diamond_uncut",-1,1200,2900],
-			["cement",-1,1900,3600],
+			["apple",-1,75,125],
+			["peach",-1,125,175],
+			["oil_processed",-1,3500,4500],
+			//["wood",-1,426,816],
+			//["brett",-1,852,1632],
+			["copper_refined",-1,650,1250],
+			["iron_refined",-1,1450,2150],
+			["salt_refined",-1,1450,2250],
+			["glass",-1,1350,2000],
+			["diamond_cut",-1,1770,2750],
+			["diamond_uncut",-1,1000,1500],
+			["cement",-1,2000,2500],
 			//["baumwolle_refined",-1,2600,4200],
 			//["applejuice",-1,50,75],
 			//["peachjuice",-1,50,75],
 			//["frogmeat",-1,2500,3500],
 			//["suggar",-1,1200,2300],
 			//["nail",-1,2200,3600],
-			["goldbar",-1,95000,115000]
+			["goldbar",-1,50000,80000]
 		],
 		0.5
 	],
-	["Illegal", 
+	["Illegal",
 		[
-			["heroin_unprocessed",-1,2300,4500],
-			["heroin_processed",-1,4000,7500],
-			["cannabis",-1,2800,3500],
-			["marijuana",-1,5000,8900],
-			["cocaine_unprocessed",-1,4000,5500],
-			["cocaine_processed",-1,4900,8500],
+			["heroin_unprocessed",-1,486,875],
+			["heroin_processed",-1,4500,7000],
+			["cannabis",-1,500,950],
+			["marijuana",-1,2500,4000],
+			["cocaine_unprocessed",-1,300,900],
+			["cocaine_processed",-1,4250,6550],
 			//["froglsd",-1,3500,6300],
-			["turtle_raw",-1,6000,9800],
+			["turtle_raw",-1,7000,17500],
 			//["turtle_soup",-1,3800,5800],
-			["weaponmg",-1,8000,15000]
+			["weaponmg",-1,4500,7000]
 		],
 		0.5
 	]
@@ -74,39 +74,39 @@ DYNMARKET_Items_Groups =
 
 // █████████████████    ALL SELLABLE ITEMS    █████████████████
 
-DYNMARKET_Items_ToTrack        = 
+DYNMARKET_Items_ToTrack        =
 [
 
-	["apple",50],
-	["peach",50],
-	["oil_processed",4500],
+	["apple",85],
+	["peach",135],
+	["oil_processed",4000],
 	//["wood",800],
 	//["brett",2300],
-	["copper_refined",6000],
-	["iron_refined",4800],
-	["salt_refined",5200],
-	["glass",4400],
-	["diamond_cut",6200],
-	["diamond_uncut",2900],
-	["cement",3600],
+	["copper_refined",1000],
+	["iron_refined",1650],
+	["salt_refined",1750],
+	["glass",1550],
+	["diamond_cut",2250],
+	["diamond_uncut",1250],
+	["cement",2100],
 	//["baumwolle_refined",2600],
 	//["applejuice",50],
 	//["peachjuice",50],
 	//["frogmeat",2500],
 	//["suggar",1200],
 	//["nail",2200],
-	["goldbar",115000],
+	["goldbar",65000],
 	// ILLEGAL
-	["heroin_unprocessed",4500],
-	["heroin_processed",7500],
-	["cannabis",3800],
-	["marijuana",8900],
-	["cocaine_unprocessed",5500],
-	["cocaine_processed",8500],
+	["heroin_unprocessed",875],
+	["heroin_processed",5275],
+	["cannabis",950],
+	["marijuana",2725],
+	["cocaine_unprocessed",900],
+	["cocaine_processed",5000],
 	//["froglsd",3500],
-	["turtle_raw",9800],
+	["turtle_raw",17500],
 	//["turtle_soup",3800],
-	["weaponmg",15000]
+	["weaponmg",5000]
 ];
 
 //███████████████████████████████████████████████████████████████████████

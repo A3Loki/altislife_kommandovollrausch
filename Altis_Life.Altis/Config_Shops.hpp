@@ -39,12 +39,14 @@ class WeaponShops {
                     {"arifle_SDAR_F",               "", 150000},
                     {"arifle_TRG20_F",              "", 200000},
                     {"arifle_Katiba_F",             "", 500000},
+					{"arifle_AKS_F",                "", 500000},
 
                     // ** Magazine
                     {"11Rnd_45ACP_Mag",             "", 1000},
                     {"30Rnd_9x21_Mag",              "", 1500},
                     {"6Rnd_45ACP_Cylinder",         "", 2500},
                     {"30Rnd_45ACP_Mag_SMG_01",      "", 3400},
+					{"30Rnd_545x39_Mag_F",          "", 3750},
                     {"20Rnd_556x45_UW_mag",         "", 3750},
                     {"30Rnd_556x45_Stanag",         "", 5650},
                     {"30Rnd_65x39_caseless_green",  "", 6250}
@@ -60,15 +62,27 @@ class WeaponShops {
         items[] = {
 					// ** Waffen
 					{"srifle_DMR_06_camo_F",        "", 300000},
+					{"srifle_DMR_03_F",             "", 300000},
+					{"srifle_DMR_03_woodland_F",    "", 300000},
+					{"arifle_AKM_F",                "", 300000},
 					{"srifle_DMR_01_DMS_BI_F",      "", 500000},
+					{"arifle_AK12_F",               "", 500000},
+					{"arifle_AK12_GL_F",            "", 800000},
                     {"srifle_LRR_camo_F",           "", 1100000},
                     {"srifle_DMR_05_tan_f",         "", 1650000},
 
 					// ** Magazine
+					{"30Rnd_762x39_Mag_f",          "", 7200},
 					{"10Rnd_762x54_Mag",            "", 7200},
                     {"20Rnd_762x51_Mag",            "", 7900},
                     {"7Rnd_408_Mag",                "", 8500},
-                    {"10Rnd_93x64_DMR_05_Mag",      "", 10000}
+                    {"10Rnd_93x64_DMR_05_Mag",      "", 10000},
+					{"1Rnd_SmokeRed_Grenade_shell", "", 500},
+                    {"1Rnd_SmokeGreen_Grenade_shell",   "", 500},
+                    {"1Rnd_SmokeYellow_Grenade_shell",  "", 500},
+                    {"1Rnd_SmokePurple_Grenade_shell",  "", 500},
+                    {"1Rnd_SmokeBlue_Grenade_shell",    "", 500},
+                    {"1Rnd_SmokeOrange_Grenade_shell",  "", 500}
         };
     };
 
@@ -80,7 +94,12 @@ class WeaponShops {
         msg = "";
         items[] = {
                     // ** Aufsätze
-                    {"optic_Arco",                  "", 7500},
+                    {"acc_flashlight",              "", 1000},
+					{"acc_pointer_IR",              "", 1000},
+					{"muzzle_snds_B",               "", 5000},
+					{"muzzle_snds_B_khk_F",         "", 5000},
+					{"optic_Arco",                  "", 7500},
+					{"optic_Arco_ghex_F",           "", 7500},
                     {"optic_Hamr",                  "", 10000},
                     {"optic_Aco",                   "", 2400},
                     {"optic_Holosight",             "", 3400},
@@ -244,8 +263,8 @@ class WeaponShops {
                     {"Chemlight_yellow",            "",      10},
                     {"Chemlight_green",             "",      10},
                     {"Chemlight_blue",              "",      10},
-                    {"SmokeShellGreen",             "",      15000},
-                    {"SmokeShellRed",               "",      15000}
+                    {"SmokeShellGreen",             "",      500},
+                    {"SmokeShellRed",               "",      500}
         };
     };
 
@@ -257,12 +276,23 @@ class WeaponShops {
         msg = "";
         items[] = {
                     // ** Waffen
-                    {"arifle_sdar_F",               "Taser Sturmgewehr",        25000},
-                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   10000},
+                    {"SMG_05_F",                    "Protector 9mm",            10000},
+                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   1000},
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
-                    {"20Rnd_556x45_UW_mag",         "556er Magazin",            1000}
+                    {"30Rnd_9x21_Mag_SMG_02",       "Protector Magazin x30",    1500},
+
+
+                    // ** Aufsätze
+                    {"optic_Aco",                   "ACO",                      2400},
+                    {"optic_Holosight",             "Holovisier",               3200},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+
+
+                    // ** Items
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
     class cop_officer {
@@ -273,21 +303,29 @@ class WeaponShops {
         msg = "Du bist kein Wachtmeister!";
         items[] = {
                     // ** Waffen
-                    {"arifle_sdar_F",               "Taser Sturmgewehr",        25000},
-                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   10000},
-                    {"SMG_02_F",                    "Sting 9mm",                30000},
-                    {"arifle_MXC_F",                "MX-Carabine",              50000},
+                    {"SMG_05_F",                    "Protector 9mm",            10000},
+                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   1000},
+                    {"arifle_SPAR_01_blk_F",        "SPAR-16",                  30000},
+
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
-                    {"30Rnd_9x21_Mag",              "9mm x30 Magazin",          1500},
-                    {"30Rnd_65x39_caseless_mag",    "6.5mm Magazin",            2500},
-                    {"20Rnd_556x45_UW_mag",         "556er Magazin",            1000},
+                    {"30Rnd_9x21_Mag_SMG_02",       "Protector Magazin x30",    1500},
+                    {"30Rnd_556x45_Stanag",         "5.56mm Magazin",           1000},
+
 
                     // ** Aufsätze
                     {"optic_Aco",                   "ACO",                      2400},
                     {"optic_Holosight",             "Holovisier",               3200},
-                    {"optic_Hamr",                  "RCO",                      4500}
+                    {"optic_Hamr",                  "RCO",                      4500},
+                    {"optic_Arco",                  "ARCO",                     7500},
+                    {"optic_MRCO",                  "MRCO",                     10000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+
+                    // ** Items
+                    {"Rangefinder",                 "Entfernungsmesser",        35000}
         };
     };
     class cop_detective {
@@ -297,34 +335,32 @@ class WeaponShops {
         level = 3;
         msg = "Du bist kein Oberwachtmeister!";
         items[] = {
-        	        // ** Waffen
-                    {"arifle_sdar_F",               "Taser Sturmgewehr",        25000},
-                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   10000},
-                    {"SMG_02_F",                    "Sting 9mm",                30000},
-                    {"arifle_MXC_F",                "MX-Carabine",              50000},
-                    {"arifle_MX_F",                 "MX Sturmgewehr",           60000},
-                    {"arifle_MXM_F",                "MXM DMR",                  65000},
-                    {"srifle_EBR_F",                "MK18 EMR",                 100000},
+                    // ** Waffen
+                    {"SMG_05_F",                    "Protector 9mm",            10000},
+                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   1000},
+                    {"arifle_SPAR_01_blk_F",        "SPAR-16",                  30000},
+                    {"arifle_SPAR_01_GL_blk_F",     "SPAR-16 GL",               35000},
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
-                    {"30Rnd_9x21_Mag",              "9mm x30 Magazin",          1500},
-                    {"30Rnd_65x39_caseless_mag",    "6.5mm Magazin",            2500},
-                    {"20Rnd_762x51_Mag",            "7.62mm x20 Magazin",       3400},
-                    {"20Rnd_556x45_UW_mag",         "556er Magazin",            1000},
+                    {"30Rnd_9x21_Mag_SMG_02",       "Protector Magazin x30",    1500},
+                    {"30Rnd_556x45_Stanag",         "5.56mm Magazin",           1000},
+                    {"1Rnd_Smoke_Grenade_shell",         "",                    1000},
+
 
                     // ** Aufsätze
                     {"optic_Aco",                   "ACO",                      2400},
                     {"optic_Holosight",             "Holovisier",               3200},
                     {"optic_Hamr",                  "RCO",                      4500},
                     {"optic_Arco",                  "ARCO",                     7500},
-                    {"optic_NVS",                   "NVS",                      11500},
-                    {"optic_DMS",                   "DMS",                      14500},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_H",               "6.5mm Schalldämpfer",      20000},
+                    {"optic_MRCO",                  "MRCO",                     10000},
+                    {"optic_AMS",                   "AMS",                      5000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
 
                     // ** Items
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
 
         };
     };
@@ -337,36 +373,34 @@ class WeaponShops {
         msg = "Du bist kein Hauptwachtmeister!";
         items[] = {
                     // ** Waffen
-                    {"arifle_sdar_F",               "Taser Sturmgewehr",        25000},
-                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   10000},
-                    {"SMG_02_F",                    "Sting 9mm",                30000},
-                    {"arifle_MXC_F",                "MX-Carabine",              50000},
-                    {"arifle_MX_F",                 "MX Sturmgewehr",           60000},
-                    {"arifle_MXM_F",                "MXM DMR",                  65000},
-                    {"srifle_EBR_F",                "MK18 EMR",                 100000},
+                    {"SMG_05_F",                    "Protector 9mm",            10000},
+                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   1000},
+                    {"arifle_SPAR_01_blk_F",        "SPAR-16",                  30000},
+                    {"arifle_SPAR_01_GL_blk_F",     "SPAR-16 GL",               35000},
+                    {"arifle_SPAR_03_blk_F",        "SPAR-17",                  50000},
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
-                    {"30Rnd_9x21_Mag",              "9mm x30 Magazin",          1500},
-                    {"30Rnd_65x39_caseless_mag",    "6.5mm Magazin",            2500},
+                    {"30Rnd_9x21_Mag_SMG_02",       "Protector Magazin x30",    1500},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
                     {"20Rnd_762x51_Mag",            "7.62mm x20 Magazin",       3400},
-                    {"20Rnd_556x45_UW_mag",         "556er Magazin",            1000},
+                    {"30Rnd_556x45_Stanag",         "5.56mm Magazin",           1000},
+                    {"1Rnd_Smoke_Grenade_shell",         "",                    1000},
 
                     // ** Aufsätze
                     {"optic_Aco",                   "ACO",                      2400},
                     {"optic_Holosight",             "Holovisier",               3200},
                     {"optic_Hamr",                  "RCO",                      4500},
                     {"optic_Arco",                  "ARCO",                     7500},
-                    {"optic_NVS",                   "NVS",                      11500},
+                    {"optic_MRCO",                  "MRCO",                     10000},
                     {"optic_DMS",                   "DMS",                      14500},
-                    {"optic_AMS",                   "AMS",                      25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_H",               "6.5mm Schalldämpfer",      20000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             50000},
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -378,22 +412,22 @@ class WeaponShops {
         msg = "Du bist kein Leutnant!";
         items[] = {
                     // ** Waffen
-                    {"arifle_sdar_F",               "Taser Sturmgewehr",        25000},
-                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   10000},
-                    {"SMG_02_F",                    "Sting 9mm",                30000},
-                    {"arifle_MXC_F",                "MX-Carabine",              50000},
-                    {"arifle_MX_F",                 "MX Sturmgewehr",           60000},
-                    {"arifle_MXM_F",                "MXM DMR",                  65000},
-                    {"srifle_EBR_F",                "MK18 EMR",                 100000},
-                    {"srifle_DMR_02_camo_F",        "MAR-10 .338",              450000},
+                    {"SMG_05_F",                    "Protector 9mm",            10000},
+                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   1000},
+                    {"arifle_SPAR_01_blk_F",        "SPAR-16",                  30000},
+                    {"arifle_SPAR_01_GL_blk_F",     "SPAR-16 GL",               35000},
+                    {"arifle_SPAR_03_blk_F",        "SPAR-17",                  50000},
+                    {"arifle_ARX_blk_F",            "",                         50000},
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
-                    {"30Rnd_9x21_Mag",              "9mm x30 Magazin",          1500},
-                    {"30Rnd_65x39_caseless_mag",    "6.5mm Magazin",            2500},
+                    {"30Rnd_9x21_Mag_SMG_02",       "Protector Magazin x30",    1500},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
                     {"20Rnd_762x51_Mag",            "7.62mm x20 Magazin",       3400},
-                    {"20Rnd_556x45_UW_mag",         "556er Magazin",            1000},
-                    {"10Rnd_338_Mag",               ".338 x10 Magazin",         5000},
+                    {"30Rnd_556x45_Stanag",         "5.56mm Magazin",           1000},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
+                    {"10Rnd_338_Mag",               ".338 10Rnd",               5000},
+                    {"1Rnd_Smoke_Grenade_shell",         "",                    1000},
 
                     // ** Aufsätze
                     {"optic_Aco",                   "ACO",                      2400},
@@ -401,17 +435,16 @@ class WeaponShops {
                     {"optic_Hamr",                  "RCO",                      4500},
                     {"optic_Arco",                  "ARCO",                     7500},
                     {"optic_MRCO",                  "MRCO",                     10000},
-                    {"optic_NVS",                   "NVS",                      11500},
                     {"optic_DMS",                   "DMS",                      14500},
-                    {"optic_AMS",                   "AMS",                      25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_H",               "6.5mm Schalldämpfer",      20000},
-                    {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
+                    {"optic_KHS_blk",               "Kahlia",                   14500},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             50000},
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -423,22 +456,24 @@ class WeaponShops {
         msg = "Du bist kein Oberleutnant!";
         items[] = {
                     // ** Waffen
-                    {"arifle_sdar_F",               "Taser Sturmgewehr",        25000},
-                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   10000},
-                    {"SMG_02_F",                    "Sting 9mm",                30000},
-                    {"arifle_MXC_F",                "MX-Carabine",              50000},
-                    {"arifle_MX_F",                 "MX Sturmgewehr",           60000},
-                    {"arifle_MXM_F",                "MXM DMR",                  65000},
-                    {"srifle_EBR_F",                "MK18 EMR",                 100000},
-                    {"srifle_DMR_02_camo_F",        "MAR-10 .338",              450000},
+                    {"SMG_05_F",                    "Protector 9mm",            10000},
+                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   1000},
+                    {"arifle_SPAR_01_blk_F",        "SPAR-16",                  30000},
+                    {"arifle_SPAR_01_GL_blk_F",     "SPAR-16 GL",               35000},
+                    {"arifle_SPAR_03_blk_F",        "SPAR-17",                  50000},
+                    {"arifle_ARX_blk_F",            "",                         50000},
+                    {"srifle_DMR_02_F",             "",                         50000},
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
-                    {"30Rnd_9x21_Mag",              "9mm x30 Magazin",          1500},
-                    {"30Rnd_65x39_caseless_mag",    "6.5mm Magazin",            2500},
+                    {"30Rnd_9x21_Mag_SMG_02",       "Protector Magazin x30",    1500},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
                     {"20Rnd_762x51_Mag",            "7.62mm x20 Magazin",       3400},
-                    {"20Rnd_556x45_UW_mag",         "556er Magazin",            1000},
-                    {"10Rnd_338_Mag",               ".338 x10 Magazin",         5000},
+                    {"30Rnd_556x45_Stanag",         "5.56mm Magazin",           1000},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
+                    {"10Rnd_50BW_Mag_F",            ".50 BW",                   5000},
+                    {"10Rnd_338_Mag",               ".338 10Rnd",               5000},
+                    {"1Rnd_Smoke_Grenade_shell",         "",                    1000},
 
                     // ** Aufsätze
                     {"optic_Aco",                   "ACO",                      2400},
@@ -446,17 +481,18 @@ class WeaponShops {
                     {"optic_Hamr",                  "RCO",                      4500},
                     {"optic_Arco",                  "ARCO",                     7500},
                     {"optic_MRCO",                  "MRCO",                     10000},
-                    {"optic_NVS",                   "NVS",                      11500},
                     {"optic_DMS",                   "DMS",                      14500},
-                    {"optic_AMS",                   "AMS",                      25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_H",               "6.5mm Schalldämpfer",      20000},
-                    {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
+                    {"optic_KHS_blk",               "Kahlia",                   14500},
+                    {"optic_AMS",                   "AMS",                      5000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
+                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       4000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             50000},
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -468,22 +504,24 @@ class WeaponShops {
         msg = "Du bist kein Hauptmann!";
         items[] = {
                     // ** Waffen
-                    {"arifle_sdar_F",               "Taser Sturmgewehr",        25000},
-                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   10000},
-                    {"SMG_02_F",                    "Sting 9mm",                30000},
-                    {"arifle_MXC_F",                "MX-Carabine",              50000},
-                    {"arifle_MX_F",                 "MX Sturmgewehr",           60000},
-                    {"arifle_MXM_F",                "MXM DMR",                  65000},
-                    {"srifle_EBR_F",                "MK18 EMR",                 100000},
-                    {"srifle_DMR_02_camo_F",        "MAR-10 .338",              450000},
+                    {"SMG_05_F",                    "Protector 9mm",            10000},
+                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   1000},
+                    {"arifle_SPAR_01_blk_F",        "SPAR-16",                  30000},
+                    {"arifle_SPAR_01_GL_blk_F",     "SPAR-16 GL",               35000},
+                    {"arifle_SPAR_03_blk_F",        "SPAR-17",                  50000},
+                    {"arifle_ARX_blk_F",            "",                         50000},
+                    {"srifle_DMR_02_F",             "",                         50000},
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
-                    {"30Rnd_9x21_Mag",              "9mm x30 Magazin",          1500},
-                    {"30Rnd_65x39_caseless_mag",    "6.5mm Magazin",            2500},
+                    {"30Rnd_9x21_Mag_SMG_02",       "Protector Magazin x30",    1500},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
                     {"20Rnd_762x51_Mag",            "7.62mm x20 Magazin",       3400},
-                    {"20Rnd_556x45_UW_mag",         "556er Magazin",            1000},
-                    {"10Rnd_338_Mag",               ".338 x10 Magazin",         5000},
+                    {"30Rnd_556x45_Stanag",         "5.56mm Magazin",           1000},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
+                    {"10Rnd_50BW_Mag_F",            ".50 BW",                   5000},
+                    {"10Rnd_338_Mag",               ".338 10Rnd",               5000},
+                    {"1Rnd_Smoke_Grenade_shell",         "",                    1000},
 
                     // ** Aufsätze
                     {"optic_Aco",                   "ACO",                      2400},
@@ -491,17 +529,18 @@ class WeaponShops {
                     {"optic_Hamr",                  "RCO",                      4500},
                     {"optic_Arco",                  "ARCO",                     7500},
                     {"optic_MRCO",                  "MRCO",                     10000},
-                    {"optic_NVS",                   "NVS",                      11500},
                     {"optic_DMS",                   "DMS",                      14500},
-                    {"optic_AMS",                   "AMS",                      25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_H",               "6.5mm Schalldämpfer",      20000},
-                    {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
+                    {"optic_KHS_blk",               "Kahlia",                   14500},
+                    {"optic_AMS",                   "AMS",                      5000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
+                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       4000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             50000},
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -512,23 +551,25 @@ class WeaponShops {
         level = 8;
         msg = "Du bist kein Stabshauptmann!";
         items[] = {
-                    // ** Waffen
-                    {"arifle_sdar_F",               "Taser Sturmgewehr",        25000},
-                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   10000},
-                    {"SMG_02_F",                    "Sting 9mm",                30000},
-                    {"arifle_MXC_F",                "MX-Carabine",              50000},
-                    {"arifle_MX_F",                 "MX Sturmgewehr",           60000},
-                    {"arifle_MXM_F",                "MXM DMR",                  65000},
-                    {"srifle_EBR_F",                "MK18 EMR",                 100000},
-                    {"srifle_DMR_02_camo_F",        "MAR-10 .338",              450000},
+                     // ** Waffen
+                    {"SMG_05_F",                    "Protector 9mm",            10000},
+                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   1000},
+                    {"arifle_SPAR_01_blk_F",        "SPAR-16",                  30000},
+                    {"arifle_SPAR_01_GL_blk_F",     "SPAR-16 GL",               35000},
+                    {"arifle_SPAR_03_blk_F",        "SPAR-17",                  50000},
+                    {"arifle_ARX_blk_F",            "",                         50000},
+                    {"srifle_DMR_02_F",             "",                         50000},
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
-                    {"30Rnd_9x21_Mag",              "9mm x30 Magazin",          1500},
-                    {"30Rnd_65x39_caseless_mag",    "6.5mm Magazin",            2500},
+                    {"30Rnd_9x21_Mag_SMG_02",       "Protector Magazin x30",    1500},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
                     {"20Rnd_762x51_Mag",            "7.62mm x20 Magazin",       3400},
-                    {"20Rnd_556x45_UW_mag",         "556er Magazin",            1000},
-                    {"10Rnd_338_Mag",               ".338 x10 Magazin",         5000},
+                    {"30Rnd_556x45_Stanag",         "5.56mm Magazin",           1000},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
+                    {"10Rnd_50BW_Mag_F",            ".50 BW",                   5000},
+                    {"10Rnd_338_Mag",               ".338 10Rnd",               5000},
+                    {"1Rnd_Smoke_Grenade_shell",         "",                    1000},
 
                     // ** Aufsätze
                     {"optic_Aco",                   "ACO",                      2400},
@@ -536,17 +577,18 @@ class WeaponShops {
                     {"optic_Hamr",                  "RCO",                      4500},
                     {"optic_Arco",                  "ARCO",                     7500},
                     {"optic_MRCO",                  "MRCO",                     10000},
-                    {"optic_NVS",                   "NVS",                      11500},
                     {"optic_DMS",                   "DMS",                      14500},
-                    {"optic_AMS",                   "AMS",                      25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_H",               "6.5mm Schalldämpfer",      20000},
-                    {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
+                    {"optic_KHS_blk",               "Kahlia",                   14500},
+                    {"optic_AMS",                   "AMS",                      5000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
+                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       4000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             50000},
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -558,22 +600,24 @@ class WeaponShops {
         msg = "Du bist kein Major!";
         items[] = {
                     // ** Waffen
-                    {"arifle_sdar_F",               "Taser Sturmgewehr",        25000},
-                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   10000},
-                    {"SMG_02_F",                    "Sting 9mm",                30000},
-                    {"arifle_MXC_F",                "MX-Carabine",              50000},
-                    {"arifle_MX_F",                 "MX Sturmgewehr",           60000},
-                    {"arifle_MXM_F",                "MXM DMR",                  65000},
-                    {"srifle_EBR_F",                "MK18 EMR",                 100000},
-                    {"srifle_DMR_02_camo_F",        "MAR-10 .338",              450000},
+                    {"SMG_05_F",                    "Protector 9mm",            10000},
+                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   1000},
+                    {"arifle_SPAR_01_blk_F",        "SPAR-16",                  30000},
+                    {"arifle_SPAR_01_GL_blk_F",     "SPAR-16 GL",               35000},
+                    {"arifle_SPAR_03_blk_F",        "SPAR-17",                  50000},
+                    {"arifle_ARX_blk_F",            "",                         50000},
+                    {"srifle_DMR_02_F",             "",                         50000},
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
-                    {"30Rnd_9x21_Mag",              "9mm x30 Magazin",          1500},
-                    {"30Rnd_65x39_caseless_mag",    "6.5mm Magazin",            2500},
+                    {"30Rnd_9x21_Mag_SMG_02",       "Protector Magazin x30",    1500},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
                     {"20Rnd_762x51_Mag",            "7.62mm x20 Magazin",       3400},
-                    {"20Rnd_556x45_UW_mag",         "556er Magazin",            1000},
-                    {"10Rnd_338_Mag",               ".338 x10 Magazin",         5000},
+                    {"30Rnd_556x45_Stanag",         "5.56mm Magazin",           1000},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
+                    {"10Rnd_50BW_Mag_F",            ".50 BW",                   5000},
+                    {"10Rnd_338_Mag",               ".338 10Rnd",               5000},
+                    {"1Rnd_Smoke_Grenade_shell",         "",                    1000},
 
                     // ** Aufsätze
                     {"optic_Aco",                   "ACO",                      2400},
@@ -581,17 +625,18 @@ class WeaponShops {
                     {"optic_Hamr",                  "RCO",                      4500},
                     {"optic_Arco",                  "ARCO",                     7500},
                     {"optic_MRCO",                  "MRCO",                     10000},
-                    {"optic_NVS",                   "NVS",                      11500},
                     {"optic_DMS",                   "DMS",                      14500},
-                    {"optic_AMS",                   "AMS",                      25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_H",               "6.5mm Schalldämpfer",      20000},
-                    {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
+                    {"optic_KHS_blk",               "Kahlia",                   14500},
+                    {"optic_AMS",                   "AMS",                      5000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
+                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       4000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             50000},
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -603,22 +648,24 @@ class WeaponShops {
         msg = "Du bist nicht der Chef!";
         items[] = {
                     // ** Waffen
-                    {"arifle_sdar_F",               "Taser Sturmgewehr",        25000},
-                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   10000},
-                    {"SMG_02_F",                    "Sting 9mm",                30000},
-                    {"arifle_MXC_F",                "MX-Carabine",              50000},
-                    {"arifle_MX_F",                 "MX Sturmgewehr",           60000},
-                    {"arifle_MXM_F",                "MXM DMR",                  65000},
-                    {"srifle_EBR_F",                "MK18 EMR",                 100000},
-                    {"srifle_DMR_02_camo_F",        "MAR-10 .338",              450000},
+                    {"SMG_05_F",                    "Protector 9mm",            10000},
+                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   1000},
+                    {"arifle_SPAR_01_blk_F",        "SPAR-16",                  30000},
+                    {"arifle_SPAR_01_GL_blk_F",     "SPAR-16 GL",               35000},
+                    {"arifle_SPAR_03_blk_F",        "SPAR-17",                  50000},
+                    {"arifle_ARX_blk_F",            "",                         50000},
+                    {"srifle_DMR_02_F",             "",                         50000},
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
-                    {"30Rnd_9x21_Mag",              "9mm x30 Magazin",          1500},
-                    {"30Rnd_65x39_caseless_mag",    "6.5mm Magazin",            2500},
+                    {"30Rnd_9x21_Mag_SMG_02",       "Protector Magazin x30",    1500},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
                     {"20Rnd_762x51_Mag",            "7.62mm x20 Magazin",       3400},
-                    {"20Rnd_556x45_UW_mag",         "556er Magazin",            1000},
-                    {"10Rnd_338_Mag",               ".338 x10 Magazin",         5000},
+                    {"30Rnd_556x45_Stanag",         "5.56mm Magazin",           1000},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
+                    {"10Rnd_50BW_Mag_F",            ".50 BW",                   5000},
+                    {"10Rnd_338_Mag",               ".338 10Rnd",               5000},
+                    {"1Rnd_Smoke_Grenade_shell",         "",                    1000},
 
                     // ** Aufsätze
                     {"optic_Aco",                   "ACO",                      2400},
@@ -626,17 +673,18 @@ class WeaponShops {
                     {"optic_Hamr",                  "RCO",                      4500},
                     {"optic_Arco",                  "ARCO",                     7500},
                     {"optic_MRCO",                  "MRCO",                     10000},
-                    {"optic_NVS",                   "NVS",                      11500},
                     {"optic_DMS",                   "DMS",                      14500},
-                    {"optic_AMS",                   "AMS",                      25000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_H",               "6.5mm Schalldämpfer",      20000},
-                    {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
+                    {"optic_KHS_blk",               "Kahlia",                   14500},
+                    {"optic_AMS",                   "AMS",                      5000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
+                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       4000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             50000},
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -648,23 +696,24 @@ class WeaponShops {
         msg = "Du bist kein Mitglied der Spezialeinheit!";
         items[] = {
                     // ** Waffen
-                    {"arifle_sdar_F",               "Taser Sturmgewehr",        25000},
-                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   10000},
-                    {"SMG_02_F",                    "Sting 9mm",                30000},
-                    {"arifle_MXC_F",                "MX-Carabine",              50000},
-                    {"arifle_MX_F",                 "MX Sturmgewehr",           60000},
-                    {"arifle_MXM_F",                "MXM DMR",                  65000},
-                    {"srifle_EBR_F",                "MK18 EMR",                 100000},
-                    {"srifle_DMR_02_camo_F",        "MAR-10 .338",              450000},
-					{"arifle_MXM_RCO_pointer_snds_F", "Fertige MXM RCO",        100000},
+                    {"SMG_05_F",                    "Protector 9mm",            10000},
+                    {"hgun_Rook40_snds_F",          "Taser-Pistole Silenced",   1000},
+                    {"arifle_SPAR_01_blk_F",        "SPAR-16",                  30000},
+                    {"arifle_SPAR_01_GL_blk_F",     "SPAR-16 GL",               35000},
+                    {"arifle_SPAR_03_blk_F",        "SPAR-17",                  50000},
+                    {"arifle_ARX_blk_F",            "",                         50000},
+                    {"srifle_DMR_02_F",             "",                         50000},
 
                     // ** Magazine
                     {"16Rnd_9x21_Mag",              "16er Magazin",             100},
-                    {"30Rnd_9x21_Mag",              "9mm x30 Magazin",          1500},
-                    {"30Rnd_65x39_caseless_mag",    "6.5mm Magazin",            2500},
+                    {"30Rnd_9x21_Mag_SMG_02",       "Protector Magazin x30",    1500},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
                     {"20Rnd_762x51_Mag",            "7.62mm x20 Magazin",       3400},
-                    {"20Rnd_556x45_UW_mag",         "556er Magazin",            1000},
-                    {"10Rnd_338_Mag",               ".338 x10 Magazin",         5000},
+                    {"30Rnd_556x45_Stanag",         "5.56mm Magazin",           1000},
+                    {"30Rnd_65x39_caseless_green",  "6.5mm Magazin",            2500},
+                    {"10Rnd_50BW_Mag_F",            ".50 BW",                   5000},
+                    {"10Rnd_338_Mag",               ".338 10Rnd",               5000},
+                    {"1Rnd_Smoke_Grenade_shell",         "",                    1000},
 
                     // ** Aufsätze
                     {"optic_Aco",                   "ACO",                      2400},
@@ -672,19 +721,18 @@ class WeaponShops {
                     {"optic_Hamr",                  "RCO",                      4500},
                     {"optic_Arco",                  "ARCO",                     7500},
                     {"optic_MRCO",                  "MRCO",                     10000},
-                    {"optic_NVS",                   "NVS",                      11500},
                     {"optic_DMS",                   "DMS",                      14500},
-                    {"optic_AMS",                   "AMS",                      25000},
-                    {"optic_KHS_old",               "Khalia",                   40000},
-                    {"optic_LRPS",                  "LRPS",                     35000},
-                    {"bipod_03_F_blk",              "Zweibein",                 50000},
-                    {"muzzle_snds_L",               "9mm Schalldämpfer",        5000},
-                    {"muzzle_snds_H",               "6.5mm Schalldämpfer",      20000},
-                    {"muzzle_snds_338_black",       "MAR-10 Schalldämpfer",     50000},
+                    {"optic_KHS_blk",               "Kahlia",                   14500},
+                    {"optic_AMS",                   "AMS",                      5000},
+                    {"acc_flashlight",              "Lampe",                    100},
+                    {"bipod_03_F_blk",              "Zweibein",                 1000},
+                    {"muzzle_snds_L",               "9mm Schalldämpfer",        1000},
+                    {"muzzle_snds_M",               "5.56mm Schalldämpfer",     2000},
+                    {"muzzle_snds_B",               "7.62mm Schalldämpfer",     3000},
+                    {"muzzle_snds_338_black",       ".338 Schalldämpfer",       4000},
 
                     // ** Items
-                    {"B_UavTerminal",               "UAV Terminal",             50000},
-                    {"Rangefinder",                 "Entfernungsmesser",        35000}
+                    {"Rangefinder",                 "Entfernungsmesser",        10000}
         };
     };
 
@@ -699,6 +747,7 @@ class WeaponShops {
                     {"ToolKit",                     "", 10},
                     {"FirstAidKit",                 "", 100},
                     {"Medikit",                     "", 100},
+                    {"ItemMap",                     "",  10},
                     {"NVGoggles",                   "", 5000},
                     {"Chemlight_red",               "", 20},
                     {"Chemlight_yellow",            "", 20},
@@ -717,6 +766,7 @@ class WeaponShops {
                     {"ItemGPS",                     "", 10},
                     {"Binocular",                   "", 10},
                     {"ToolKit",                     "", 10},
+                    {"ItemMap",                     "", 10},
                     {"FirstAidKit",                 "", 100},
                     {"Medikit",                     "", 100},
                     {"NVGoggles",                   "", 5000},

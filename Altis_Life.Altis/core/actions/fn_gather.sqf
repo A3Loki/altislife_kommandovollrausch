@@ -2,7 +2,7 @@
 /*
 	File: fn_gather.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Main functionality for gathering.
 */
@@ -24,9 +24,9 @@ if(EQUAL(_zone,"")) exitWith {life_action_gathering = false;};
 switch(true) do {
 	case (_zone in ["apple_1","apple_2","apple_3","apple_4"]): {_gather = ["apple",3];};
 	case (_zone in ["peaches_1","peaches_2","peaches_3","peaches_4"]): {_gather = ["peach",3];};
-	case (_zone in ["heroin_1"]): {_gather = ["heroin_unprocessed",1];};
-	case (_zone in ["cocaine_1"]): {_gather = ["cocaine_unprocessed",1];};
-	case (_zone in ["weed_1"]): {_gather = ["cannabis",1];};
+	case (_zone in ["heroin_1"]): {_gather = ["heroin_unprocessed",2];};
+	case (_zone in ["cocaine_1"]): {_gather = ["cocaine_unprocessed",2];};
+	case (_zone in ["weed_1"]): {_gather = ["cannabis",3];};
 	case (_zone in ["weapon_mg"]): {_gather = ["weaponmg",1];};
 	default {""};
 };
