@@ -8,7 +8,7 @@
 private["_veh"];
 _veh = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _tone = [_this,1,"SirenLong",[""]] call BIS_fnc_param;
-_nap = [_this,2,15.1,[0]] call BIS_fnc_param;
+_nap = [_this,2,4.55,[0]] call BIS_fnc_param;
 if(isNull _veh) exitWith {};
 if(isNil {_veh getVariable "siren"}) exitWith {};
 while {true} do

@@ -172,7 +172,7 @@ switch (_code) do {
                 [] spawn
                 {
                     life_siren_active = true;
-                    uiSleep 25; // 25.2
+                    uiSleep 4.7; // 25.2
                     life_siren_active = false;
                 };
                 if(isNil {_veh getVariable "siren"}) then {_veh setVariable["siren",false,true];};
@@ -183,7 +183,7 @@ switch (_code) do {
                 } else {
                     titleText [localize "STR_MISC_SirensON","PLAIN"];
                     _veh setVariable["siren",true,true];
-                    [[_veh, "Siren_Long_2", 25],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
+                    [[_veh, "Siren_Long_2", 4.7],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
                 };
             };
 		}
@@ -207,7 +207,7 @@ switch (_code) do {
                 [] spawn
                 {
                     life_siren_active = true;
-                    uiSleep 27.1;
+                    uiSleep 3.35;
                     life_siren_active = false;
                 };
                 if(isNil {_veh getVariable "siren"}) then {_veh setVariable["siren",false,true];};
@@ -218,7 +218,7 @@ switch (_code) do {
                 } else {
                     titleText [localize "STR_MISC_SirensON","PLAIN"];
                     _veh setVariable["siren",true,true];
-                    [[_veh, "Siren_Long_3", 27.1],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
+                    [[_veh, "Siren_Long_3", 3.35],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
                 };
             };
         }
@@ -423,7 +423,7 @@ switch (_code) do {
                 [] spawn
                 {
                     life_siren_active = true;
-                    if(playerSide == west) then {uiSleep 15.1;}
+                    if(playerSide == west) then {uiSleep 4.55;}
                     else {uiSleep 4.4;};
                     life_siren_active = false;
                 };
