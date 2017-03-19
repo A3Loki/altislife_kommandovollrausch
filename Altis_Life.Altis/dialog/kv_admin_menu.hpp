@@ -326,7 +326,7 @@ class life_kv_admin_menu {
 			y = 0.522 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
 			h = 0.022 * safezoneH;
-			action =  "closeDialog 0; [""tpmap""] spawn life_fnc_kv_adminTeleport;";
+			action =  "[""tpmap""] spawn life_fnc_kv_adminTeleport;";
 		};
 	};
 };
