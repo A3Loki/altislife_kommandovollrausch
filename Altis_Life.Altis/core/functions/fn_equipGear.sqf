@@ -18,13 +18,10 @@ if(playerSide == west) then {
       case 5;
       case 6;
       case 7;
-      case 8;
-      case 9;
-      case 10;
-      case 11: {
+      case 8: {
          switch(_type) do {
             case "U_Rangemaster" : {
-               _path = "textures\cop\pka_shirt.jpg";
+               _path = "textures\cop\pk_shirt.jpg";
                _unit setObjectTextureGlobal [0,_path];
             };
          };
@@ -37,7 +34,16 @@ if(playerSide == west) then {
             };
          };
       };
-   };
+      case 9;
+      case 10;
+      case 11: {
+         switch(_type) do {
+            case "U_Rangemaster" : {
+               _path = "textures\cop\pp_shirt.jpg";
+               _unit setObjectTextureGlobal [0,_path];
+            };
+         };
+      };
 //	case "U_B_GEN_Soldier_F" : {
 			//_path = "textures\cop\captain.paa";
 			//_unit setObjectTextureGlobal [0,_path];
