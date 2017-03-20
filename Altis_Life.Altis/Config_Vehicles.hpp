@@ -637,10 +637,10 @@ class CfgVehicles {
                 "textures\cop\Hatchback_Gendarm.jpg"
             } },
 			{ "Mario", "civ", {
-                "textures\cop\hatchbackv1.jpg"
+                "textures\civ\hatchbackv1.jpg"
             } },
 			{ "Peach", "civ", {
-                "textures\cop\hatchbackv2.jpg"
+                "textures\civ\hatchbackv2.jpg"
             } }
         };
     };
