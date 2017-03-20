@@ -46,21 +46,10 @@ if(playerSide == west) then {
       case 10;
       case 11;
    };
-   //	case "U_B_GEN_Soldier_F" : {
-			//_path = "textures\cop\captain.paa";
-			//_unit setObjectTextureGlobal [0,_path];
-		//};
-		//case "U_B_GEN_Commander_F" : {
-			//_path = "textures\cop\detective.paa";
-			//_unit setObjectTextureGlobal [0,_path];
-		//};
-		//case "U_O_V_Soldier_Viper_F" : {
-			//_path = "textures\cop\swat.paa";
-			//_unit setObjectTextureGlobal [0,_path];
-		//};
+
 
    if((backpack player) == "B_Bergen_mcamo")  then {
-       //(unitBackpack _unit) setObjectTextureGlobal [0, "textures\cop\cop_backpack.paa"];
+
        (unitBackpack player) setObjectTextureGlobal [0, ""];
    };
 };
