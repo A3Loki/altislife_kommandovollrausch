@@ -101,7 +101,8 @@ class Clothing {
 
 		uniforms[] = {
 			{ "NONE",                       "Uniform entfernen", 0, { "", "", -1 } },
-			{ "U_I_HeliPilotCoveralls",     "ART",              250, { "life_mediclevel", "SCALAR", -1 } }
+			{ "U_I_HeliPilotCoveralls",     "ART",              250, { "life_mediclevel", "SCALAR", -1 } },
+			{ "U_IG_Guerilla2_1",           "Notarzt",          500, { "life_mediclevel", "SCALAR",  4 } },
 
 		};
 
