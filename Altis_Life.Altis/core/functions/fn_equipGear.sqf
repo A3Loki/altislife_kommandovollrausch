@@ -82,24 +82,6 @@ if(playerSide == independent) then {
 	};
 };
 
-
-if(playerSide == independent) then {
-	switch(_type) do {
-		case "U_I_HeliPilotCoveralls" : {
-			_path = "textures\med\art_uniform.jpg";
-			_unit setObjectTextureGlobal [0,_path];
-		};
-		case "U_C_WorkerCoveralls" : {
-		    _path = "textures\med\art_uniform.jpg";
-		    _unit setObjectTextureGlobal [0,_path];
-		};
-	};
-
-	if((backpack player) == "B_Bergen_rgr") then {
-		(unitBackpack _unit) setObjectTextureGlobal [0, ""];
-	};
-};
-
 /*
 if(playerSide == civilian) then {
 	switch(_type) do {
