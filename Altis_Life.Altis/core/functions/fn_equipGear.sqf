@@ -11,9 +11,9 @@ _type = [_this,1,"",[""]] call BIS_fnc_param;
 
 
 if(playerSide == west) then {
-   switch(FETCH_CONST(life_coplevel)) do {
+   if(FETCH_CONST(life_coplevel)) then {
       case 1: {
-         switch(_type) do {
+         if(_type) then {
             case "U_Rangemaster" : {
                _path = "textures\cop\pka_shirt.jpg";
                _unit setObjectTextureGlobal [0,_path];
@@ -27,7 +27,7 @@ if(playerSide == west) then {
       case 6;
       case 7;
       case 8: {
-         switch(_type) do {
+         if(_type) then {
             case "U_Rangemaster" : {
                _path = "textures\cop\pk_shirt.jpg";
                _unit setObjectTextureGlobal [0,_path];
@@ -37,7 +37,7 @@ if(playerSide == west) then {
       case 9;
       case 10;
       case 11: {
-         switch(_type) do {
+         if(_type) then {
             case "U_Rangemaster" : {
                _path = "textures\cop\pp_shirt.jpg";
                _unit setObjectTextureGlobal [0,_path];
@@ -66,7 +66,7 @@ if(playerSide == west) then {
 
 
 if(playerSide == independent) then {
-	switch(_type) do {
+	if(_type) then {
 		case "U_I_HeliPilotCoveralls" : {
 			_path = "textures\med\art_uniform.jpg";
 			_unit setObjectTextureGlobal [0,_path];
@@ -84,7 +84,7 @@ if(playerSide == independent) then {
 
 /*
 if(playerSide == civilian) then {
-	switch(_type) do {
+	if(_type) then {
 		case "U_C_WorkerCoveralls" : {
 			_path = "textures\civ\adac_cloth.jpg";
 			_unit setObjectTextureGlobal [0,_path];

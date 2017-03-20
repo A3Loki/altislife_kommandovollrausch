@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=7544;
+		nextID=7552;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=85;
+		nextID=91;
 	};
 	class Camera
 	{
-		pos[]={3657.9556,98.453461,12340.42};
-		dir[]={-0.93049878,-0.36662298,0.003321409};
-		up[]={-0.3667233,0.93031371,0.0012857382};
-		aside[]={0.0035622441,1.9253919e-005,1.0001292};
+		pos[]={3771.4385,20.752886,13014.179};
+		dir[]={-0.50980884,-0.40673724,-0.75809985};
+		up[]={-0.22699906,0.91352087,-0.33755502};
+		aside[]={-0.829835,1.0128133e-008,0.55805224};
 	};
 };
 binarizationWanted=0;
@@ -29196,7 +29196,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3768.9597,18.950483,13010.977};
+						position[]={3768.96,18.950439,13010.977};
 						angles[]={0,0.056339227,0};
 					};
 					side="Civilian";
@@ -29204,14 +29204,33 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this allowDamage false;  this addAction[""Kantine"",life_fnc_virt_menu,""med""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide == independent '];  this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""medcloth""]; this addAction[""Arztbedarf"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[""Arztbedarf-Notarzt"",life_fnc_weaponShopMenu,""med_notarzt""]; this setObjectTexture [0,""textures\med\art_uniform.jpg""];";
+						init="this enableSimulation false;  this allowDamage false;  this addAction[""Kantine"",life_fnc_virt_menu,""med""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide == independent '];  this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""medcloth""]; this addAction[""Arztbedarf"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[""Arztbedarf-Notarzt"",life_fnc_weaponShopMenu,""med_notarzt""]; removeUniform this; this addUniform""U_I_HeliPilotCoveralls""; this setObjectTexture [0,""textures\med\art_uniform.jpg""];";
 					};
-					id=2022;
+					id=7549;
 					type="C_man_1";
-					atlOffset=0.0990448;
+					atlOffset=0.099000931;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -29230,7 +29249,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -29238,7 +29257,7 @@ class Mission
 			{
 			};
 			id=2021;
-			atlOffset=0.0990448;
+			atlOffset=0.099000931;
 		};
 		class Item1451
 		{
@@ -116112,7 +116131,7 @@ class Mission
 			};
 			id=7391;
 			type="Land_Basket_F";
-			atlOffset=0.090362549;
+			atlOffset=0.027767181;
 		};
 		class Item3643
 		{
@@ -116179,7 +116198,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3534.2183,61.388603,12301.43};
-				angles[]={-0,4.4788294,0};
+				angles[]={0,4.4788294,0};
 			};
 			side="Empty";
 			flags=4;
@@ -116195,7 +116214,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3534.3569,61.822617,12300.92};
-				angles[]={-0,4.712389,0};
+				angles[]={0,4.712389,0};
 			};
 			side="Empty";
 			flags=4;
@@ -116360,7 +116379,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3533.905,62.456409,12302.112};
-				angles[]={-0,5.8902421,0};
+				angles[]={0,5.8902421,0};
 			};
 			side="Empty";
 			flags=4;
@@ -116578,7 +116597,7 @@ class Mission
 			};
 			id=7417;
 			type="Land_HumanSkull_F";
-			atlOffset=0.33366394;
+			atlOffset=0.33366013;
 		};
 		class Item3658
 		{
@@ -116658,7 +116677,7 @@ class Mission
 			};
 			id=7423;
 			type="Land_GarbageContainer_closed_F";
-			atlOffset=3.4669266;
+			atlOffset=3.4670715;
 		};
 		class Item3663
 		{
@@ -118072,7 +118091,7 @@ class Mission
 			};
 			id=7520;
 			type="Land_LampShabby_F";
-			atlOffset=-0.013946533;
+			atlOffset=-0.013942719;
 		};
 		class Item3749
 		{
@@ -118139,7 +118158,7 @@ class Mission
 			};
 			id=7531;
 			type="Land_WoodenTable_large_F";
-			atlOffset=0.40744019;
+			atlOffset=0.46121597;
 		};
 		class Item3753
 		{
@@ -118147,16 +118166,15 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3541.5715,59.740547,12316.484};
-				angles[]={-0,3.0138004,0};
+				angles[]={0,3.0138004,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=7532;
 			type="Land_RattanChair_01_F";
-			atlOffset=0.20033264;
+			atlOffset=0.27821732;
 		};
 		class Item3754
 		{
@@ -118188,7 +118206,7 @@ class Mission
 			};
 			id=7534;
 			type="Land_RattanChair_01_F";
-			atlOffset=0.47544861;
+			atlOffset=0.52144241;
 		};
 		class Item3756
 		{
@@ -118228,7 +118246,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3540.8464,59.692543,12314.758};
-				angles[]={-0,0.88645595,0};
+				angles[]={0,0.88645595,0};
 			};
 			side="Empty";
 			flags=4;
@@ -118245,7 +118263,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3544.8291,59.555023,12316.177};
-				angles[]={-0,2.8746202,0};
+				angles[]={0,2.8746202,0};
 			};
 			side="Empty";
 			flags=4;
@@ -118716,7 +118734,7 @@ class Mission
 			class Item40
 			{
 				linkID=40;
-				item0=2022;
+				item0=7549;
 				item1=1909;
 				class CustomData
 				{
