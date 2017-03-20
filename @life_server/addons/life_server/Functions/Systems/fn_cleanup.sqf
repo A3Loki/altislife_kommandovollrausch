@@ -11,7 +11,7 @@ _deleted = false;
 while {true} do
 {
 	private["_veh","_units"];
-	sleep (60 * 60);
+	sleep (60 * 360);
 	{
 		_veh = _x;
 		_vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "vehicleClass");
@@ -48,7 +48,7 @@ while {true} do
 					_plate = _dbInfo select 1;
 
 					_query = format["vehicleUpdateActivePlate:0:%1:%2",_uid,_plate];
-					
+
 					[_query,1] call DB_fnc_asyncCall;
 				};
 			};
