@@ -21,7 +21,14 @@ if(playerSide == west) then {
             };
          };
       };
-      case 2;
+      case 2: {
+         if(_type) then {
+            case "U_Rangemaster" : {
+               _path = "textures\cop\pk_shirt.jpg";
+               _unit setObjectTextureGlobal [0,_path];
+            };
+         };
+      };
       case 3;
       case 4;
       case 5;
@@ -30,21 +37,14 @@ if(playerSide == west) then {
       case 8: {
          if(_type) then {
             case "U_Rangemaster" : {
-               _path = "textures\cop\pk_shirt.jpg";
+               _path = "textures\cop\pp_shirt.jpg";
                _unit setObjectTextureGlobal [0,_path];
             };
          };
       };
       case 9;
       case 10;
-      case 11: {
-         if(_type) then {
-            case "U_Rangemaster" : {
-               _path = "textures\cop\pp_shirt.jpg";
-               _unit setObjectTextureGlobal [0,_path];
-            };
-         };
-      };
+      case 11;
    };
    //	case "U_B_GEN_Soldier_F" : {
 			//_path = "textures\cop\captain.paa";
