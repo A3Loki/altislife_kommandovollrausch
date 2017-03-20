@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	fn_equipGear.sqf
 	Author: Keine Ahnung.. Internet? o.O
