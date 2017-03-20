@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	fn_equipGear.sqf
 	Author: Keine Ahnung.. Internet? o.O
@@ -70,10 +71,6 @@ if(playerSide == independent) then {
 		case "U_I_HeliPilotCoveralls" : {
 			_path = "textures\med\art_uniform.jpg";
 			_unit setObjectTextureGlobal [0,_path];
-		};
-		case "U_C_WorkerCoveralls" : {
-		    _path = "textures\med\art_uniform.jpg";
-		    _unit setObjectTextureGlobal [0,_path];
 		};
 	};
 
