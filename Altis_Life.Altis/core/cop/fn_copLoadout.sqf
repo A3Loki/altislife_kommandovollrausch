@@ -37,7 +37,6 @@ player assignItem "ItemGPS";
  if((FETCH_CONST(life_coplevel)) > -1) then
 {
 player addUniform "U_Rangemaster";
-player setObjectTextureGlobal [0,"textures\cop\pka_shirt.jpg"];
 player addVest "V_Rangemaster_belt";
 player addWeapon "hgun_Rook40_snds_F";
 player addMagazine "16Rnd_9x21_Mag";
@@ -59,7 +58,6 @@ player assignItem "ItemGPS";
 if((FETCH_CONST(life_coplevel)) == 2) then
 {
 player addUniform "U_Rangemaster";
-player setObjectTextureGlobal [0,"textures\cop\pk_shirt.jpg"];
 player addVest "V_Rangemaster_belt";
 player addWeapon "hgun_Rook40_snds_F";
 player addMagazine "16Rnd_9x21_Mag";
@@ -81,7 +79,6 @@ player assignItem "ItemGPS";
  if((FETCH_CONST(life_coplevel)) == 3) then
 {
 player addUniform "U_Rangemaster";
-player setObjectTextureGlobal [0,"textures\cop\pk_shirt.jpg"];
 player addVest "V_Rangemaster_belt";
 player addWeapon "hgun_Rook40_snds_F";
 player addMagazine "16Rnd_9x21_Mag";
@@ -103,7 +100,6 @@ player assignItem "ItemGPS";
 if((FETCH_CONST(life_coplevel)) == 4) then
 {
 player addUniform "U_Rangemaster";
-player setObjectTextureGlobal [0,"textures\cop\pk_shirt.jpg"];
 player addVest "V_Rangemaster_belt";
 player addWeapon "hgun_Rook40_snds_F";
 player addMagazine "16Rnd_9x21_Mag";
@@ -125,7 +121,6 @@ player assignItem "ItemGPS";
  if((FETCH_CONST(life_coplevel)) == 5) then
 {
 player addUniform "U_Rangemaster";
-player setObjectTextureGlobal [0,"textures\cop\pk_shirt.jpg"];
 player addVest "V_Rangemaster_belt";
 player addWeapon "hgun_Rook40_snds_F";
 player addMagazine "16Rnd_9x21_Mag";
@@ -147,7 +142,6 @@ player assignItem "ItemGPS";
 if((FETCH_CONST(life_coplevel)) == 6) then
 {
 player addUniform "U_Rangemaster";
-player setObjectTextureGlobal [0,"textures\cop\pk_shirt.jpg"];
 player addVest "V_Rangemaster_belt";
 player addWeapon "hgun_Rook40_snds_F";
 player addMagazine "16Rnd_9x21_Mag";
@@ -169,7 +163,6 @@ player assignItem "ItemGPS";
  if((FETCH_CONST(life_coplevel)) == 7) then
 {
 player addUniform "U_Rangemaster";
-player setObjectTextureGlobal [0,"textures\cop\pk_shirt.jpg"];
 player addVest "V_Rangemaster_belt";
 player addWeapon "hgun_Rook40_snds_F";
 player addMagazine "16Rnd_9x21_Mag";
@@ -191,7 +184,6 @@ player assignItem "ItemGPS";
 if((FETCH_CONST(life_coplevel)) == 8) then
 {
 player addUniform "U_Rangemaster";
-player setObjectTextureGlobal [0,"textures\cop\pk_shirt.jpg"];
 player addVest "V_Rangemaster_belt";
 player addWeapon "hgun_Rook40_snds_F";
 player addMagazine "16Rnd_9x21_Mag";
@@ -213,7 +205,6 @@ player assignItem "ItemGPS";
  if((FETCH_CONST(life_coplevel)) == 9) then
 {
 player addUniform "U_Rangemaster";
-player setObjectTextureGlobal [0,"textures\cop\pp_shirt.jpg"];
 player addVest "V_Rangemaster_belt";
 player addWeapon "hgun_Rook40_snds_F";
 player addMagazine "16Rnd_9x21_Mag";
@@ -235,7 +226,6 @@ player assignItem "ItemGPS";
 if((FETCH_CONST(life_coplevel)) == 10) then
 {
 player addUniform "U_Rangemaster";
-player setObjectTextureGlobal [0,"textures\cop\pp_shirt.jpg"];
 player addVest "V_Rangemaster_belt";
 player addWeapon "hgun_Rook40_snds_F";
 player addMagazine "16Rnd_9x21_Mag";
@@ -257,7 +247,6 @@ player assignItem "ItemGPS";
  if((FETCH_CONST(life_coplevel)) == 11) then
 {
 player addUniform "U_Rangemaster";
-player setObjectTextureGlobal [0,"textures\cop\pp_shirt.jpg"];
 player addVest "V_Rangemaster_belt";
 player addWeapon "hgun_Rook40_snds_F";
 player addMagazine "16Rnd_9x21_Mag";

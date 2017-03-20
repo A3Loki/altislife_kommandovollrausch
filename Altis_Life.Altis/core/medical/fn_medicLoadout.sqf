@@ -11,7 +11,6 @@ _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
 player addUniform "U_I_HeliPilotCoveralls";
-player setObjectTextureGlobal [0,"textures\med\art_uniform.jpg"];
 player addItem "FirstAidKit";
 player addItem "FirstAidKit";
 player addItem "ItemMap";
@@ -24,7 +23,6 @@ player assignItem "ItemWatch";
  if((FETCH_CONST(life_mediclevel)) > -1) then
 {
 player addUniform "U_I_HeliPilotCoveralls";
-player setObjectTextureGlobal [0,"textures\med\art_uniform.jpg"];
 player addItem "FirstAidKit";
 player addItem "FirstAidKit";
 player addItem "ItemMap";
@@ -38,7 +36,6 @@ player assignItem "ItemWatch";
 if((FETCH_CONST(life_mediclevel)) == 2) then
 {
 player addUniform "U_I_HeliPilotCoveralls";
-player setObjectTextureGlobal [0,"textures\med\art_uniform.jpg"];
 player addItem "FirstAidKit";
 player addItem "FirstAidKit";
 player addItem "ItemMap";
@@ -52,7 +49,6 @@ player assignItem "ItemWatch";
  if((FETCH_CONST(life_mediclevel)) == 3) then
 {
 player addUniform "U_I_HeliPilotCoveralls";
-player setObjectTextureGlobal [0,"textures\med\art_uniform.jpg"];
 player addItem "FirstAidKit";
 player addItem "FirstAidKit";
 player addItem "ItemMap";
@@ -66,7 +62,6 @@ player assignItem "ItemWatch";
 if((FETCH_CONST(life_mediclevel)) == 4) then
 {
 player addUniform "U_IG_Guerilla2_1";
-player setObjectTextureGlobal [0,"textures\med\medic_uniform.jpg"];
 player addItem "FirstAidKit";
 player addItem "FirstAidKit";
 player addItem "ItemMap";
@@ -80,7 +75,6 @@ player assignItem "ItemWatch";
  if((FETCH_CONST(life_mediclevel)) == 5) then
 {
 player addUniform "U_IG_Guerilla2_1";
-player setObjectTextureGlobal [0,"textures\med\medic_uniform.jpg"];
 player addItem "FirstAidKit";
 player addItem "FirstAidKit";
 player addItem "ItemMap";
