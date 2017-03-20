@@ -196,7 +196,7 @@ compileFinal "
 KV_fnc_freezePlayer =
 compileFinal "
     private[""_unit"", ""_target"", ""_freezed""];
-    _target = _this select 0;
+    _target = _this;
     _unit   = player;
 
     if(_unit call KV_fnc_admin) then {
