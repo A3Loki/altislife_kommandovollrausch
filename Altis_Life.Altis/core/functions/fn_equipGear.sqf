@@ -67,10 +67,8 @@ if(playerSide == west) then {
 
 
 if(playerSide == independent) then {
-   if(FETCH_CONST(life_medilevel)) then {
-      case 1;
-      case 2;
-      case 3: {
+   if(FETCH_CONST(life_mediclevel)) then {
+      case 1: {
          if(_type) then {
             case "U_I_HeliPilotCoveralls" : {
                _path = "textures\med\art_uniform.jpg";
@@ -78,8 +76,9 @@ if(playerSide == independent) then {
             };
          };
       };
-      case 4;
-      case 5:: {
+      case 2;
+      case 3;
+      case 4: {
          if(_type) then {
             case "U_IG_Guerilla2_1" : {
                _path = "textures\med\medic_uniform.jpg";
@@ -87,6 +86,7 @@ if(playerSide == independent) then {
             };
          };
       };
+      case 5;
    };
 	if((backpack player) == "B_Bergen_rgr") then {
 		(unitBackpack _unit) setObjectTextureGlobal [0, ""];
