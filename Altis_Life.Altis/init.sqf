@@ -6,12 +6,6 @@ NativeGamer_colorSET = compileFinal preprocessFileLineNumbers 'core\functions\fn
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 
-if(!isDedicated) then {
-    if((getPlayerUID player) in KV_temp_banned_players) then {
-        ["Banned",FALSE,TRUE] call BIS_fnc_endMission;
-    };
-};
-
 StartProgress = true;
 
 if (isNil "Waffenschein") then {

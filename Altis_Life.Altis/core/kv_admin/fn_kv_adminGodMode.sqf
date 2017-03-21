@@ -1,10 +1,10 @@
 #include <macro.h>
 /*
-	File: fn_kv_adminFreeze.sqf
+	File: fn_kv_adminGodMode.sqf
 	Author: Loki
 	
 	Description:
-	Freeze Handler
+	Dead Vehicle Handler
 */
 if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
 private["_player", "_name"];
@@ -15,4 +15,4 @@ _player = lbData[75307, lbCurSel (75307)];
 _player = call compile format["%1", _player];
 _name = lbText[75307, lbCurSel (75307)];
 
-[[_player], "KV_fnc_freezePlayer", player, false] call life_fnc_MP;
+[[_player], "KV_fnc_godMode", player, false] call life_fnc_MP;

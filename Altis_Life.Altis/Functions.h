@@ -45,12 +45,14 @@ class Life_Client_Core
 		class kv_adminCash {};
 		class kv_adminChangeVehType {};
 		class kv_adminDeadVeh {};
+		class kv_adminDeleteSpawnedObjects {};
 		class kv_adminFreeze {};
 		class kv_adminKick {};
 		class kv_adminMenu {};
 		class kv_adminSpawnObject {};
 		class kv_adminSpectate {};
 		class kv_adminTeleport {};
+		class kv_adminGodMode {};
 	};
 	
 	class Admin

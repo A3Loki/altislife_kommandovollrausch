@@ -18,4 +18,4 @@ _name = lbText[75307, lbCurSel (75307)];
 _cash = ctrlText 75309;
 
 [[_player, _cash, _type], "KV_fnc_changeCash", player, false] call life_fnc_MP;
-hint format["Bei %1 wurde das Geld geaendert.", _name];
+hint format["Bei %1 wurde das Geld auf/um %2 geaendert.", _name, _cash];

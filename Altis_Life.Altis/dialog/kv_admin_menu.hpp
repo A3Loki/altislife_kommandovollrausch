@@ -328,5 +328,25 @@ class life_kv_admin_menu {
 			h = 0.022 * safezoneH;
 			action =  "[""tpmap""] spawn life_fnc_kv_adminTeleport;";
 		};
+		class kv_deleteSpawned: Life_RscButtonMenu
+		{
+			idc = 75314;
+			text = "Alles entfernen"; //--- ToDo: Localize;
+			x = 0.613437 * safezoneW + safezoneX;
+			y = 0.555 * safezoneH + safezoneY;
+			w = 0.113437 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[] spawn life_fnc_kv_adminDeleteSpawnedObjects;";
+		};
+		class kv_godMode: Life_RscButtonMenu
+		{
+			idc = 75315;
+			text = "Unsterblich"; //--- ToDo: Localize;
+			x = 0.613437 * safezoneW + safezoneX;
+			y = 0.588 * safezoneH + safezoneY;
+			w = 0.113437 * safezoneW;
+			h = 0.022 * safezoneH;
+			action =  "[] spawn life_fnc_kv_adminGodMode;";
+		};
 	};
 };

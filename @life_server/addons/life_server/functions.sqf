@@ -109,7 +109,6 @@ publicVariable "TON_fnc_clientGangLeader";
 
 /*********** ADMIN ***********/
 KV_admin_uids = compileFinal "[""76561198077148178"",""76561197972350240"",""76561197970753742""]";
-KV_temp_banned_players = [];
 
 KV_fnc_admin =
 compileFinal "
@@ -122,7 +121,7 @@ compileFinal "
 
 KV_fnc_spawnObject =
 compileFinal "
-    private[""_unit"", ""_object"", ""_pos"", ""_dir"", ""_radius"", ""_special""];
+    private[""_unit"", ""_object"", ""_pos"", ""_dir"", ""_radius"", ""_special"", ""_vehicles""];
     _object     = _this select 0;
     _pos        = _this select 1;
     _dir        = _this select 2;
@@ -133,6 +132,11 @@ compileFinal "
     if(_unit call KV_fnc_admin) then {
         _create = createVehicle [_object, _pos, [], _radius, _special];
         _create setDir _dir;
+		  
+		  _vehicles = _unit getVariable ""spawnedObjects"";
+		  if(isNil ""_vehicles"") then {_vehicles = []}
+		  _vehicles pushBack _create;
+		  _unit setVariable [""spawnedObjects"", _vehicles, true];
         [""Object wurde erstellt.""] remoteExec [""KV_fnc_throwMsg"", _unit];
     };
 ";
@@ -185,6 +189,49 @@ compileFinal "
     };
 ";
 
+KV_fnc_deleteSpawned =
+compileFinal "
+    private[""_unit"", ""_vehicles""];
+    _unit = player;
+
+    if(_unit call KV_fnc_admin) then {
+			_vehicles = _unit getVariable ""spawnedObjects"";
+	 
+        {
+            deleteVehicle _x;
+        } forEach _vehicles;
+        [""Alle von dir gespawnten Fahrzeuge wurden entfernt""] remoteExec [""KV_fnc_throwMsg"", _unit];
+    };
+";
+
+KV_fnc_getDamageAllowed =
+compileFinal "
+   private[""_unit"", ""_damage""];
+   _unit = _this;
+   _damage = if(isDamageAllowed) then {true} else {false};
+   _damage;
+";
+
+KV_fnc_godMode =
+compileFinal "
+    private[""_unit"", ""_target"", ""_godMode""];
+    _target = _this select 0;
+    _unit   = player;
+
+    if(_unit call KV_fnc_admin) then {
+        _godMode = _target remoteExecCall [""KV_fnc_getDamageAllowed"", _target];
+        if(_godMode) then {
+            {allowDamage true;} remoteExec [""BIS_fnc_call"", _target];
+				[""Die Person ist nun nicht mehr unsterblich.""] remoteExec [""KV_fnc_throwMsg"", _unit];
+            [""Du bist nun nicht mehr unsterblich.""] remoteExec [""KV_fnc_throwMsg"", _target];
+        } else {
+            {allowDamage false;} remoteExec [""BIS_fnc_call"", _target];
+				[""Die Person ist nun unsterblich.""] remoteExec [""KV_fnc_throwMsg"", _unit];
+            [""Du bist nun unsterblich.""] remoteExec [""KV_fnc_throwMsg"", _target];
+        };
+    };
+";
+
 KV_fnc_getFreeze =
 compileFinal "
    private[""_unit"", ""_disabled""];
@@ -199,14 +246,16 @@ compileFinal "
     _target = _this select 0;
     _unit   = player;
 
-    if(_unit call KV_fnc_admin) then {
+    if(_unit call KV_fnc_admin && _target != _unit) then {
         _freezed = _target remoteExecCall [""KV_fnc_getFreeze"", _target];
         if(!_freezed) then {
             {disableUserInput true;} remoteExec [""BIS_fnc_call"", _target];
             [""Du wurdest eingefroren.""] remoteExec [""KV_fnc_throwMsg"", _target];
+            [""Die Person wurde eingefroren.""] remoteExec [""KV_fnc_throwMsg"", _unit];
         } else {
             {disableUserInput false;} remoteExec [""BIS_fnc_call"", _target];
             [""Du bist nun nicht mehr eingefroren.""] remoteExec [""KV_fnc_throwMsg"", _target];
+				[""Die Person ist nun nicht mehr eingefroren.""] remoteExec [""KV_fnc_throwMsg"", _unit];
         };
     };
 ";
@@ -241,7 +290,7 @@ compileFinal "
     _unit   = player;
 
     if(_unit call KV_fnc_admin) then {
-        {[""Kicked"",FALSE,TRUE] call BIS_fnc_endMission;} remoteExec [""BIS_fnc_call"", _target];
+		  serverCommand format [""#kick %1"", getPlayerUID _target];
     };
 ";
 
@@ -252,8 +301,7 @@ compileFinal "
     _unit   = player;
 
     if(_unit call KV_fnc_admin) then {
-        KV_temp_banned_players pushBack (getPlayerUID _target);
-        {[""Banned"",FALSE,TRUE] call BIS_fnc_endMission;} remoteExec [""BIS_fnc_call"", _target];
+		  serverCommand format [""#exec ban %1"", getPlayerUID _target];
     };
 ";
 
@@ -264,18 +312,50 @@ compileFinal "
     hint _message;
 ";
 
+KV_fnc_getGodModePlayer =
+compileFinal "
+	private[""_player""];
+	_player = """";
+	_unit = player;
+	
+	if(_unit call KV_fnc_admin) then {
+		{
+			if(!isDamageAllowed) then {_player = _player + format ["", %1"", name _x]};
+		} forEach playableUnits;
+		[format[""Unsterbliche Spieler: %1"", _player]] remoteExec [""KV_fnc_throwMsg"", _unit];
+	};
+";
+
+KV_fnc_getFreezedPlayer =
+compileFinal "
+	private[""_player""];
+	_player = """";
+	_unit = player;
+	
+	if(_unit call KV_fnc_admin) then {
+		{
+			if(userInputDisabled) then {_player = _player + format ["", %1"", name _x]};
+		} forEach playableUnits;
+		[format[""Eingefrorene Spieler: %1"", _player]] remoteExec [""KV_fnc_throwMsg"", _unit];
+	};
+";
+
 publicVariable "KV_admin_uids";
-publicVariable "KV_temp_banned_players";
 publicVariable "KV_fnc_admin";
 publicVariable "KV_fnc_spawnObject";
 publicVariable "KV_fnc_changePos";
 publicVariable "KV_fnc_cleanVehicles";
+publicVariable "KV_fnc_deleteSpawned";
+publicVariable "KV_fnc_getDamageAllowed";
+publicVariable "KV_fnc_godMode";
 publicVariable "KV_fnc_getFreeze";
 publicVariable "KV_fnc_freezePlayer";
 publicVariable "KV_fnc_changeCash";
 publicVariable "KV_fnc_kickPlayer";
 publicVariable "KV_fnc_banPLayer";
 publicVariable "KV_fnc_throwMsg";
+publicVariable "KV_fnc_getGodModePlayer";
+publicVariable "KV_fnc_getFreezedPlayer";
 /*********** ADMIN ***********/
 
 //To EMS
