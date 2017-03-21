@@ -134,7 +134,7 @@ compileFinal "
         _create setDir _dir;
 		  
 		  _vehicles = _unit getVariable ""spawnedObjects"";
-		  if(isNil ""_vehicles"") then {_vehicles = []}
+		  if(isNil ""_vehicles"") then {_vehicles = []};
 		  _vehicles pushBack _create;
 		  _unit setVariable [""spawnedObjects"", _vehicles, true];
         [""Object wurde erstellt.""] remoteExec [""KV_fnc_throwMsg"", _unit];
