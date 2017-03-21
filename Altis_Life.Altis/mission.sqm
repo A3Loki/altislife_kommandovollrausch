@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=641;
+	toggles=513;
 	class ItemIDProvider
 	{
 		nextID=8112;
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=97;
+		nextID=100;
 	};
 	class Camera
 	{
@@ -29138,7 +29138,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3768.9597,18.950483,13010.977};
+						position[]={3768.96,18.950439,13010.977};
 						angles[]={0,0.056339227,0};
 					};
 					side="Civilian";
@@ -29146,14 +29146,33 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;  this allowDamage false;  this addAction[""Kantine"",life_fnc_virt_menu,""med""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide == independent '];  this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""medcloth""]; this addAction[""Arztbedarf"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[""Arztbedarf-Notarzt"",life_fnc_weaponShopMenu,""med_notarzt""]; this setObjectTexture [0,""textures\med\art_uniform.jpg""];";
+						init="this enableSimulation false;  this allowDamage false;  this addAction[""Kantine"",life_fnc_virt_menu,""med""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide == independent '];  this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""medcloth""]; this addAction[""Arztbedarf"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[""Arztbedarf-Notarzt"",life_fnc_weaponShopMenu,""med_notarzt""]; removeUniform this; this addUniform""U_I_HeliPilotCoveralls""; this setObjectTexture [0,""textures\med\art_uniform.jpg""];";
 					};
 					id=2022;
 					type="C_man_1";
-					atlOffset=0.0990448;
+					atlOffset=0.099000931;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -29172,7 +29191,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -29180,7 +29199,7 @@ class Mission
 			{
 			};
 			id=2021;
-			atlOffset=0.0990448;
+			atlOffset=0.099000931;
 		};
 		class Item1443
 		{
@@ -132189,7 +132208,7 @@ class Mission
 			position[]={25809.441,19.810814,21447.035};
 			name="medic_spawn_4";
 			type="Empty";
-			angle=354.56451;
+			angle=354.56448;
 			id=8091;
 			atlOffset=-1.8435192;
 		};
@@ -132258,7 +132277,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14533.83,52.028687,20820.436};
-			angle=0.38147655;
+			angle=0.38147652;
 			class Attributes
 			{
 				name="Eingang_AuD_7";
@@ -132282,7 +132301,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={15559.369,32.362648,20966.053};
-			angle=0.9964956;
+			angle=0.99649554;
 			class Attributes
 			{
 				name="Eingang_AuD_8";
@@ -132304,7 +132323,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={15897.489,26.442488,21259.791};
-			angle=0.99649554;
+			angle=0.99649549;
 			class Attributes
 			{
 				name="Eingang_AuD_9";
@@ -132326,7 +132345,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={16110.529,21.543028,21328.383};
-			angle=0.99649554;
+			angle=0.99649549;
 			class Attributes
 			{
 				name="Eingang_AuD_10";
@@ -132348,7 +132367,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={16108.117,14.935359,22049.008};
-			angle=0.99649554;
+			angle=0.99649549;
 			class Attributes
 			{
 				name="Eingang_AuD_11";
@@ -132370,7 +132389,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={15184.143,36.766525,22006.238};
-			angle=0.99649554;
+			angle=0.99649549;
 			class Attributes
 			{
 				name="Eingang_AuD_12";
@@ -132392,7 +132411,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14298.909,99.869362,21747.205};
-			angle=0.99649554;
+			angle=0.99649549;
 			class Attributes
 			{
 				name="Eingang_AuD_13";
@@ -132414,7 +132433,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={13976.935,63.785538,21066.939};
-			angle=0.99649554;
+			angle=0.99649549;
 			class Attributes
 			{
 				name="Eingang_AuD_14";
@@ -132436,7 +132455,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14289.252,32.08094,19549.861};
-			angle=0.99649554;
+			angle=0.99649549;
 			class Attributes
 			{
 				name="Eingang_AuD_15";
