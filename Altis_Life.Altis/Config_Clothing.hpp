@@ -146,7 +146,7 @@ class Clothing {
 
 		uniforms[] = {
 			{ "NONE",                       "Uniform entfernen", 0, { "", "", -1 } },
-			{ "U_Rangemaster",              "Dienstuniform",   25, { "", "", -1 } },
+			{ "U_Rangemaster",              "Dienstuniform",    25, { "", "", -1 } },
 			{ "U_B_Wetsuit",                "Taucheranzug",     25, { "", "", -1 } },
 			{ "U_B_GEN_Soldier_F",          "Wachtmeister+",    350, { "life_coplevel", "SCALAR", 2 } },
 			{ "U_B_GEN_Commander_F",        "Leutnant+",        1250, { "life_coplevel", "SCALAR", 6 } },
