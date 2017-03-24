@@ -11,7 +11,7 @@ _type = [_this,1,"",[""]] call BIS_fnc_param;
 
 
 if(playerSide == west) then {
-	switch(_type) do {
+	 switch(_type) do {
 		case "U_Rangemaster" : {
 			_path = "textures\cop\pk_shirt.jpg";
 			_unit setObjectTextureGlobal [0,_path];
@@ -43,7 +43,7 @@ if(playerSide == independent) then {
 			_path = "textures\med\art_uniform.jpg";
 			_unit setObjectTextureGlobal [0,_path];
 		};
-	  	case "U_IG_Guerilla2_1" : {
+	 	case "U_IG_Guerilla2_1" : {
 		    _path = "textures\med\medic_uniform.jpg";
 		    _unit setObjectTextureGlobal [0,_path];
 		};
