@@ -43,9 +43,9 @@ if(playerSide == independent) then {
 			_path = "textures\med\art_uniform.jpg";
 			_unit setObjectTextureGlobal [0,_path];
 		};
-	//	case "U_C_WorkerCoveralls" : {
-	//	    _path = "textures\med\art_uniform.jpg";
-	//	    _unit setObjectTextureGlobal [0,_path];
+	  	case "U_IG_Guerilla2_1" : {
+		    _path = "textures\med\medic_uniform.jpg";
+		    _unit setObjectTextureGlobal [0,_path];
 		};
 	};
 
